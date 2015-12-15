@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ContinuousPipe</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="top">
+<header id="home">
+    <nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                    <nav class="pull">
+                        <ul class="top-nav">
+                            <li><a href="#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a>
+                            </li>
+                            <li><a href="#features">Features <span class="indicator"><i
+                                    class="fa fa-angle-right"></i></span></a></li>
+                            <li><a href="#beta">Join the private beta <span class="indicator"><i
+                                    class="fa fa-angle-right"></i></span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-right navicon">
+                    <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+                    <h1 class="animated fadeInDown">Continuous<span>Pipe</span></h1>
+
+                    <p class="animated fadeInUp delay-05s">Deployment pipeline for Docker-based applications</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <a href="#beta" class="learn-more-btn">Join the private beta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<section class="intro text-center section-padding" id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Focus on your business</h1>
+
+                <p>
+                    Deploying applications and DevOps works is a pain that all the development teams wants to forget.
+                    <a href="http://www.docker.com">Docker</a> containers definitely help us to do that on developers'
+                    laptop
+                    but not yet for the whole application lifecycle, that often needs a dedicated team to manage servers
+                    and deployment.
+                    With Continuous-Pipe, you can deploy your applications with the standard
+                    <code>docker-compose.yml</code>
+                    file and with a very little configuration on the Docker cluster you wants (Kubernetes or Google Container Engine for now).
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="features text-center section-padding" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="arrow">We help you through the whole application lifecycle</h1>
+
+                <div class="features-wrapper">
+                    <div class="col-md-4 wp2">
+                        <div class="icon">
+                            <i class="fa fa-clone shadow"></i>
+                        </div>
+                        <h2>Feature environments</h2>
+
+                        <p>
+                            We all agree that the development is easier when we use feature branches. By deploying these
+                            feature branches into feature environments, we have an isolated environment
+                            that can be used by QA and the final customer to improve the feedback loop.
+                        </p>
+                    </div>
+                    <div class="col-md-4 wp2 delay-05s">
+                        <div class="icon">
+                            <i class="fa fa-code shadow"></i>
+                        </div>
+                        <h2>GitHub integration</h2>
+
+                        <p>
+                            You only have to activate your GitHub repository from the UI. The status of the deployments
+                            will be displayed on GitHub via its statuses and the addresses of your feature environments
+                            commented on the pull-requests.
+                        </p>
+                    </div>
+                    <div class="col-md-4 wp2 delay-1s">
+                        <div class="icon">
+                            <i class="fa fa-line-chart shadow"></i>
+                        </div>
+                        <h2>Continuous deployment</h2>
+
+                        <p>
+                            Once you've done with your feature branch and everybody is happy, just merge the pull-request
+                            and CP will automatically updates the environment associated with the principal branch like it is
+                            doing with feature branches.
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="subscribe text-center" id="beta">
+    <div class="container">
+        <h1><i class="fa fa-paper-plane"></i><span>Join the waiting-list for the beta access</span></h1>
+
+        <form action="#">
+            <input type="text" name="" value="" placeholder="" required>
+            <input type="submit" name="" value="Send">
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="legals">
+                    <li><a href="http://ui.continuouspipe.io">Manager</a></li>
+                    <li><a href="http://docs.continuouspipe.io">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 credit">
+                <p>♥ from <a href="http://continuouspipe.io">ContinuousPipe</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/modernizr.js"></script>
+</body>
+</html>
