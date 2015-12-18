@@ -132,10 +132,20 @@
     <div class="container">
         <h1><i class="fa fa-paper-plane"></i><span>Join the waiting-list for the beta access</span></h1>
 
-        <form action="#">
-            <input type="text" name="" value="" placeholder="" required>
+        {% if message is not null %}
+        <div class="message">{{ message }}</div>
+        {% else %}
+        <form action="#beta" method="POST">
+            <div class="errors">
+                {{ form_errors(form.email) }}
+            </div>
+            {{ form_widget(form.email) }}
+
+            {{ form_rest(form) }}
+
             <input type="submit" name="" value="Send">
         </form>
+        {% endif %}
     </div>
 </section>
 <footer>
