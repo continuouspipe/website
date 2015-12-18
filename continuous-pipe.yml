@@ -1,0 +1,10 @@
+tasks:
+    - build:
+          services:
+              app:
+                  image: inviqasession/cp-website
+
+    - deploy:
+          cluster: gke
+
+filter: code_reference.branch != 'gh-pages'
