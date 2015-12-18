@@ -2,11 +2,13 @@
 
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use ZfrMailChimp\Client\MailChimpClient;
 
 $routes = $app['controllers_factory'];
 $routes->match('/', function (Request $request) use ($app) {
@@ -27,8 +29,24 @@ $routes->match('/', function (Request $request) use ($app) {
 
     if ($form->isValid()) {
         $email = $form->getData()['email'];
+        $client = new MailChimpClient('b8453108d758fb6feef42cdb90195868-us12');
 
-        $message = 'Thank you very much, see you soon!';
+        try {
+            $client->subscribe([
+                'id' => '713f4777b9',
+                'email' => [
+                    'email' => $email
+                ],
+                'double_optin' => false,
+                'send_welcome' => false,
+            ]);
+
+            $message = 'Thank you very much, see you soon!';
+        } catch (\ZfrMailChimp\Exception\Ls\AlreadySubscribedException $e) {
+            $message = 'Yeah, it looks like you\'ve already subscribed. Thank you again :)';
+        } catch (\ZfrMailChimp\Exception\ExceptionInterface $e) {
+            $form->addError(new FormError($e->getMessage()));
+        }
     }
 
     return $app['twig']->render('index.html.twig', [

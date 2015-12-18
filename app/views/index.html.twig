@@ -137,6 +137,7 @@
         {% else %}
         <form action="#beta" method="POST">
             <div class="errors">
+                {{ form_errors(form) }}
                 {{ form_errors(form.email) }}
             </div>
             {{ form_widget(form.email) }}
