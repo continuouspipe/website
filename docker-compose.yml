@@ -1,0 +1,6 @@
+app:
+    build: .
+    volumes:
+        - ./:/app
+    expose:
+        - 80
