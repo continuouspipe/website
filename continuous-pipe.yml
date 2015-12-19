@@ -2,9 +2,9 @@ tasks:
     - build:
           services:
               app:
-                  image: inviqasession/cp-website
+                  image: docker.io/inviqasession/cp-website
 
     - deploy:
-          cluster: gke
+          cluster: fra-01
 
 filter: code_reference.branch != 'gh-pages'
