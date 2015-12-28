@@ -1,10 +1,17 @@
 tasks:
-    - build:
-          services:
-              app:
-                  image: docker.io/inviqasession/cp-website
+    images:
+        build:
+            services:
+                app:
+                    image: docker.io/inviqasession/cp-website
 
-    - deploy:
-          cluster: fra-01
+    deploy:
+        deploy:
+            cluster: fra-01
+            services:
+                app:
+                    specification:
+                        accessibility:
+                            from_external: true
 
 filter: code_reference.branch != 'gh-pages'
