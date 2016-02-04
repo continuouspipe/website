@@ -7,7 +7,7 @@ tasks:
 
     deploy:
         deploy:
-            cluster: fra-01
+            cluster: gke
             services:
                 app:
                     specification:
