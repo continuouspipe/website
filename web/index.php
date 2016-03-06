@@ -17,5 +17,14 @@ $app->register(new TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../app/views',
 ));
 
+$app['twig'] = $app->share($app->extend('twig', function(\Twig_Environment $twig, $app) {
+    $twig->addFunction(new \Twig_SimpleFunction('asset', function ($asset) use ($app) {
+        return $app['request']->getBasePath().$asset;
+    }));
+
+    return $twig;
+}));
+
+
 $app->mount('/', require '../app/controllers/home.php');
 $app->run();

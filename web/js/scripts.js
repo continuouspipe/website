@@ -1,9 +1,9 @@
-/***************** Waypoints ******************/
-
 $(document).ready(function() {
 
+	/***************** Waypoints ******************/
+
 	$('.wp1').waypoint(function() {
-		$('.wp1').addClass('animated fadeInLeft');
+		$('.wp1').addClass('animated fadeInUp');
 	}, {
 		offset: '75%'
 	});
@@ -13,131 +13,91 @@ $(document).ready(function() {
 		offset: '75%'
 	});
 	$('.wp3').waypoint(function() {
-		$('.wp3').addClass('animated fadeInDown');
-	}, {
-		offset: '55%'
-	});
-	$('.wp4').waypoint(function() {
-		$('.wp4').addClass('animated fadeInDown');
-	}, {
-		offset: '75%'
-	});
-	$('.wp5').waypoint(function() {
-		$('.wp5').addClass('animated fadeInUp');
-	}, {
-		offset: '75%'
-	});
-	$('.wp6').waypoint(function() {
-		$('.wp6').addClass('animated fadeInDown');
+		$('.wp3').addClass('animated fadeInRight');
 	}, {
 		offset: '75%'
 	});
 
-});
-
-/***************** Slide-In Nav ******************/
-
-$(window).load(function() {
-
-	$('.nav_slide_button').click(function() {
-		$('.pull').slideToggle();
+	/***************** Initiate Flexslider ******************/
+	$('.flexslider').flexslider({
+		animation: "slide"
 	});
 
-});
+	/***************** Initiate Fancybox ******************/
 
-/***************** Smooth Scrolling ******************/
+	$('.single_image').fancybox({
+		padding: 4,
+	});
 
-$(function() {
+	/***************** Tooltips ******************/
+    $('[data-toggle="tooltip"]').tooltip();
 
-	$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+	/***************** Nav Transformicon ******************/
 
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				$('html,body').animate({
-					scrollTop: target.offset().top
-				}, 2000);
-				return false;
+	/* When user clicks the Icon */
+	$('.nav-toggle').click(function() {
+		$(this).toggleClass('active');
+		$('.header-nav').toggleClass('open');
+		event.preventDefault();
+	});
+	/* When user clicks a link */
+	$('.header-nav li a').click(function() {
+		$('.nav-toggle').toggleClass('active');
+		$('.header-nav').toggleClass('open');
+
+	});
+
+	/***************** Header BG Scroll ******************/
+
+	$(function() {
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+
+			if (scroll >= 20) {
+				$('section.navigation').addClass('fixed');
+				$('header').css({
+					"border-bottom": "none",
+					"padding": "25px 0"
+				});
+				$('header .member-actions').css({
+					"top": "26px",
+				});
+				$('header .navicon').css({
+					"top": "34px",
+				});
+			} else {
+				$('section.navigation').removeClass('fixed');
+				$('header').css({
+					"border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
+					"padding": "40px 0"
+				});
+				$('header .member-actions').css({
+					"top": "41px",
+				});
+				$('header .navicon').css({
+					"top": "48px",
+				});
 			}
-		}
+		});
 	});
+	/***************** Smooth Scrolling ******************/
 
-});
+	$(function() {
 
-/***************** Nav Transformicon ******************/
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
-document.querySelector("#nav-toggle").addEventListener("click", function() {
-	this.classList.toggle("active");
-});
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 2000);
+					return false;
+				}
+			}
+		});
 
-/***************** Overlays ******************/
-
-$(document).ready(function(){
-    if (Modernizr.touch) {
-        // show the close overlay button
-        $(".close-overlay").removeClass("hidden");
-        // handle the adding of hover class when clicked
-        $(".img").click(function(e){
-            if (!$(this).hasClass("hover")) {
-                $(this).addClass("hover");
-            }
-        });
-        // handle the closing of the overlay
-        $(".close-overlay").click(function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            if ($(this).closest(".img").hasClass("hover")) {
-                $(this).closest(".img").removeClass("hover");
-            }
-        });
-    } else {
-        // handle the mouseenter functionality
-        $(".img").mouseenter(function(){
-            $(this).addClass("hover");
-        })
-        // handle the mouseleave functionality
-        .mouseleave(function(){
-            $(this).removeClass("hover");
-        });
-    }
-});
-
-/***************** Flexsliders ******************/
-
-$(window).load(function() {
-
-	$('#portfolioSlider').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		touch: false,
-		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
-	});
-
-	$('#servicesSlider').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		touch: true,
-		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
-	});
-
-	$('#teamSlider').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		touch: true,
-		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
 	});
 
 });
