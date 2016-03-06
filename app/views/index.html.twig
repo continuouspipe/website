@@ -1,183 +1,268 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ContinuousPipe</title>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/queries.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body id="top">
-<header id="home">
-    <nav>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-                    <nav class="pull">
-                        <ul class="top-nav">
-                            <li><a href="#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a>
-                            </li>
-                            <li><a href="#features">Features <span class="indicator"><i
-                                                class="fa fa-angle-right"></i></span></a></li>
-                            <li><a href="#beta">Join the private beta <span class="indicator"><i
-                                                class="fa fa-angle-right"></i></span></a></li>
+{% extends "layout.html.twig" %}
+{% block body %}
+<section class="hero">
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="#"><i class="cp-icon-logo"></i></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#sign-up">Sign up</a></li>
+                        </ul>
+                        <ul class="member-actions">
+                            <li><a href="#" class="login">Log in</a></li>
                         </ul>
                     </nav>
                 </div>
-            </div>
-        </div>
-    </nav>
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-right navicon">
-                    <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center inner">
-                    <h1 class="animated fadeInDown">Continuous<span>Pipe</span></h1>
-
-                    <p class="animated fadeInUp delay-05s">Deployment pipeline for Docker-based applications</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <a href="#beta" class="learn-more-btn">Join the private beta</a>
-                </div>
-            </div>
-        </div>
+        </header>
     </section>
-</header>
-<section class="intro text-center section-padding" id="intro">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 wp1">
-                <h1 class="arrow">Focus on your business</h1>
-
-                <p>
-                    Deploying applications and DevOps works is a pain that all the development teams wants to forget.
-                    <a href="http://www.docker.com">Docker</a> containers definitely help us to do that on developers'
-                    laptop
-                    but not yet for the whole application lifecycle, that often needs a dedicated team to manage servers
-                    and deployment.
-                    With Continuous-Pipe, you can deploy your applications with the standard
-                    <code>docker-compose.yml</code>
-                    file and with a very little configuration on the Docker cluster you wants (Kubernetes or Google Container Engine for now).
-                </p>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="hero-content text-center">
+                    <h1>Build and deploy containers!</h1>
+                    <p class="intro">ContinuousPipe is a continuous deployment pipeline that allow frictionless deployment of features in isolated application environments. All while you are drinking your coffee.</p>
+                    <a href="#sign-up" class="btn btn-fill btn-large btn-margin-right">Getting started</a>
+                    <a href="#features" class="btn btn-accent btn-large">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
+</section>
+<section class="intro section-padding" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 intro-feature">
+                <div class="intro-icon">
+                    <span data-icon="&#xe033;" class="icon"></span>
+                </div>
+                <div class="intro-content">
+                    <h5>Any technology</h5>
+                    <p>Based on Docker containers, the pipeline can build and deploy any kind of technology stack. You can be using Go, Java, PHP or anything else, all your need is the Docker configuration.</p>
+                </div>
+            </div>
+            <div class="col-md-4 intro-feature">
+                <div class="intro-icon">
+                    <span data-icon="&#xe030;" class="icon"></span>
+                </div>
+                <div class="intro-content">
+                    <h5>Enable experiments</h5>
+                    <p>You can try a new design, feature, framework or even programming language easily. Because you don't have to configure your deployment pipeline but just have the Docker configuration, simply try it!</p>
+                </div>
+            </div>
+            <div class="col-md-4 intro-feature">
+                <div class="intro-icon">
+                    <span data-icon="&#xe040;" class="icon"></span>
+                </div>
+                <div class="intro-content last">
+                    <h5>Quicker feedback</h5>
+                    <p>By being able to deploy a feature extremely quickly without perturbating any other running environment, you can have feedback from your clients and users faster.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section class="features text-center section-padding" id="features">
+<section class="features section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-7">
+                <div class="feature-list">
+                    <h3>A complete integration with GitHub</h3>
+                    <p>We consider your GitHub not only as a code repository but also as your project repository.</p>
+                    <ul class="features-stack">
+                        <li class="feature-item">
+                            <div class="feature-icon">
+                                <span data-icon="&#xe040;" class="icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Pipeline control</h5>
+                                <p>By using comments and/or labels, trigger and control the deployment pipeline.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-icon">
+                                <span data-icon="&#xe03e;" class="icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Updated status</h5>
+                                <p>On each code change, the status of the pipeline will be updated on GitHub</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-icon">
+                                <span data-icon="&#xe03c;" class="icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h5>"Here is the address"</h5>
+                                <p>When creating a pull-request, just wait and an comment will appear with the deployment environment link.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="device-showcase">
+        <div class="devices">
+            <div class="ipad-wrap wp1"></div>
+            <div class="iphone-wrap wp2"></div>
+        </div>
+    </div>
+    <div class="responsive-feature-img"><img src="img/devices.png" alt="responsive devices"></div>
+</section>
+<section class="features-extra section-padding" id="assets">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="feature-list">
+                    <h3>Deploy at scale</h3>
+                    <p>Drasticaly changes the way of seeing the shiping.</p>
+                    <p>Uses Kubernetes my friend!</p>
+                    <a href="#" class="btn btn-ghost btn-small">What's Kubernetes?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="macbook-wrap wp3"></div>
+    <div class="responsive-feature-img"><img src="img/macbook-pro.png" alt="responsive devices"></div>
+</section>
+<section class="testimonial-slider section-padding text-center">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="arrow">We help you through the whole application lifecycle</h1>
-
-                <div class="features-wrapper">
-                    <div class="col-md-4 wp2">
-                        <div class="icon">
-                            <i class="fa fa-clone shadow"></i>
-                        </div>
-                        <h2>Feature environments</h2>
-
-                        <p>
-                            We all agree that the development is easier when we use feature branches. By deploying these
-                            feature branches into feature environments, we have an isolated environment
-                            that can be used by QA and the final customer to improve the feedback loop.
-                        </p>
-                    </div>
-                    <div class="col-md-4 wp2 delay-05s">
-                        <div class="icon">
-                            <i class="fa fa-code shadow"></i>
-                        </div>
-                        <h2>GitHub integration</h2>
-
-                        <p>
-                            You only have to activate your GitHub repository from the UI. The status of the deployments
-                            will be displayed on GitHub via its statuses and the addresses of your feature environments
-                            commented on the pull-requests.
-                        </p>
-                    </div>
-                    <div class="col-md-4 wp2 delay-1s">
-                        <div class="icon">
-                            <i class="fa fa-line-chart shadow"></i>
-                        </div>
-                        <h2>Continuous deployment</h2>
-
-                        <p>
-                            Once you've done with your feature branch and everybody is happy, just merge the pull-request
-                            and CP will automatically updates the environment associated with the principal branch like it is
-                            doing with feature branches.
-                        </p>
-                    </div>
-                    <div class="clearfix"></div>
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="avatar"><img src="img/avatar.jpg" alt="Sedna Testimonial Avatar"></div>
+                            <h2>"Our highest priority is to satisfy the customer through early and continuous delivery of valuable software."</h2>
+                            <p class="author">Principles behind the Agile Manifesto.</p>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="img/mani.jpg" alt="Sedna Testimonial Avatar"></div>
+                            <h2>"Until your pretty code is in production, making money, or doing whatever it does, you’ve just wasted your time."</h2>
+                            <p class="author">Chris Read.</p>
+                        </li>
+                        <li>
+                            <div class="avatar"><img src="img/130.jpg" alt="Sedna Testimonial Avatar"></div>
+                            <h2>"What’s the smallest number of steps, with the smallest number of people and the smallest amount of ceremony required to get new code running on your servers?"</h2>
+                            <p class="author">Erik Kastner</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="subscribe text-center" id="beta">
+<section class="blog-intro section-padding" id="pricing">
     <div class="container">
-        <h1><i class="fa fa-paper-plane"></i><span>Join the waiting-list for the beta access</span></h1>
-
-        {% if message is not null %}
-        <div class="message">{{ message }}</div>
-        {% else %}
-        <form action="#beta" method="POST">
-            <div class="errors">
-                {{ form_errors(form) }}
-                {{ form_errors(form.email) }}
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Pricing</h3>
             </div>
-            {{ form_widget(form.email) }}
-
-            {{ form_rest(form) }}
-
-            <input type="submit" name="" value="Send">
-        </form>
-        {% endif %}
+        </div>
+    </div>
+</section>
+<section class="hero-strip section-padding">
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h2>Built to change and embrace your workflow</h2>
+            <p>ContinuousPipe already supports many different workflow. If you want to have more information or believe you need dedicated assistance, simply drop us a message.</p>
+            <a href="#sign-up" class="btn btn-ghost btn-accent btn-large">Contact us!</a>
+            <div class="logo-placeholder floating-logo"><img src="{{ asset('img/envelope.png') }}" alt="Sketch Logo"></div>
+        </div>
+    </div>
+</section>
+<section class="sign-up section-padding text-center" id="sign-up">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>Register your interest</h3>
+                <p>Just put your email here, and we'll whitelist your beta access!</p>
+                <form class="signup-form" action="#" method="POST" role="form">
+                    <div class="form-input-group">
+                        <i class="fa fa-envelope"></i><input type="text" class="" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-input-group">
+                        <i class="fa fa-user"></i><input type="text" class="" placeholder="GitHub username" required>
+                    </div>
+                    <button type="submit" class="btn-fill sign-up-btn">Request access</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-intro section-padding" id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Frequently asked questions</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <h5>Can I use my own hosting?</h5>
+                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <h5>Can I run tests?</h5>
+                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <h5>How can I customize the workflow?</h5>
+                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <h5>Can I run migration scripts?</h5>
+                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <h5>How are the permissions managed?</h5>
+                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <h5>Where are stored the Docker images?</h5>
+                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="to-top">
+    <div class="container">
+        <div class="row">
+            <div class="to-top-wrap">
+                <a href="#top" class="top"><i class="fa fa-angle-up"></i></a>
+            </div>
+        </div>
     </div>
 </section>
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <ul class="legals">
-                    <li><a href="http://ui.continuouspipe.io">Manager</a></li>
-                    <li><a href="http://docs.continuouspipe.io">Documentation</a></li>
-                </ul>
+            <div class="col-md-7">
+                <div class="footer-links">
+                    <ul class="footer-group">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#sign-up">Sign up</a></li>
+                    </ul>
+                    <p>Crafted with <span class="fa fa-heart pulse2"></span> by <a href="https://twitter.com/samuelroze">Samuel Roze</a>.</p>
+                </div>
             </div>
-            <div class="col-md-6 credit">
-                <p>♥ from <a href="http://continuouspipe.io">ContinuousPipe</a></p>
+            <div class="social-share">
+                <p>Share ContinuousPipe</p>
+                <a href="https://twitter.com/samuelroze" class="twitter-share"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook-share"><i class="fa fa-facebook"></i></a>
             </div>
         </div>
     </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/modernizr.js"></script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-71216332-3', 'auto');
-    ga('send', 'pageview');
-</script>
-</body>
-</html>
+{% endblock %}

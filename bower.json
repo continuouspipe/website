@@ -1,0 +1,9 @@
+{
+  "name": "cp-website",
+  "dependencies": {
+    "animate.css": "~3.3.0",
+    "classie": "~1.0.1",
+    "retina.js": "~1.2.0",
+    "waypoints": "~3.1.1"
+  }
+}
