@@ -435,7 +435,7 @@ Navigation
 }
 
 header {
-  padding: 50px 0;
+  padding: 40px 0;
   border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   position: relative;
   width: 1170px;
@@ -484,6 +484,8 @@ header ul.member-actions li a:hover {
 }
 header .header-nav {
   display: inline-block;
+  vertical-align: top;
+  line-height: 40px;
 }
 header .member-actions {
   position: absolute;
@@ -529,28 +531,8 @@ Features-stack
 .features {
   position: relative;
 }
-.features p {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
 .features h3 {
   margin: 0 0 20px 0;
-}
-.features span.icon {
-  font-size: 35px;
-  color: #52A6FF;
-  font-weight: bold;
-}
-.features .feature-icon {
-  display: inline-block;
-  vertical-align: top;
-  padding: 6px 0 0 0;
-  margin-right: 20px;
-  width: 35px;
-}
-.features .feature-content {
-  display: inline-block;
-  width: 75%;
 }
 .features .intro-icon {
   display: inline-block;
@@ -561,18 +543,6 @@ Features-stack
 .features .intro-content {
   display: inline-block;
   width: 80%;
-}
-.features ul.features-stack {
-  margin-top: 50px;
-}
-.features ul.features-stack li {
-  margin-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: solid 1px #E6E9EA;
-}
-.features ul.features-stack li:last-child {
-  padding-bottom: 0px;
-  border-bottom: none;
 }
 .features .ipad-wrap {
   width: 706px;
@@ -601,6 +571,40 @@ Features-stack
 
 .devices {
   position: relative;
+}
+
+.feature-list p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+ul.features-stack {
+  margin-top: 50px;
+}
+ul.features-stack span.icon {
+  font-size: 35px;
+  color: #52A6FF;
+  font-weight: bold;
+}
+ul.features-stack .feature-icon {
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px 0 0 0;
+  margin-right: 20px;
+  width: 35px;
+}
+ul.features-stack .feature-content {
+  display: inline-block;
+  width: 75%;
+}
+ul.features-stack li {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #E6E9EA;
+}
+ul.features-stack li:last-child {
+  padding-bottom: 0px;
+  border-bottom: none;
 }
 
 /* ==========================================================================
@@ -770,10 +774,14 @@ Features-stack
   border-radius: 50%;
   border: solid 3px #fff;
   background-color: #fff;
+  padding-top: 10px;
 }
 .testimonial-slider .avatar img {
   width: 82px;
   height: auto;
+}
+.testimonial-slider .avatar .icon {
+  font-size: 3em;
 }
 .testimonial-slider h2 {
   color: #fff;
@@ -796,6 +804,23 @@ Sign up form
   border-radius: 3px;
   width: 80%;
   font-size: 13px;
+}
+.sign-up .signup-form div.message {
+  width: 80%;
+  margin: 0 auto;
+  color: #ffffff;
+  background: #71B571;
+  padding: 10px;
+}
+.sign-up .signup-form div.errors {
+  width: 80%;
+  margin: 0 auto;
+}
+.sign-up .signup-form div.errors ul li {
+  padding: 10px;
+  background: #F91717;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 .sign-up .signup-form .form-input-group {
   width: 80%;

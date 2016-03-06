@@ -9,9 +9,8 @@
                     <nav>
                         <ul class="primary-nav">
                             <li><a href="#features">Features</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#faq">FAQ</a></li>
                             <li><a href="#sign-up">Sign up</a></li>
+                            <li><a href="#faq">FAQ</a></li>
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#" class="login">Log in</a></li>
@@ -124,10 +123,29 @@
         <div class="row">
             <div class="col-md-5">
                 <div class="feature-list">
-                    <h3>Deploy at scale</h3>
-                    <p>Drasticaly changes the way of seeing the shiping.</p>
-                    <p>Uses Kubernetes my friend!</p>
-                    <a href="#" class="btn btn-ghost btn-small">What's Kubernetes?</a>
+                    <h3>Deploy at scale with Kubernetes</h3>
+                    <p>For an experimental feature, your staging or production environment, the deployment will always be the same.</p>
+                    <ul class="features-stack">
+                        <li class="feature-item">
+                            <div class="feature-icon">
+                                <span data-icon="&#xe031;" class="icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Application stack</h5>
+                                <p>Your entire application will be deployed and orchestrated, from your Docker Compose configuration.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-icon">
+                                <span data-icon="&#xe04b;" class="icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Infrastructure independent</h5>
+                                <p>Kubernetes can run everywhere. On your laptop as well as in large-scale clouds.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p><a href="http://kubernetes.io/" class="btn btn-ghost btn-small" target="_blank">What's Kubernetes?</a></p>
                 </div>
             </div>
         </div>
@@ -135,49 +153,13 @@
     <div class="macbook-wrap wp3"></div>
     <div class="responsive-feature-img"><img src="img/macbook-pro.png" alt="responsive devices"></div>
 </section>
-<section class="testimonial-slider section-padding text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li>
-                            <div class="avatar"><img src="img/avatar.jpg" alt="Sedna Testimonial Avatar"></div>
-                            <h2>"Our highest priority is to satisfy the customer through early and continuous delivery of valuable software."</h2>
-                            <p class="author">Principles behind the Agile Manifesto.</p>
-                        </li>
-                        <li>
-                            <div class="avatar"><img src="img/mani.jpg" alt="Sedna Testimonial Avatar"></div>
-                            <h2>"Until your pretty code is in production, making money, or doing whatever it does, you’ve just wasted your time."</h2>
-                            <p class="author">Chris Read.</p>
-                        </li>
-                        <li>
-                            <div class="avatar"><img src="img/130.jpg" alt="Sedna Testimonial Avatar"></div>
-                            <h2>"What’s the smallest number of steps, with the smallest number of people and the smallest amount of ceremony required to get new code running on your servers?"</h2>
-                            <p class="author">Erik Kastner</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="blog-intro section-padding" id="pricing">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Pricing</h3>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="hero-strip section-padding">
     <div class="container">
         <div class="col-md-12 text-center">
             <h2>Built to change and embrace your workflow</h2>
             <p>ContinuousPipe already supports many different workflow. If you want to have more information or believe you need dedicated assistance, simply drop us a message.</p>
             <a href="#sign-up" class="btn btn-ghost btn-accent btn-large">Contact us!</a>
-            <div class="logo-placeholder floating-logo"><img src="{{ asset('img/envelope.png') }}" alt="Sketch Logo"></div>
+            <div class="logo-placeholder floating-logo"><img src="{{ asset('img/envelope.png') }}" alt="Contact us"></div>
         </div>
     </div>
 </section>
@@ -187,15 +169,29 @@
             <div class="col-md-6 col-md-offset-3">
                 <h3>Register your interest</h3>
                 <p>Just put your email here, and we'll whitelist your beta access!</p>
-                <form class="signup-form" action="#" method="POST" role="form">
+                {% if message is not null %}
+                    <div class="message">{{ message }}</div>
+                {% else %}
+                <form class="signup-form" action="#sign-up" method="POST" role="form">
+                    <div class="errors">
+                        {{ form_errors(form) }}
+                        {{ form_errors(form.email) }}
+                        {{ form_errors(form.github) }}
+                    </div>
+
                     <div class="form-input-group">
-                        <i class="fa fa-envelope"></i><input type="text" class="" placeholder="Enter your email" required>
+                        <i class="fa fa-envelope"></i>
+                        {{ form_widget(form.email) }}
                     </div>
                     <div class="form-input-group">
-                        <i class="fa fa-user"></i><input type="text" class="" placeholder="GitHub username" required>
+                        <i class="fa fa-user"></i>
+                        {{ form_widget(form.github) }}
                     </div>
+
+                    {{ form_rest(form) }}
                     <button type="submit" class="btn-fill sign-up-btn">Request access</button>
                 </form>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -210,27 +206,58 @@
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                 <h5>Can I use my own hosting?</h5>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Definitely. We can provide the Kubernetes cluster for development environment but you can have your own for any stage. A lot of companies including Google themselves can also manage Kubernetes clusters for you.</p>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <h5>Can I run tests?</h5>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Because you will use immutable docker images, you can simply run your unit tests in the built image. Because we can create an environment on the fly, the integration tests won't never be easier!</p>
             </div>
+        </div>
+        <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                 <h5>How can I customize the workflow?</h5>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>The configuration, based on tasks, is extremely extensible. You can use branch names, pull-request labels and variables to activate or not different tasks for instance.</p>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <h5>Can I run migration scripts?</h5>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Yes, we can run abstract commands in containers once the environment is deployed actually. You will use the same feature than for integration tests.</p>
             </div>
+        </div>
+        <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                 <h5>How are the permissions managed?</h5>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>You can create teams and manage different project repository per team. Only the administrators will be able to modify or create the flows but the users will have a read-only access.</p>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <h5>Where are stored the Docker images?</h5>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>The Docker images can be stored in any Docker Registry. You will just have to configure your credentials to access to the repositories, either public or private.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonial-slider section-padding text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="avatar"><span data-icon="&#xe029;" class="icon"></span></div>
+                            <h2>"The highest priority is to satisfy the customer through early and continuous delivery of valuable software."</h2>
+                            <p class="author">Principles behind the Agile Manifesto.</p>
+                        </li>
+                        <li>
+                            <div class="avatar"><span data-icon="&#xe051;" class="icon"></span></div>
+                            <h2>"Until your pretty code is in production, making money, or doing whatever it does, you’ve just wasted your time."</h2>
+                            <p class="author">Chris Read.</p>
+                        </li>
+                        <li>
+                            <div class="avatar"><span data-icon="&#xe05a;" class="icon"></span></div>
+                            <h2>"What’s the smallest number of steps, with the smallest number of people and the smallest amount of ceremony required to get new code running on your servers?"</h2>
+                            <p class="author">Erik Kastner</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -251,16 +278,15 @@
                 <div class="footer-links">
                     <ul class="footer-group">
                         <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="#sign-up">Sign up</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                     <p>Crafted with <span class="fa fa-heart pulse2"></span> by <a href="https://twitter.com/samuelroze">Samuel Roze</a>.</p>
                 </div>
             </div>
             <div class="social-share">
                 <p>Share ContinuousPipe</p>
-                <a href="https://twitter.com/samuelroze" class="twitter-share"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook-share"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/ContinuousPipe" class="twitter-share"><i class="fa fa-twitter"></i></a>
             </div>
         </div>
     </div>

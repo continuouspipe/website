@@ -311,7 +311,7 @@ Navigation
   width: 100%;
 }
 header {
-  padding: 50px 0;
+  padding: 40px 0;
   border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   position: relative;
   width: 1170px;
@@ -369,6 +369,8 @@ header {
   }
   .header-nav {
     display: inline-block;
+    vertical-align: top;
+    line-height: 40px;
   }
   .member-actions {
     position: absolute;
@@ -412,28 +414,8 @@ Features-stack
 .features {
   position: relative;
 
-  p {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
   h3 {
     margin: 0 0 20px 0;
-  }
-  span.icon {
-    font-size: 35px;
-    color: $accent-color;
-    font-weight: bold;
-  }
-  .feature-icon {
-    display: inline-block;
-    vertical-align: top;
-    padding: 6px 0 0 0;
-    margin-right: 20px;
-    width: 35px;
-  }
-  .feature-content {
-    display: inline-block;
-    width: 75%;
   }
   .intro-icon {
     display: inline-block;
@@ -444,18 +426,6 @@ Features-stack
   .intro-content {
     display: inline-block;
     width: 80%;
-  }
-  ul.features-stack {
-    margin-top: 50px;
-  }
-  ul.features-stack li {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: solid 1px $keyline-color;
-  }
-  ul.features-stack li:last-child {
-    padding-bottom: 0px;
-    border-bottom: none;
   }
   .ipad-wrap {
     width: 706px;
@@ -483,6 +453,44 @@ Features-stack
 }
 .devices {
   position: relative;
+}
+
+.feature-list {
+  p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+ul.features-stack {
+  margin-top: 50px;
+
+  span.icon {
+    font-size: 35px;
+    color: $accent-color;
+    font-weight: bold;
+  }
+  .feature-icon {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 0 0 0;
+    margin-right: 20px;
+    width: 35px;
+  }
+  .feature-content {
+    display: inline-block;
+    width: 75%;
+  }
+
+  li {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px $keyline-color;
+
+    &:last-child {
+      padding-bottom: 0px;
+      border-bottom: none;
+    }
+  }
 }
 
 /* ==========================================================================
@@ -657,10 +665,15 @@ Features-stack
     border-radius: 50%;
     border: solid 3px $white-color;
     background-color: $white-color;
+    padding-top: 10px;
 
     img {
       width: 82px;
       height: auto;
+    }
+
+    .icon {
+      font-size: 3em;
     }
   }
   h2 {
@@ -687,6 +700,24 @@ Sign up form
       border-radius: 3px;
       width: 80%;
       font-size: 13px;
+    }
+    div.message {
+      width: 80%;
+      margin: 0 auto;
+      color: #ffffff;
+      background: #71B571;
+      padding: 10px;
+    }
+    div.errors {
+      width: 80%;
+      margin: 0 auto;
+
+      ul li {
+        padding: 10px;
+        background: #F91717;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
     }
     .form-input-group {
       width: 80%;
