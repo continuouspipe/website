@@ -3,6 +3,7 @@
 use Silex\Provider\FormServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\TwigServiceProvider;
+use Silex\Provider\UrlGeneratorServiceProvider;
 use Silex\Provider\ValidatorServiceProvider;
 
 require_once __DIR__.'/../vendor/autoload.php';
@@ -13,6 +14,7 @@ $app = new Silex\Application([
 $app->register(new FormServiceProvider());
 $app->register(new TranslationServiceProvider());
 $app->register(new ValidatorServiceProvider());
+$app->register(new UrlGeneratorServiceProvider());
 $app->register(new TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../app/views',
 ));
@@ -27,4 +29,5 @@ $app['twig'] = $app->share($app->extend('twig', function(\Twig_Environment $twig
 
 
 $app->mount('/', require '../app/controllers/home.php');
+$app->mount('/docs/', require '../app/controllers/documentation.php');
 $app->run();
