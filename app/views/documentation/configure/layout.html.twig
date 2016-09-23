@@ -1,0 +1,14 @@
+{% extends "documentation/layout.html.twig" %}
+{% block top_nagivation_configure_class %} class="active"{% endblock %}
+{% block left_navigation %}
+<ul class="nav nav-pills nav-stacked">
+    <li{% block left_navigation_introduction_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'introduction'}) }}">Introduction</a></li>
+    <li{% block left_navigation_configuration_files_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'configuration-files'}) }}">Configuration file(s)</a></li>
+    <li{% block left_navigation_tasks_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'tasks'}) }}">Tasks overview</a></li>
+    <li{% block left_navigation_images_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'images'}) }}">Building the Docker images</a></li>
+    <li{% block left_navigation_deployments_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}">Deploying services</a></li>
+    <li{% block left_navigation_commands_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'commands'}) }}">Running commands</a></li>
+    <li class="separator"></li>
+    <li{% block left_navigation_teams_credentials_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'teams-and-credentials'}) }}">Teams & Credentials</a></li>
+</ul>
+{% endblock %}

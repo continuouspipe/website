@@ -1,0 +1,16 @@
+{% extends "documentation/layout.html.twig" %}
+{% block top_nagivation_basics_class %} class="active"{% endblock %}
+{% block hero %}
+    <div class="documentation-header">
+        <h1>Getting started with ContinuousPipe</h1>
+    </div>
+{% endblock %}
+
+{% block left_navigation %}
+<ul class="nav nav-pills nav-stacked">
+    <li{% block left_navigation_introduction_class %}{% endblock %}><a href="{{ path('documentation_basics', {'page': 'introduction'}) }}">Introduction</a></li>
+    <li{% block left_navigation_workflow_class %}{% endblock %}><a href="{{ path('documentation_basics', {'page': 'workflow'}) }}">Workflow</a></li>
+    <li{% block left_navigation_images_class %}{% endblock %}><a href="{{ path('documentation_basics', {'page': 'images'}) }}">Docker images</a></li>
+    <li{% block left_navigation_clusters_class %}{% endblock %}><a href="{{ path('documentation_basics', {'page': 'clusters'}) }}">Clusters</a></li>
+</ul>
+{% endblock %}

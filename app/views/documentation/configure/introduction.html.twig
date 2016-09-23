@@ -1,0 +1,20 @@
+{% extends "documentation/configure/layout.html.twig" %}
+{% block left_navigation_introduction_class %} class="active"{% endblock %}
+
+{% block content %}
+    <h2>Introduction</h2>
+    <p>Start with the configuration files.</p>
+
+    {% codeblock lang:php phpopentag:false mark:3,8 "Methods on a Class" %}
+    public function __construct(BazInterface $baz)
+    {
+    $this->baz = $baz;
+    }
+
+    public function doIt()
+    {
+    return $this->baz->do('it');
+    }
+    {% endcodeblock %}
+
+{% endblock %}
