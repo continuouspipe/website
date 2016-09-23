@@ -53,6 +53,10 @@ $(document).ready(function() {
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop();
 
+			if ($('section.navigation').hasClass('regular')) {
+				return;
+			}
+
 			if (scroll >= 20) {
 				$('section.navigation').addClass('fixed');
 				$('header').css({

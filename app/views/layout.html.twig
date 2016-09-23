@@ -12,17 +12,20 @@
 
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
-    <link rel="stylesheet" href="{{ asset('css/vendor/normalize.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/vendor/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/vendor/jquery.fancybox.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/vendor/flexslider.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/vendor/etline-font.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/vendor/animate.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    {% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('/css/vendor/normalize.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/vendor/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/vendor/jquery.fancybox.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/vendor/flexslider.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/vendor/etline-font.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/vendor/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/documentation.css') }}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    {% endblock %}
 
-    <script src="{{ asset('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+    <script src="{{ asset('/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
 </head>
 <body id="top">
 <!-- Google Tag Manager -->
@@ -41,13 +44,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 {% block body %}{% endblock %}
 
-<script src="{{ asset('js/vendor/jquery-1.11.2.min.js') }}"></script>
-<script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/vendor/jquery-waypoints/lib/jquery.waypoints.min.js') }}"></script>
-<script src="{{ asset('js/vendor/retina.js/dist/retina.js') }}"></script>
-<script src="{{ asset('js/vendor/classie/classie.js') }}"></script>
-<script src="{{ asset('js/jquery.fancybox.pack.js') }}"></script>
-<script src="{{ asset('js/jquery.flexslider-min.js') }}"></script>
-<script src="{{ asset('js/scripts.js') }}"></script>
+<script src="{{ asset('/js/vendor/jquery-1.11.2.min.js') }}"></script>
+<script src="{{ asset('/js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ asset('/js/vendor/jquery-waypoints/lib/jquery.waypoints.min.js') }}"></script>
+<script src="{{ asset('/js/vendor/retina.js/dist/retina.js') }}"></script>
+<script src="{{ asset('/js/vendor/classie/classie.js') }}"></script>
+<script src="{{ asset('/js/jquery.fancybox.pack.js') }}"></script>
+<script src="{{ asset('/js/jquery.flexslider-min.js') }}"></script>
+<script src="{{ asset('/js/scripts.js') }}"></script>
 </body>
 </html>

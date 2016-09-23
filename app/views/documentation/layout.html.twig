@@ -1,0 +1,50 @@
+{% extends "layout.html.twig" %}
+{% block body %}
+    <section class="navigation regular">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="/"><i class="cp-icon-logo"></i></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="/#features">Features</a></li>
+                        </ul>
+                        <ul class="member-actions">
+                            <li><a href="{{ path('documentation') }}">Documentation</a></li>
+                            <li><a href="https://console.continuouspipe.io" class="login">Console</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+    {% block hero %}{% endblock %}
+    <div class="documentation-nav">
+        <div class="container">
+            <ul class="nav nav-pills nav-justified">
+                <li{% block top_nagivation_basics_class %}{% endblock %}><a href="{{ path('documentation') }}">Basics</a></li>
+                <li><a href="#">Quick start</a></li>
+                <li{% block top_nagivation_configure_class %}{% endblock %}><a href="{{ path('documentation_configure') }}">Configure</a></li>
+                <li><a href="#">Examples</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container documentation-inner">
+        <div class="row">
+            <div class="col-md-3 left-navigation">
+                {% block left_navigation %}{% endblock %}
+            </div>
+
+            <div class="col-md-9">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('/css/vendor/pygmentize.css') }}">
+{% endblock %}

@@ -1,8 +1,12 @@
 <?php
 
-$routes = $app['controllers_factory'];
-$routes->match('/', function () use ($app) {
-    return $app['twig']->render('documentation/index.html.twig');
+$routesFactory = $app['controllers_factory'];
+$routesFactory->match('/', function () use ($app) {
+    return $app['twig']->render('documentation/basics/index.html.twig');
 })->method('GET')->bind('documentation');
 
-return $routes;
+$routesFactory->match('/configure/', function () use ($app) {
+    return $app['twig']->render('documentation/configure/index.html.twig');
+})->method('GET')->bind('documentation_configure');
+
+return $routesFactory;

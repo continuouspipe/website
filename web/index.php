@@ -1,5 +1,6 @@
 <?php
 
+use Ramsey\Twig\CodeBlock\TokenParser\CodeBlockParser;
 use Silex\Provider\FormServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\TwigServiceProvider;
@@ -23,6 +24,8 @@ $app['twig'] = $app->share($app->extend('twig', function(\Twig_Environment $twig
     $twig->addFunction(new \Twig_SimpleFunction('asset', function ($asset) use ($app) {
         return $app['request']->getBasePath().$asset;
     }));
+
+    $twig->addTokenParser(new CodeBlockParser('pygments', []));
 
     return $twig;
 }));

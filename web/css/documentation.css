@@ -1,0 +1,30 @@
+section.navigation.regular {
+    background-color: #232731;
+    position: relative;
+}
+section.navigation.regular header {
+    padding: 20px 0;
+}
+section.navigation.regular .member-actions {
+    top: 22px;
+}
+
+div.documentation-header {
+    background: url(../img/documentation-background-1.png);
+    text-align: center;
+    color: #fff;
+    padding: 70px;
+}
+div.documentation-header h1 {
+    font-size: 2em;
+}
+div.documentation-nav {
+    background: #efefef;
+    padding: 10px;
+}
+div.documentation-inner {
+    margin-top: 20px;
+}
+div.documentation-inner .left-navigation ul {
+    margin-top: 20px;
+}

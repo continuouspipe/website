@@ -1,7 +1,7 @@
 FROM php:7-apache
 
 # PHP extension
-RUN requirements="zlib1g-dev libicu-dev libmcrypt-dev git" \
+RUN requirements="zlib1g-dev libicu-dev libmcrypt-dev git python-pygments" \
     && apt-get update && apt-get install -y $requirements && rm -rf /var/lib/apt/lists/* \
     && docker-php-ext-install mbstring \
     && docker-php-ext-install intl \
@@ -16,7 +16,7 @@ RUN curl -sS https://getcomposer.org/installer | php \
 
 # Apache & PHP configuration
 RUN a2enmod rewrite
-ADD docker/apache/vhost.conf /etc/apache2/sites-enabled/default.conf
+ADD docker/apache/vhost.conf /etc/apache2/sites-enabled/000-default.conf
 ADD docker/php/php.ini /usr/local/etc/php/php.ini
 
 # Add the application
