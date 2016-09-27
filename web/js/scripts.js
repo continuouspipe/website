@@ -1,3 +1,8 @@
+if (JSON && localStorage && localStorage.getItem('user')) {
+	var user = JSON.parse(localStorage.getItem('user') || '{}');
+	window.intercomSettings = {app_id: 'i0yqsxbt', name: user.name, email: user.email, created_at: user.timestamp};
+}
+
 $(document).ready(function() {
 
 	/***************** Waypoints ******************/

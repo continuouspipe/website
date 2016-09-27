@@ -17,6 +17,10 @@
                     <p>Just put your email here, and we'll whitelist your beta access!</p>
                     {% if message is not null %}
                         <div class="message">{{ message }}</div>
+
+                        <script type="text/javascript">
+                            localStorage.setItem('user', JSON.stringify({name: '{{ data.name }}', email: '{{ data.email }}', timestamp: '{{ timestamp }}'}));
+                        </script>
                     {% else %}
                         <form class="signup-form" action="#form" method="POST" role="form">
                             <div class="errors">

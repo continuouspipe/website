@@ -103,6 +103,8 @@ $routes->match('/contact', function (Request $request) use ($app) {
 
     return $app['twig']->render('contact.html.twig', [
         'form' => $form->createView(),
+        'data' => $form->getData(),
+        'timestamp' => time(),
         'message' => isset($message) ? $message : null,
     ]);
 })->method('GET|POST')->bind('contact');
