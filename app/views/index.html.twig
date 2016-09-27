@@ -2,27 +2,7 @@
 {% block body %}
 <section class="hero">
     <section class="navigation">
-        <header>
-            <div class="header-content">
-                <div class="logo"><a href="#"><i class="cp-icon-logo"></i></a></div>
-                <div class="header-nav">
-                    <nav>
-                        <ul class="primary-nav">
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#sign-up">Sign up</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                        </ul>
-                        <ul class="member-actions">
-                            <li><a href="{{ path('documentation') }}">Documentation</a></li>
-                            <li><a href="https://console.continuouspipe.io" class="login">Console</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="navicon">
-                    <a class="nav-toggle" href="#"><span></span></a>
-                </div>
-            </div>
-        </header>
+        {% include "_partials/header.html.twig" %}
     </section>
     <div class="container">
         <div class="row">
@@ -30,15 +10,15 @@
                 <div class="hero-content text-center">
                     <h1>Build and deploy containers!</h1>
                     <p class="intro">ContinuousPipe is a continuous deployment pipeline that allows frictionless deployment of features in isolated application environments. All while you are drinking your coffee.</p>
-                    <a href="#sign-up" class="btn btn-fill btn-large btn-margin-right">Getting started</a>
-                    <a href="#features" class="btn btn-accent btn-large">Learn more</a>
+                    <a href="#overview" class="btn btn-fill btn-large btn-margin-right">Overview</a>
+                    <a href="{{ path('documentation') }}" class="btn btn-accent btn-large">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="down-arrow floating-arrow"><a href="#"><i class="fa fa-angle-down"></i></a></div>
 </section>
-<section class="intro section-padding" id="features">
+<section class="intro section-padding" id="overview">
     <div class="container">
         <div class="row">
             <div class="col-md-4 intro-feature">
@@ -158,10 +138,9 @@
 <section class="hero-strip section-padding">
     <div class="container">
         <div class="col-md-12 text-center">
-            <h2>Built to change and embrace your workflow</h2>
+            <h2>Built to embrace your application</h2>
             <p>ContinuousPipe already supports many different workflows. If you want to have more information or believe you need dedicated assistance, simply drop us a message.</p>
-            <a href="#sign-up" class="btn btn-ghost btn-accent btn-large">Contact us!</a>
-            <div class="logo-placeholder floating-logo"><img src="{{ asset('img/envelope.png') }}" alt="Contact us"></div>
+            <a href="{{ path('contact') }}" class="btn btn-ghost btn-accent btn-large">Contact us!</a>
         </div>
     </div>
 </section>
@@ -169,128 +148,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>Register your interest</h3>
-                <p>Just put your email here, and we'll whitelist your beta access!</p>
-                {% if message is not null %}
-                    <div class="message">{{ message }}</div>
-                {% else %}
-                <form class="signup-form" action="#sign-up?s=signedup" method="POST" role="form">
-                    <div class="errors">
-                        {{ form_errors(form) }}
-                        {{ form_errors(form.email) }}
-                        {{ form_errors(form.github) }}
-                    </div>
-
-                    <div class="form-input-group">
-                        <i class="fa fa-envelope"></i>
-                        {{ form_widget(form.email) }}
-                    </div>
-                    <div class="form-input-group">
-                        <i class="fa fa-user"></i>
-                        {{ form_widget(form.github) }}
-                    </div>
-
-                    {{ form_rest(form) }}
-                    <button type="submit" class="btn-fill sign-up-btn">Request access</button>
-                </form>
-                {% endif %}
+                <h3>Ready to go?</h3>
+                <p>Login to the console, checkout our documentation and start deploying!</p>
+                <p>
+                    <a href="https://ui.continuouspipe.io" class="btn btn-accent btn-fill btn-large">Open the console</a>
+                </p>
             </div>
         </div>
     </div>
 </section>
-<section class="blog-intro section-padding" id="faq">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Frequently asked questions</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <h5>Can I use my own hosting?</h5>
-                <p>Definitely. We can provide the Kubernetes cluster for development environments but you can have your own for any stage. A lot of companies including Google themselves can also manage Kubernetes clusters for you.</p>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <h5>Can I run tests?</h5>
-                <p>Because you will use immutable docker images, you can simply run your unit tests in the built image. Because we can create an environment on the fly, the integration tests will never be easier!</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <h5>How can I customize the workflow?</h5>
-                <p>The configuration, based on tasks, is extremely extensible. You can use branch names, pull-request labels and variables to activate or not different tasks for instance.</p>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <h5>Can I run migration scripts?</h5>
-                <p>Yes, we can run abstract commands in containers once the environment is deployed. You will then use the same feature for integration tests.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <h5>How are the permissions managed?</h5>
-                <p>You can create teams and manage different project repositorys per team. Only the administrators will be able to modify or create the flows but the users will have a read-only access.</p>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <h5>Where are the Docker images stored?</h5>
-                <p>The Docker images can be stored in any Docker Registry. You will just have to configure your credentials to access to the repositories, either public or private.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="testimonial-slider section-padding text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li>
-                            <div class="avatar"><span data-icon="&#xe029;" class="icon"></span></div>
-                            <h2>"The highest priority is to satisfy the customer through early and continuous delivery of valuable software."</h2>
-                            <p class="author">Principles behind the Agile Manifesto.</p>
-                        </li>
-                        <li>
-                            <div class="avatar"><span data-icon="&#xe051;" class="icon"></span></div>
-                            <h2>"Until your pretty code is in production, making money, or doing whatever it does, you’ve just wasted your time."</h2>
-                            <p class="author">Chris Read.</p>
-                        </li>
-                        <li>
-                            <div class="avatar"><span data-icon="&#xe05a;" class="icon"></span></div>
-                            <h2>"What’s the smallest number of steps, with the smallest number of people and the smallest amount of ceremony required to get new code running on your servers?"</h2>
-                            <p class="author">Erik Kastner</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="to-top">
-    <div class="container">
-        <div class="row">
-            <div class="to-top-wrap">
-                <a href="#top" class="top"><i class="fa fa-angle-up"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <div class="footer-links">
-                    <ul class="footer-group">
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#sign-up">Sign up</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                    <p>Crafted with <span class="fa fa-heart pulse2"></span> by <a href="https://twitter.com/samuelroze">Samuel Roze</a>.</p>
-                </div>
-            </div>
-            <div class="social-share">
-                <p>You know, these social icons...</p>
-                <a href="https://twitter.com/ContinuousPipe" class="twitter-share"><i class="fa fa-twitter"></i></a>
-            </div>
-        </div>
-    </div>
-</footer>
 {% endblock %}

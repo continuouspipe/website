@@ -475,6 +475,7 @@ header ul.primary-nav li:last-child a {
 }
 header ul.member-actions li {
   display: inline;
+  margin-left: 20px;
 }
 header ul.member-actions li a {
   color: #fff;
@@ -631,7 +632,6 @@ ul.features-stack li:last-child {
 .hero-strip
 ========================================================================== */
 .hero-strip {
-  margin-top: 120px;
   background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
   padding-bottom: 190px;
   position: relative;
@@ -833,6 +833,10 @@ Sign up form
   text-align: left;
   position: relative;
 }
+.sign-up .signup-form .form-input-group.flexible {
+  height: auto;
+  padding: 5px;
+}
 .sign-up .signup-form .form-input-group i {
   color: #52A6FF;
   font-size: 14px;
@@ -861,6 +865,13 @@ Sign up form
   transform: translateY(-50%);
   margin-left: 20px;
 }
+.sign-up .signup-form .form-input-group i.fa-github {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+}
 .sign-up .signup-form .form-input-group input {
   padding-left: 68px;
   width: 100%;
@@ -869,6 +880,12 @@ Sign up form
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: none;
+}
+.sign-up .signup-form .form-input-group textarea {
+  border: none;
+  padding: 5px;
+  width: 100%;
+  min-height: 200px;
 }
 .sign-up .signup-form .form-input-group input::-webkit-input-placeholder {
   color: #BCC1C3;
@@ -933,7 +950,6 @@ footer a:hover {
   color: #52A6FF;
 }
 footer ul.footer-group {
-  border-top: solid 1px #4E566C;
   padding-top: 25px;
   margin-bottom: 45px;
 }
@@ -958,20 +974,20 @@ footer span.fa-heart {
   font-size: 15px;
   margin: 0 2px;
 }
-footer .social-share {
+footer .right-column {
   position: absolute;
   background-color: #373D4A;
   right: 0;
   width: 40%;
   height: 100%;
-  padding: 142px 0 0 70px;
+  padding: 50px 0 0 70px;
 }
-footer .social-share p {
+footer .right-column p {
   color: #fff;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-footer .social-share a.twitter-share {
+footer a.twitter-share {
   height: 60px;
   width: 60px;
   background-color: #1AB4EF;
@@ -981,32 +997,22 @@ footer .social-share a.twitter-share {
   text-align: center;
   margin-right: 20px;
 }
-footer .social-share a.twitter-share:hover, footer .social-share a.twitter-share:focus {
+footer a.twitter-share:hover, footer a.twitter-share:focus {
   background-color: #1590BF;
 }
-footer .social-share a.facebook-share:hover, footer .social-share a.facebook-share:focus {
-  background-color: #324C85;
-}
-footer .social-share a.facebook-share {
-  height: 60px;
-  width: 60px;
-  background-color: #3B5898;
-  border-radius: 3px;
-  font-size: 22px;
-  display: inline-block;
-  text-align: center;
-}
-footer .social-share a {
+footer .right-column a {
   color: #fff;
 }
-footer .social-share a:hover {
+footer .right-column a:hover {
   color: #fff;
 }
-footer .social-share a i {
+footer a i {
   margin-top: 20px;
 }
 footer .footer-links {
-  margin: 120px 0 120px 0;
+  margin: 50px 0;
+}
+footer .right-column .quote {
 }
 
 /* ==========================================================================

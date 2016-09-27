@@ -9,6 +9,7 @@
         "symfony/validator": "^3.0",
         "symfony/config": "^3.0",
         "zfr/zfr-mailchimp": "dev-master",
-        "ramsey/twig-codeblock": "^1.0"
+        "ramsey/twig-codeblock": "^1.0",
+        "intercom/intercom-php": "^3.0"
     }
 }
