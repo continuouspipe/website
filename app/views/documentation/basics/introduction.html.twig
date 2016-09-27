@@ -3,10 +3,15 @@
 {% block content %}
 <h2>Introduction to ContinuousPipe</h2>
 
-- Continuous deployment pipeline
-- Deploy your pull requests
-- A workflow that is up to you
-- Docker containers (pushes them anywhere)
-- Guess configuration from docker-compose.yml
-- Deploys to anywhere (because using Kubernetes)
+<p>ContinuousPipe is a continuous deployment pipeline that allow frictionless deployment of features in isolated
+application environments. Based on Docker and Kubernetes, it dramatically speeds up the feedback loop and cuts lead times.</p>
+
+[IMAGE - Where is CP]
+
+<p>The <a href="{{ path('documentation_basics', {'page': 'workflow'}) }}">customizable workflow</a> you are going to use
+is thought to onboard the QA team and Product Owner(s) as quick as possible in order to lose time waiting for feedback.</p>
+
+<p>Built on Docker and Kubernets you can push your <a href="{{ path('documentation_basics', {'page': 'images'}) }}">
+Docker images</a> on <a href="{{ path('documentation_basics', {'page': 'clusters'}) }}">any cluster</a> that can be on
+your bare metals servers as well as on any cloud such as AWS or GCE.</p>
 {% endblock %}

@@ -1,11 +1,25 @@
 {% extends "documentation/basics/layout.html.twig" %}
 {% block left_navigation_workflow_class %} class="active"{% endblock %}
 {% block content %}
-<h2>Reduces the feedback loop</h2>
-- Deploy the code directly
-
 <h2>A workflow that suits you</h2>
 
-- Build and/or deploy based on Github labels
-- Custom tasks that include webhooks (so you can imagine the integrations you would like)
+<p>Adding a simple feature to a brand’s website should be a piece of cake. But too often the process is hampered by long
+lead times and slow feedback loops that cost the site owner time and money.</p>
+
+<p>Using ContinuousPipe, you can actually achieve real continuous deployment. The point here is to <strong>reduce the lead time</strong>,
+meaning the time from when the feature development starts and the time when that given feature is to production.</p>
+
+[IMAGE - Reduced workflow]
+
+<h2>Integrated with your code repository</h2>
+<p>Because GitHub is more than a code repository but actually your project repository! Your default branch can be <code>production</code>
+or <code>uat</code> so the developers know to which environment they deploy. ContinuousPipe will do the rest and rolling update your
+according environment in order to have <a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#zero-downtime">zero-downtime deployments</a>.</p>
+
+<p>Using <a href="{{ path('documentation_configure', {'page': 'tasks'}) }}#filters">task filters</a> you can control the steps
+ran for a given branch or pull-request. You can even use GitHub's labels to control the tasks that had to be ran, or
+your own custom integration through the hooks tasks.</p>
+
+[IMAGE - The workflow based on GitHub labels]
+
 {% endblock %}
