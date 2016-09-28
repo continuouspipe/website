@@ -24,7 +24,7 @@ ADD . /app
 WORKDIR /app
 
 # Run installation with private credentials
-RUN composer install -o
+RUN composer install -o && chown www-data .
 
 # Run Apache2
 CMD ["/app/docker/apache/run.sh"]
