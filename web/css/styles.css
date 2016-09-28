@@ -182,6 +182,9 @@ ul li {
 .section-padding {
   padding: 120px 0;
 }
+.hero-strip.section-padding.no-icon {
+  padding-bottom: 90px;
+}
 
 .tooltip {
   position: absolute;
@@ -1456,4 +1459,165 @@ you can use the generic selector below, but it's slower:
 
 .icon-dribbble:before {
   content: "\e063";
+}
+
+.pricing-table {
+  margin: 50px auto;
+  text-align: center;
+  padding: 10px;
+  padding-right: 0;
+  line-height: 1;
+}
+/*------ utiltity classes -----*/
+.pricing-table .fl{ float:left; }
+.pricing-table .fr{ float: right; }
+/*its also known as clearfix*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;  /*For IE 6/7 (trigger hasLayout) */
+}
+
+.pricing-table h1, .pricing-table h2, .pricing-table p, .pricing-table div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pricing-table .heading{
+  color: #9C9E9F;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+}
+.pricing-table .block, .pricing-table.block{
+  width: 22%;
+  margin: 0 15px;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /*    border: 1px solid red;*/
+}
+/*Shared properties*/
+.pricing-table  .title, .pricing-table  .pt-footer{
+  color: #FEFEFE;
+  text-transform: capitalize;
+  line-height: 2.5;
+  position: relative;
+}
+.pricing-table .content{
+  position: relative;
+  color: #FEFEFE;
+  padding: 20px 0 10px 0;
+  min-height: 100px;
+}
+/*arrow creation*/
+.pricing-table .content:after, .pricing-table .content:before,.pricing-table .pt-footer:before,.pricing-table .pt-footer:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+}
+.pricing-table .pt-footer:after,.pricing-table .pt-footer:before{
+  top:0;
+}
+.pricing-table .content:after,.pricing-table .pt-footer:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-width: 5px;
+  margin-left: -5px;
+}
+/*/arrow creation*/
+.pricing-table .price{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.625rem;
+}
+.pricing-table .price span{
+  font-size: 4rem;
+  letter-spacing: 8px;
+  font-weight: bold;
+}
+.pricing-table .price sup{
+  font-size: 1.5rem;
+  position: absolute;
+  top: 12px;
+  left: -12px;
+}
+.pricing-table .hint{
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.pricing-table .features{
+  list-style-type: none;
+  background: #efefef;
+  text-align: left;
+  color: #9C9C9C;
+  padding: 30px;
+}
+.pricing-table .features li{
+  padding:15px 0;
+  width: 100%;
+}
+.pricing-table .features li span{
+  padding-right: 0.4rem;
+}
+.pricing-table .pt-footer{
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+/*PERSONAL*/
+.pricing-table .personal .title{
+  background: #78CFBF;
+}
+.pricing-table .personal .content,.personal .pt-footer{
+  background: #82DACA;
+}
+.pricing-table .personal .content:after{
+  border-top-color: #82DACA;
+}
+.pricing-table .personal .pt-footer:after{
+  border-top-color: #efefef;
+}
+/*PROFESSIONAL*/
+.pricing-table .professional .title{
+  background: #3EC6E0;
+}
+.pricing-table .professional .content,.professional .pt-footer{
+  background: #53CFE9;
+}
+.pricing-table .professional .content:after{
+  border-top-color: #53CFE9;
+}
+.pricing-table .professional .pt-footer:after{
+  border-top-color: #efefef;
+}
+/*BUSINESS*/
+.pricing-table .business .title{
+  background: #E3536C;
+}
+.pricing-table .business .content,.business .pt-footer{
+  background: #EB6379;
+}
+.pricing-table .business .content:after{
+  border-top-color: #EB6379;
+}
+.pricing-table .business .pt-footer:after {
+  border-top-color: #efefef;
 }
