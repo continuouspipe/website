@@ -1551,7 +1551,6 @@ you can use the generic selector below, but it's slower:
 }
 .pricing-table .price span{
   font-size: 4rem;
-  letter-spacing: 8px;
   font-weight: bold;
 }
 .pricing-table .price sup{

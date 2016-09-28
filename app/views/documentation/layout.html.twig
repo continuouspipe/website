@@ -7,9 +7,9 @@
     <div class="documentation-nav">
         <div class="container">
             <ul class="nav nav-pills nav-justified">
-                <li{% block top_nagivation_basics_class %}{% endblock %}><a href="{{ path('documentation') }}">Basics</a></li>
+                <li{% block top_nagivation_basics_class %}{% endblock %}><a href="{{ path('documentation') }}"><i class="fa fa-cubes"></i> Basics</a></li>
                 {# <li><a href="#">Quick start</a></li> #}
-                <li{% block top_nagivation_configure_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'introduction'}) }}">Configure</a></li>
+                <li{% block top_nagivation_configure_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'introduction'}) }}"><i class="fa fa-book"></i> Configure</a></li>
                 {# <li{% block top_nagivation_examples_class %}{% endblock %}><a href="{{ path('documentation_examples', {'page': 'introduction'}) }}">Examples</a></li> #}
             </ul>
         </div>

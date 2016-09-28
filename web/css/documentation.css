@@ -28,3 +28,12 @@ div.documentation-inner {
 div.documentation-inner .left-navigation ul {
     margin-top: 20px;
 }
+div.documentation-nav li a {
+    color: #848484;
+}
+div.documentation-nav li.active a {
+    background-color: #c2c2c2;
+}
+div.documentation-inner p img {
+    max-width: 100%;
+}
