@@ -2,9 +2,83 @@
 {% block left_navigation_tasks_class %} class="active"{% endblock %}
 
 {% block content %}
-    <h2>Tasks</h2>
+    <h2><a name="list"></a>Task list</h2>
+    <p>As you've seen in the configuration files section, most of CP's configuration is about tasks. These tasks achieve a
+    specific behaviour and can be picked up independently. As now, here are the 3 official tasks:</p>
 
+    <ul>
+        <li><a href="{{ path('documentation_configure', {'page': 'images'}) }}"><code>build</code>: Will build and push your Docker image</a></li>
+        <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}"><code>deploy</code>: Will deploy your service(s) to a cluster</a></li>
+        <li><a href="{{ path('documentation_configure', {'page': 'commands'}) }}"><code>run</code>: Will run some commands inside a deployed context</a></li>
+    </ul>
 
+    <p><strong>Note:</strong> there is also a <code>wait</code> (waiting for other GitHub Commit Statuses) and a <code>webhook</code>
+    (calling and waiting call from an API) task that are activated on demand. <a href="{{ path('contact') }}">Contact us.</a></p>
 
-    <h3 name="filters">Conditional tasks</h3>
+    <h2><a name="filters"></a>Conditional tasks</h2>
+
+    <p>You can filter the execution of each task by using the <code>filter</code> configuration in the YML file.
+    This can be done with an expression, as you can see in the following sample configuration:</p>
+
+{% codeblock lang:yaml %}
+tasks:
+    images:
+        build:
+            # ...
+
+        filter:
+            expression: code_reference.branch == 'master'
+{% endcodeblock %}
+
+    <p>As with the <a href="{{ path('documentation_configure', {'page': 'configuration-files'}) }}#conditional-variables">conditional variables</a>,
+    this expression have access to a context of objects. The first part of this context is tide-related values, that are:</p>
+
+    <ul>
+        <li><code>code_reference</code> that contains the following properties:
+            <ul>
+                <li><code>branch</code> which is the name of the branch</li>
+                <li><code>sha1</code> which is the SHA1 of the given commit</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Task-related informations</h3>
+
+    <p>Under the <code>tasks</code> value, you can have access to information that come from the different previous tasks.
+    You need to use named tasks like in the previous examples to access to them, by their names.</p>
+
+    <p>The <code>deploy</code> tasks exposes the following configuration:</p>
+
+    <ul>
+        <li><code>services</code> which is an array of objects indexed by key. The key is the name of the deployed service. Then, the objects contains the following property:
+            <ul>
+                <li><code>created</code> true if the service was created</li>
+                <li><code>updated</code> true if the service was updated</li>
+                <li><code>deleted</code> true if the service was deleted</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>For example, if you want to run some setup script only if the database was created you can use the following configuration:</p>
+
+{% codeblock lang:yaml %}
+tasks:
+    deployment:
+        deploy:
+            cluster: my-cluster
+
+            services:
+                mysql:
+                    specification:
+                        source:
+                            image: mysql
+
+    fixtures:
+        run:
+            # ...
+
+        filter:
+            expression: tasks.deployment.services.mysql.created
+{% endcodeblock %}
+
 {% endblock %}
