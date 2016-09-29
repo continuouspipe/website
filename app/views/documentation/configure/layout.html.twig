@@ -23,7 +23,22 @@
             <li><a href="{{ path('documentation_configure', {'page': 'images'}) }}#arguments">Arguments</a></li>
         </ul>
     </li>
-    <li{% block left_navigation_deployments_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}">Deploying services</a></li>
+    <li{% block left_navigation_deployments_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}">Deploying services</a>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#introduction">Introduction</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#image">Image source</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#strategy">Deployment strategy</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#environment-variables">Environment variables</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#accessibility">Accessibility</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#ports">Ports</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#endpoints">Endpoints</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#conditional">Conditional services</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#volumes">Persistent volumes</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#resources">Resources</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#health-checks">Health-checks</a></li>
+                <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}#zero-downtime">Zero downtime</a></li>
+            </ul>
+        </li>
     <li{% block left_navigation_commands_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'commands'}) }}">Running commands</a></li>
     <li class="separator"></li>
 {# <li{% block left_navigation_teams_credentials_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'teams-and-credentials'}) }}">Teams & Credentials</a></li> #}

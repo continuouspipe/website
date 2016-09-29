@@ -2,7 +2,24 @@
 {% block left_navigation_deployments_class %} class="active"{% endblock %}
 
 {% block content %}
-    <h2>Deployments</h2>
+    <h2><a name="introduction"></a>Deployments</h2>
+    <p>Once your images are built (if you have to build some), you can deploy them. The <code>deploy</code> task is configurable
+    in many ways.</p>
 
-    <h2 name="zero-downtime-deployments">Zero downtime deployments</h2>
+    <h2><a name="image"></a>Image source</h2>
+    - From service
+    - Image
+
+    <h2><a name="strategy"></a>Deployment strategy</h2>
+    <h2><a name="environment-variables"></a>Environment variables</h2>
+    <h2><a name="accessibility"></a>Accessibility</h2>
+    <h2><a name="ports"></a>Ports</h2>
+    - Guessed from Docker Compose's `expose`
+    <h2><a name="endpoints"></a>Endpoints</h2>
+    - Can be "simply" done by the accessibility
+    <h2><a name="conditional"></a>Conditional services</h2>
+    <h2><a name="volumes"></a>Persistent volumes</h2>
+    <h2><a name="resources"></a>Resources</h2>
+    <h2><a name="health-checks"></a>Health-checks</h2>
+    <h2><a name="zero-downtime"></a>Zero downtime</h2>
 {% endblock %}
