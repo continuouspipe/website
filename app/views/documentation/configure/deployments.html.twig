@@ -6,11 +6,73 @@
     <p>Once your images are built (if you have to build some), you can deploy them. The <code>deploy</code> task is configurable
     in many ways.</p>
 
+    <p>The following example assume that you have at least a <code>web</code> and a <code>database</code> service configured in your
+    <code>docker-compose.yml</code> file.</p>
+
+{% codeblock lang:yaml %}
+tasks:
+    deployment:
+        deploy:
+            cluster: my-cluster-identifier
+
+            services:
+                web: ~
+                database: ~
+{% endcodeblock %}
+
+    <p>This will therefore only deploy these 2 services. For each of this service, you can then fine-tune a lot of options
+    that are presented in the following paragraphs. Therefore, the full YAML structure won't be presented but assume that
+    every option is under a service configuration, for example:</p>
+
+{% codeblock lang:yaml %}
+tasks:
+    deployment:
+        deploy:
+            services:
+                database:
+                    source:
+                        image: mysql
+{% endcodeblock %}
+
     <h2><a name="image"></a>Image source</h2>
-    - From service
-    - Image
+
+    <p><strong>If you have a <a href="{{ path('documentation_configure', {'page': 'images'}) }}"><code>build</code> task</a> before the deployment task</strong> and an image for the service having the same name
+    have been built just before, it'll use this image name, and <strong>you have nothing to configure</strong>.</p>
+
+    <p>If it's not the case, the first way is to explicitly mentioning the image name. Note that this value is automatically guessed if you have a service having the same name
+    in your project's <code>docker-compose.yml</code> file.</p>
+
+{% codeblock lang:yaml %}
+tasks:
+    deployment:
+        deploy:
+            services:
+                database:
+                    source:
+                        image: mysql
+                        tag: latest
+{% endcodeblock %}
+
+    <p>The last option, if for instance you are deploying the same image but with different runtime commands, you can use a source from a given
+    service:</p>
+
+{% codeblock lang:yaml %}
+tasks:
+    deployment:
+        deploy:
+            services:
+                web:
+                    # ...
+
+                database:
+                    source:
+                        from_service: web
+{% endcodeblock %}
 
     <h2><a name="strategy"></a>Deployment strategy</h2>
+
+    <p></p>
+
     <h2><a name="environment-variables"></a>Environment variables</h2>
     <h2><a name="accessibility"></a>Accessibility</h2>
     <h2><a name="ports"></a>Ports</h2>
