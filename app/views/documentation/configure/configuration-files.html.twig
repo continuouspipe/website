@@ -4,5 +4,85 @@
 {% block content %}
     <h2>Configuration files</h2>
 
-    <h2 name="variables">Variables</h2>
+    <p>The entire configuration is represented as a YAML file. The final configuration is the result of the merge of these
+    different optional configuration sources:</p>
+
+    <ol>
+        <li>The YAML stored on CP, in your flow, then Configuration</li>
+        <li>The YAML file named <code>continuous-pipe.yml</code> in your code repository</li>
+        <li>The YAML file named <code>continuous-pipe.[branch].yml</code> in your code repository</li>
+    </ol>
+
+
+    <h2><a name="tasks"></a>Tasks</h2>
+
+    <p>The main objects of this configuration file are the <code>tasks</code>. Each task have a name, and will be run chronologically.</p>
+    <p>In the following example, you can see that we define a build task, a deployment task, and a run task, that are going to be run
+    in this order when a tide will be ran.</p>
+
+<div class="highlight-title">Defining tasks</div>
+{% codeblock lang:yaml %}
+tasks:
+    images:
+        build:
+            # ...
+
+    deployment:
+        deploy:
+            # ...
+
+    migrations:
+        run:
+            # ...
+{% endcodeblock %}
+
+    <p>You will learn more about each task in the <a href="{{ path('documentation_configure', {'page': 'tasks'}) }}">tasks overview</a> section.</p>
+
+    <h2><a name="variables"></a>Variables</h2>
+
+    <p>In order to prevent copy/pasting, you can use variables inside your configuration files. The following example
+    shows you how to prevent putting values inside your project's <code>continuous-pipe.yml</code>
+    by using variables that are defined in the configuration stored on ContinuousPipe.</p>
+
+<div class="highlight-title">Configuration in CP</div>
+{% codeblock lang:yaml %}
+environment_variables:
+    - { name: CLUSTER, value: my-production-cluster }
+{% endcodeblock %}
+
+<div class="highlight-title"><code>continuous-pipe.yml</code></div>
+{% codeblock lang:yaml %}
+tasks:
+    # ...
+    deployment:
+        deploy:
+            cluster: ${CLUSTER}
+
+            # ...
+{% endcodeblock %}
+
+    <p>Once the configuration files merged, the variables are resolved. That means that the final configuration will contain
+    the <code>my-production-cluster</code> value at the <code>cluster</code> key of the deployment task.</p>
+
+    <h2><a name="conditional-variables"></a>Conditional variables</h2>
+
+    <p>Because you may want to change the value of the cluster depending on the branch name for instance, you can use variable's
+    conditions:</p>
+
+{% codeblock lang:yaml %}
+environment_variables:
+    - { name: CLUSTER, condition: 'code_reference.branch in ["production", "uat"]', value: my-production-cluster }
+    - { name: CLUSTER, condition: 'code_reference.branch not in ["production", "uat"]', value: my-development-cluster }
+{% endcodeblock %}
+
+    <p>As the <a href="{{ path('documentation_configure', {'page': 'tasks'}) }}#filters">conditional tasks</a>, the <code>condition</code> value is an expression. In this context, this expression have access to the following variables:</p>
+
+    <ul>
+        <li><code>code_reference</code> that contains the following properties:
+            <ul>
+                <li><code>branch</code> which is the name of the branch</li>
+                <li><code>sha1</code> which is the SHA1 of the given commit</li>
+            </ul>
+        </li>
+    </ul>
 {% endblock %}

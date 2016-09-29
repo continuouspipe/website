@@ -25,8 +25,19 @@ div.documentation-nav {
 div.documentation-inner {
     margin-top: 20px;
 }
-div.documentation-inner .left-navigation ul {
+div.documentation-inner .left-navigation > ul {
     margin-top: 20px;
+    margin-bottom: 40px;
+}
+div.documentation-inner .left-navigation ul ul {
+    display: none;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+}
+div.documentation-inner .left-navigation ul li.active ul {
+    display: block;
 }
 div.documentation-nav li a {
     color: #848484;
@@ -34,6 +45,33 @@ div.documentation-nav li a {
 div.documentation-nav li.active a {
     background-color: #c2c2c2;
 }
-div.documentation-inner p img {
+div.documentation-content p img {
     max-width: 100%;
+}
+div.documentation-content p, div.documentation-content li {
+    font-size: 18px;
+    line-height: 29px;
+    color: rgba(28, 54, 83, 0.6);
+}
+div.documentation-content p, div.documentation-content ul, div.documentation-content ol {
+    padding-bottom: 20px;
+}
+div.documentation-content ul, div.documentation-content ol {
+    margin-left: 20px;
+}
+div.documentation-content li {
+    list-style-type: disc;
+}
+div.documentation-content div.highlight-title {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    background: #efefef;
+    border-top-right-radius: 4px;
+    font-weight: bold;
+    border-top-left-radius: 4px;
+}
+div.documentation-content div.highlight-title ~ figure pre {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
 }
