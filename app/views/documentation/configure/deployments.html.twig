@@ -56,6 +56,15 @@ source:
     from_service: web
 {% endcodeblock %}
 
+    <h2><a name="environment-name"></a>Environment name</h2>
+
+    <p>You can configure the name of the deployed environment (the namespace in Kubernetes terms) using an expression:</p>
+
+{% codeblock lang:yaml %}
+environment:
+    name: '"my-app-" ~ code_reference.branch'
+{% endcodeblock %}
+
     <h2><a name="strategy"></a>Deployment strategy</h2>
 
     <p>The deployment strategy describe how would you like the container(s) to be deployed.</p>
