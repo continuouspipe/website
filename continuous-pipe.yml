@@ -7,11 +7,21 @@ tasks:
 
     deploy:
         deploy:
-            cluster: gke
+            cluster: ${CLUSTER}
             services:
                 app:
-                    specification:
-                        accessibility:
-                            from_external: true
+                    endpoints:
+                        -
+                            name: https
+                            type: NodePort
+                            ssl_certificates:
+                                -
+                                    name: continuouspipeio
+                                    cert: ${WILDCARD_SSL_CERT}
+                                    key: ${WILDCARD_SSL_KEY}
 
-filter: code_reference.branch != 'gh-pages'
+                    deployment_strategy:
+                        readiness_probe:
+                            type: http
+                            port: 80
+                            path: /
