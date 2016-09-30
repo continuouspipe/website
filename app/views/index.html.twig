@@ -54,14 +54,58 @@
 <section class="features section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-md-offset-7">
+            <div class="col-md-7">
+                <img src="{{ asset('/img/home-page-screen.png') }}" class="ui-showcase" alt="ContinuousPipe UI" />
+            </div>
+            <div class="col-md-5">
+                <div class="feature-list">
+                    <h3>Continuous deployment with containers</h3>
+                    <p>Enable fast changes by applying continuous deployment with your Docker based application.</p>
+                    <ul class="features-stack">
+                        <li class="feature-item">
+                            <div class="feature-icon">
+                                <span data-icon="&#xe03e;" class="icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Keep the pace</h5>
+                                <p>Remove the release pain. By testing in feature branches, you remove the fear of production deployments.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-icon">
+                                <span data-icon="&#xe033;" class="icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Your own technology</h5>
+                                <p>We <em>just</em> build and deploy your containers. You can use what you want inside.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="features-extra section-padding" id="assets">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
                 <div class="feature-list">
                     <h3>A complete integration with GitHub</h3>
                     <p>We consider your GitHub not only as a code repository but also as your project repository.</p>
                     <ul class="features-stack">
                         <li class="feature-item">
                             <div class="feature-icon">
-                                <span data-icon="&#xe040;" class="icon"></span>
+                                <span data-icon="&#xe030;" class="icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h5>"Here is the address"</h5>
+                                <p>When creating a pull-request, just wait and an comment will appear with the deployed environment link.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-icon">
+                                <span data-icon="" class="icon"></span>
                             </div>
                             <div class="feature-content">
                                 <h5>Pipeline control</h5>
@@ -70,36 +114,35 @@
                         </li>
                         <li class="feature-item">
                             <div class="feature-icon">
-                                <span data-icon="&#xe03e;" class="icon"></span>
+                                <span data-icon="" class="icon"></span>
                             </div>
                             <div class="feature-content">
-                                <h5>Updated status</h5>
-                                <p>On each code change, the status of the pipeline will be updated on GitHub</p>
-                            </div>
-                        </li>
-                        <li class="feature-item">
-                            <div class="feature-icon">
-                                <span data-icon="&#xe03c;" class="icon"></span>
-                            </div>
-                            <div class="feature-content">
-                                <h5>"Here is the address"</h5>
-                                <p>When creating a pull-request, just wait and an comment will appear with the deployment environment link.</p>
+                                <h5>That quick feedback loop</h5>
+                                <p>The developers and QAs can approve in parallel the features and simply deploy by merging.</p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
+            <div class="col-md-6 col-md-offset-1">
+                <div class="image-container">
+                    <img src="{{ asset('/img/github-workflow.png') }}" alt="GitHub workflow" class="illustration-image" />
+                </div>
+            </div>
         </div>
     </div>
-    <div class="device-showcase">
-        <div class="devices">
-            <div class="ipad-wrap wp1"></div>
-            <div class="iphone-wrap wp2"></div>
-        </div>
-    </div>
-    <div class="responsive-feature-img"><img src="img/devices.png" alt="responsive devices"></div>
 </section>
-<section class="features-extra section-padding" id="assets">
+<section class="hero-strip section-padding">
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h2>Built to embrace your application</h2>
+            <p>ContinuousPipe already supports many different workflows. If you want to have more information or believe you need dedicated assistance, simply drop us a message.</p>
+            <a href="{{ path('contact') }}" class="btn btn-ghost btn-accent btn-large">Contact us!</a>
+        </div>
+    </div>
+</section>
+
+<section class="features-extra section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
@@ -127,32 +170,13 @@
                         </li>
                     </ul>
                     <p>&nbsp;</p>
-                    <p><a href="http://kubernetes.io/" class="btn btn-ghost btn-small" target="_blank">What is Kubernetes?</a></p>
+                    <p style="text-align: center;"><a href="http://kubernetes.io/" class="btn btn-ghost btn-small" target="_blank">What is Kubernetes?</a></p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="macbook-wrap wp3"></div>
-    <div class="responsive-feature-img"><img src="img/macbook-pro.png" alt="responsive devices"></div>
-</section>
-<section class="hero-strip section-padding">
-    <div class="container">
-        <div class="col-md-12 text-center">
-            <h2>Built to embrace your application</h2>
-            <p>ContinuousPipe already supports many different workflows. If you want to have more information or believe you need dedicated assistance, simply drop us a message.</p>
-            <a href="{{ path('contact') }}" class="btn btn-ghost btn-accent btn-large">Contact us!</a>
-        </div>
-    </div>
-</section>
-<section class="sign-up section-padding text-center" id="sign-up">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>Ready to go?</h3>
-                <p>Login to the console, checkout our documentation and start deploying!</p>
-                <p>
-                    <a href="https://ui.continuouspipe.io" class="btn btn-accent btn-fill btn-large">Open the console</a>
-                </p>
+            <div class="col-md-5 col-md-offset-2">
+                <div class="image-container">
+                    <img src="{{ asset('/img/kubernetes-logo.png') }}" alt="Kubernetes" class="illustration-image" />
+                </div>
             </div>
         </div>
     </div>
