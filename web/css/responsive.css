@@ -253,3 +253,13 @@
 
   .down-arrow {
     display: none; } }
+
+@media screen and (max-width: 991px) {
+  .section-padding:not(.large) {
+    padding: 20px;
+  }
+
+  .container .image-container {
+    padding: 40px 20px;
+  }
+}

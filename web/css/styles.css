@@ -551,9 +551,8 @@ Features-stack
 .features img {
   max-width:100%;
 }
-.features .ui-showcase {
+.features .image-container .illustration-image {
   width: 100%;
-  padding: 0px 100px 0 0;
 }
 
 .features .responsive-feature-img, .features-extra .responsive-feature-img {
@@ -998,7 +997,8 @@ footer a i {
 footer .footer-links {
   margin: 50px 0;
 }
-footer .right-column .quote {
+footer .quote {
+  margin: 50px 30px;
 }
 
 /* ==========================================================================
@@ -1451,23 +1451,8 @@ you can use the generic selector below, but it's slower:
   padding-right: 0;
   line-height: 1;
 }
-/*------ utiltity classes -----*/
-.pricing-table .fl{ float:left; }
-.pricing-table .fr{ float: right; }
-/*its also known as clearfix*/
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  zoom: 1;  /*For IE 6/7 (trigger hasLayout) */
-}
 
-.pricing-table h1, .pricing-table h2, .pricing-table p, .pricing-table div {
+.pricing-table h1, .pricing-table h2, .pricing-table p {
   margin: 0;
   padding: 0;
   border: 0;
@@ -1485,13 +1470,11 @@ you can use the generic selector below, but it's slower:
   margin-bottom: 4rem;
 }
 .pricing-table .block, .pricing-table.block{
-  width: 22%;
-  margin: 0 15px;
   overflow: hidden;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  /*    border: 1px solid red;*/
+  margin-bottom: 40px;
 }
 /*Shared properties*/
 .pricing-table  .title, .pricing-table  .pt-footer{
