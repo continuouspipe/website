@@ -1,0 +1,112 @@
+{% extends "regular_layout.html.twig" %}
+{% block content %}
+<section class="hero-strip section-padding no-icon">
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h2>Pricing</h2>
+            <p>Discover the easiest continuous deployment pipeline for container based projects.</p>
+        </div>
+    </div>
+</section>
+<section class="sign-up section-padding text-center" id="form">
+    <div class="container pricing-table">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="block personal">
+                    <h2 class="title">Small</h2>
+                    <div class="content">
+                        <p class="price">
+                            <sup>£</sup>
+                            <span>400</span>
+                            <sub>/mo.</sub>
+                        </p>
+                        <p class="hint">Very small teams</p>
+                    </div>
+
+                    <ul class="features">
+                        <li><i class="fa fa-user"></i> Up to 5 users</li>
+                        <li><i class="fa fa-github"></i> Up to 5 repositories</li>
+                        <li><i class="fa fa-cube"></i> Unlimited builds</li>
+                        <li><i class="fa fa-cloud"></i> Unlimited deployments</li>
+                        <li><i class="fa fa-comments"></i> GitHub integration</li>
+                    </ul>
+
+                    <div class="pt-footer"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="block professional">
+                    <h2 class="title">Team</h2>
+                    <div class="content">
+                        <p class="price">
+                            <sup>£</sup>
+                            <span>700</span>
+                            <sub>/mo.</sub>
+                        </p>
+                        <p class="hint">Suitable for startups</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fa fa-user"></i> Up to 10 users</li>
+                        <li><i class="fa fa-github"></i> Up to 10 repositories</li>
+                        <li><i class="fa fa-cube"></i> Unlimited builds</li>
+                        <li><i class="fa fa-cloud"></i> Unlimited deployments</li>
+                        <li><i class="fa fa-comments"></i> GitHub integration</li>
+                        <li><i class="fa fa-key"></i> API access</li>
+                        <li><i class="fa fa-line-chart"></i> Reports</li>
+                    </ul>
+                    <div class="pt-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="block professional">
+                    <h2 class="title">Business</h2>
+                    <!-- CONTENT -->
+                    <div class="content">
+                        <p class="price">
+                            <sup>£</sup>
+                            <span>1200</span>
+                            <sub>/mo.</sub>
+                        </p>
+                        <p class="hint">For established business</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fa fa-user"></i> Up to 20 users</li>
+                        <li><i class="fa fa-github"></i> Up to 20 repositories</li>
+                        <li><i class="fa fa-cube"></i> Unlimited builds</li>
+                        <li><i class="fa fa-cloud"></i> Unlimited deployments</li>
+                        <li><i class="fa fa-comments"></i> GitHub integration</li>
+                        <li><i class="fa fa-key"></i> API access</li>
+                        <li><i class="fa fa-line-chart"></i> Reports</li>
+                    </ul>
+                    <div class="pt-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="block business">
+                    <h2 class="title">Enterprise</h2>
+                    <div class="content">
+                        <a href="{{ path('contact') }}" class="btn btn-accent btn-large">Contact us</a>
+                    </div>
+
+                    <ul class="features">
+                        <li><i class="fa fa-user"></i> Unlimited users</li>
+                        <li><i class="fa fa-github"></i> Unlimited repositories</li>
+                        <li><i class="fa fa-cube"></i> Unlimited builds</li>
+                        <li><i class="fa fa-cloud"></i> Unlimited deployments</li>
+                        <li><i class="fa fa-comments"></i> GitHub integration</li>
+                        <li><i class="fa fa-key"></i> API access</li>
+                        <li><i class="fa fa-line-chart"></i> Reports</li>
+                        <li><i class="fa fa-home"></i> On-premise hosting</li>
+                    </ul>
+
+                    <div class="pt-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

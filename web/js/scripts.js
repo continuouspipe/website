@@ -1,3 +1,8 @@
+if (JSON && localStorage && localStorage.getItem('user')) {
+	var user = JSON.parse(localStorage.getItem('user') || '{}');
+	window.intercomSettings = {app_id: 'i0yqsxbt', name: user.name, email: user.email, created_at: user.timestamp};
+}
+
 $(document).ready(function() {
 
 	/***************** Waypoints ******************/
@@ -52,6 +57,10 @@ $(document).ready(function() {
 	$(function() {
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop();
+
+			if ($('section.navigation').hasClass('regular')) {
+				return;
+			}
 
 			if (scroll >= 20) {
 				$('section.navigation').addClass('fixed');

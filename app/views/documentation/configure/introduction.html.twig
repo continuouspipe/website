@@ -1,0 +1,14 @@
+{% extends "documentation/configure/layout.html.twig" %}
+{% block left_navigation_introduction_class %} class="active"{% endblock %}
+
+{% block content %}
+    <h2>Introduction</h2>
+    <p>You always start with a team. A team contains some cluster and docker registry credentials, as well as some <em>Flows</em>.
+    A <em>Flow</em> is basically a connected code repository with <a href="{{ path('documentation_configure', {'page': 'configuration-files'}) }}">some configuration</a> (as less as possible).</p>
+
+    <p>At this moment, you should be able to organise <a href="{{ path('documentation_configure', {'page': 'tasks'}) }}">the tasks</a>
+    you want and therefore <a href="{{ path('documentation_configure', {'page': 'images'}) }}">build your Docker images</a>,
+    <a href="{{ path('documentation_configure', {'page': 'deployments'}) }}">deploy the services</a> and <a href="{{ path('documentation_configure', {'page': 'commands'}) }}">run your migration and/or tests.</a></p>
+
+
+{% endblock %}

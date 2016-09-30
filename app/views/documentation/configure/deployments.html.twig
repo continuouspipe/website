@@ -1,0 +1,204 @@
+{% extends "documentation/configure/layout.html.twig" %}
+{% block left_navigation_deployments_class %} class="active"{% endblock %}
+
+{% block content %}
+    <h2><a name="introduction"></a>Deployments</h2>
+    <p>Once your images are built (if you have to build some), you can deploy them. The <code>deploy</code> task is configurable
+    in many ways.</p>
+
+    <p>The following example assume that you have at least a <code>web</code> and a <code>database</code> service configured in your
+    <code>docker-compose.yml</code> file.</p>
+
+{% codeblock lang:yaml %}
+tasks:
+    deployment:
+        deploy:
+            cluster: my-cluster-identifier
+
+            services:
+                web: ~
+                database: ~
+{% endcodeblock %}
+
+    <p>For each of this service, you can then fine-tune a lot of options
+    that are presented in the following paragraphs. Therefore, the full YAML structure won't be presented but assume that
+    every option is under a service configuration, for example:</p>
+
+{% codeblock lang:yaml %}
+tasks:
+    deployment:
+        deploy:
+            services:
+                database:
+                    source:
+                        image: mysql
+{% endcodeblock %}
+
+    <h2><a name="image"></a>Image source</h2>
+
+    <p><strong>If you have a <a href="{{ path('documentation_configure', {'page': 'images'}) }}"><code>build</code> task</a> before the deployment task</strong> and an image for the service having the same name
+    have been built just before, it'll use this image name, and <strong>you have nothing to configure</strong>.</p>
+
+    <p>If it's not the case, the first way is to explicitly mentioning the image name. Note that this value is automatically guessed if you have a service having the same name
+    in your project's <code>docker-compose.yml</code> file.</p>
+
+{% codeblock lang:yaml %}
+source:
+    image: mysql
+    tag: latest
+{% endcodeblock %}
+
+    <p>The last option, if for instance you are deploying the same image but with different runtime commands, you can use a source from a given
+    service:</p>
+
+{% codeblock lang:yaml %}
+source:
+    from_service: web
+{% endcodeblock %}
+
+    <h2><a name="environment-name"></a>Environment name</h2>
+
+    <p>You can configure the name of the deployed environment (the namespace in Kubernetes terms) using an expression:</p>
+
+{% codeblock lang:yaml %}
+environment:
+    name: '"my-app-" ~ code_reference.branch'
+{% endcodeblock %}
+
+    <h2><a name="strategy"></a>Deployment strategy</h2>
+
+    <p>The deployment strategy describe how would you like the container(s) to be deployed.</p>
+
+{% codeblock lang:yaml %}
+deployment_strategy:
+    # If true, the locked parameter ensure that the container(s) won't never
+    #  be updated once created
+    locked: false
+
+    # If true, an attached container means that CP will wait this container
+    # to have finished its job and stream the output
+    attached: false
+
+    # If true, the existing container will be forced to be reset
+    # at each deployment
+    reset: false
+{% endcodeblock %}
+
+    <h2><a name="environment-variables"></a>Environment variables</h2>
+    <p>You can set environment variables that are going to be injected in the running containers.</p>
+
+{% codeblock lang:yaml %}
+specification:
+    environment_variables:
+        - name: VARIABLE_NAME
+          value: the-value
+        - name: ANOTHER_VALUE
+          value: ${USING_A_VARIABLE}
+{% endcodeblock %}
+
+    <h2><a name="ports"></a>Ports</h2>
+
+    <p>In order to expose some services to other ones or through a load-balancer, you need to precise which ports
+    are exposed by this service.</p>
+
+{% codeblock lang:yaml %}
+specification:
+    ports:
+        - 80
+{% endcodeblock %}
+
+    <p><strong>Note:</strong> if you have an <code>expose</code> configuration in your <code>docker-compose.yml</code> file,
+    this configuration will be filled automatically.</p>
+
+    <h2><a name="accessibility"></a>Accessibility</h2>
+
+{% codeblock lang:yaml %}
+specification:
+    accessibility:
+        # If true, the service will be accessible from inside the cluster by other services.
+        from_cluster: true
+
+        # If true, a public load-balancer will be created for this service.
+        from_external: false
+{% endcodeblock %}
+
+    <h2><a name="endpoints"></a>Endpoints</h2>
+
+    <p><strong>Note:</strong> for most of the cases, the <code>from_external</code> accessibility value is enough.</p>
+    <p>If you are using a cluster that supports Ingress and SSL certificates, then you can use the <code>endpoints</code>
+    configuration to define these endpoints:</p>
+
+{% codeblock lang:yaml %}
+endpoints:
+    -
+        name: https
+        type: NodePort
+        ssl_certificates:
+            -
+                name: your-certificate-name
+                cert: ${WILDCARD_SSL_CERT}
+                key: ${WILDCARD_SSL_KEY}
+{% endcodeblock %}
+
+    <h2><a name="conditional"></a>Conditional services</h2>
+
+    <p>If you need to not deploy some services on a given condition, you can use the <code>condition</code> expression:</p>
+
+{% codeblock lang:yaml %}
+condition: code_reference.branch not in ["production", "uat", "integration"]
+{% endcodeblock %}
+
+    <h2><a name="volumes"></a>Persistent volumes</h2>
+
+    <p>If you want some volumes containing data that will be persistent across the deployments, you can mount some
+    persistent volumes:</p>
+
+{% codeblock lang:yaml %}
+specification:
+    volumes:
+        - type: persistent
+          name: my-volume
+          capacity: 5Gi
+          storage_class: default
+    volume_mounts:
+        - name: my-volume
+          mount_path: /data
+{% endcodeblock %}
+
+    <h2><a name="resources"></a>Resources</h2>
+
+    <p>You can define the amount of requested resources, as well as the resource limits for your services. This will be applied
+    to only one replica of your container.</p>
+
+{% codeblock lang:yaml %}
+specification:
+    resources:
+        requests:
+            cpu: 50m
+            memory: 250Mi
+        limits:
+            cpu: 500m
+            memory: 500Mi
+{% endcodeblock %}
+
+    <h2><a name="health-checks"></a>Health-checks</h2>
+
+    <p>Health-checks (also called probes) helps to identify when a container is ready during a deployment and when
+    a container is still alive when deployed.</p>
+
+{% codeblock lang:yaml %}
+deployment_strategy:
+    readiness_probe:
+        type: tcp
+        port: 6379
+
+    liveness_probe:
+        initial_delay_seconds: 5
+        timeout_seconds: 5
+        period_seconds: 5
+        type: http
+        port: 80
+        path: /healthz
+{% endcodeblock %}
+
+{% endblock %}

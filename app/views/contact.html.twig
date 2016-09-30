@@ -1,0 +1,60 @@
+{% extends "regular_layout.html.twig" %}
+{% block content %}
+    <section class="hero-strip section-padding large">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h2>Contact Us</h2>
+                <p>If you want to have more information or believe you need dedicated assistance from our entreprise support, <br />simply drop us a message.</p>
+                <div class="logo-placeholder floating-logo"><img src="{{ asset('img/envelope.png') }}" alt="Contact us"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sign-up section-padding text-center large" id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>Type something there!</h3>
+                    {% if message is not null %}
+                        <div class="message">{{ message }}</div>
+
+                        <script type="text/javascript">
+                            localStorage.setItem('user', JSON.stringify({name: '{{ data.name }}', email: '{{ data.email }}', timestamp: '{{ timestamp }}'}));
+                        </script>
+                    {% else %}
+                        <form class="signup-form" action="#form" method="POST" role="form">
+                            <div class="errors">
+                                {{ form_errors(form) }}
+                                {{ form_errors(form.name) }}
+                                {{ form_errors(form.email) }}
+                                {{ form_errors(form.github) }}
+                                {{ form_errors(form.message) }}
+                            </div>
+
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i>
+                                {{ form_widget(form.name) }}
+                            </div>
+
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i>
+                                {{ form_widget(form.email) }}
+                            </div>
+
+                            <div class="form-input-group">
+                                <i class="fa fa-github"></i>
+                                {{ form_widget(form.github) }}
+                            </div>
+
+                            <div class="form-input-group flexible">
+                                {{ form_widget(form.message) }}
+                            </div>
+
+                            {{ form_rest(form) }}
+                            <button type="submit" class="btn-fill sign-up-btn"><i class="fa fa-send"></i> Send</button>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

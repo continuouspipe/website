@@ -1,0 +1,78 @@
+{% extends "documentation/configure/layout.html.twig" %}
+{% block left_navigation_images_class %} class="active"{% endblock %}
+
+{% block content %}
+    <h2>The YAML bit</h2>
+
+    <p>Before deploying anything, you will most of the time want ContinuousPipe to build your Docker images. Being probably the simple
+    task, the only mandatory parameter being the image name you want to build.</p>
+
+{% codeblock lang:yaml %}
+tasks:
+    images:
+        build:
+            services:
+                web:
+                    image: docker.io/your-namespace/your-application
+{% endcodeblock %}
+
+    <p>You can obviously use any other image name as long as it contains the Docker registry as first part of it. You can
+    also see that it's configured per <em>service</em>, here we have only one (named <code>web</code>) that we need to deploy.</p>
+
+    <p>ContinuousPipe is guessing parameters from your <code>docker-compose.yml</code> file. The <code>image</code> is the only
+    required value if you have such a Docker Compose file.</p>
+
+    <h2><a name="naming-strategy"></a>Naming strategy</h2>
+
+    <p>At the moment, there is two naming strategies: the default one being the <code>sha1</code> strategy, that basically
+    builds a tag per commit SHA1. If you require it you can use the <code>branch</code> strategy that will create a tag
+    per branch.</p>
+
+{% codeblock lang:yaml %}
+tasks:
+    images:
+        build:
+            services:
+                web:
+                    # ...
+                    naming_strategy: branch
+{% endcodeblock %}
+
+    <p><strong>Warning:</strong> we do not recommend the branch naming strategy as when updated, some clusters might not
+    force pull the new image while rolling-updating the services.</p>
+
+    <h2><a name="arguments"></a>Arguments</h2>
+
+    <p>If you need to inject token or strings in your build process in order to download private dependencies for instance,
+    you can use <a href="https://docs.docker.com/engine/reference/builder/#/arg">Docker build arguments</a>.</p>
+
+    <p>The following example shows how to be able to install PHP private dependencies (using <a href="http://getcomposer.org">Composer</a>) using
+    a private GitHub token:</p>
+
+<div class="highlight-title"><code>Dockerfile</code></div>
+{% codeblock lang:yaml %}
+# ...
+
+ARG GITHUB_TOKEN=
+
+RUN composer config github-oauth.github.com $GITHUB_TOKEN && \
+    composer install -o --no-interaction && \
+    composer clear-cache
+
+# ...
+{% endcodeblock %}
+
+{% codeblock lang:yaml %}
+tasks:
+    images:
+        build:
+            environment:
+                - name: GITHUB_TOKEN
+                  value: ${GITHUB_TOKEN}
+
+            # ...
+{% endcodeblock %}
+
+    <p><strong>Note:</strong> this assume that you have defined the <code>GITHUB_TOKEN</code> variable somewhere.
+    You can refer to the <a href="{{ path('documentation_configure', {'page': 'configuration-files'}) }}#variables">variable section</a>.</p>
+{% endblock %}

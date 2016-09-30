@@ -1,0 +1,32 @@
+{% extends "layout.html.twig" %}
+{% block body %}
+    <section class="navigation regular">
+        {% include "_partials/header.html.twig" %}
+    </section>
+    {% block hero %}{% endblock %}
+    <div class="documentation-nav">
+        <div class="container">
+            <ul class="nav nav-pills nav-justified">
+                <li{% block top_nagivation_basics_class %}{% endblock %}><a href="{{ path('documentation') }}"><i class="fa fa-cubes"></i> Basics</a></li>
+                {# <li><a href="#">Quick start</a></li> #}
+                <li{% block top_nagivation_configure_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'introduction'}) }}"><i class="fa fa-book"></i> Configure</a></li>
+                {# <li{% block top_nagivation_examples_class %}{% endblock %}><a href="{{ path('documentation_examples', {'page': 'introduction'}) }}">Examples</a></li> #}
+            </ul>
+        </div>
+    </div>
+    <div class="container documentation-inner">
+        <div class="row">
+            <div class="col-md-3 left-navigation">
+                {% block left_navigation %}{% endblock %}
+            </div>
+
+            <div class="col-md-9 documentation-content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('/css/vendor/pygmentize.css') }}">
+{% endblock %}

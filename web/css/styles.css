@@ -5,7 +5,7 @@
 Typography
 ========================================================================== */
 p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 29px;
   color: rgba(28, 54, 83, 0.6);
   padding-bottom: 20px;
@@ -181,6 +181,9 @@ ul li {
 
 .section-padding {
   padding: 120px 0;
+}
+.hero-strip.section-padding.no-icon {
+  padding-bottom: 90px;
 }
 
 .tooltip {
@@ -475,6 +478,7 @@ header ul.primary-nav li:last-child a {
 }
 header ul.member-actions li {
   display: inline;
+  margin-left: 20px;
 }
 header ul.member-actions li a {
   color: #fff;
@@ -544,25 +548,11 @@ Features-stack
   display: inline-block;
   width: 80%;
 }
-.features .ipad-wrap {
-  width: 706px;
-  height: 1002px;
-  background: url("../img/ipad-device.png") no-repeat center center;
-  z-index: 1;
+.features img {
+  max-width:100%;
 }
-.features .iphone-wrap {
-  width: 304px;
-  height: 620px;
-  background: url("../img/iphone6.png") no-repeat center center;
-  position: absolute;
-  left: 530px;
-  bottom: 129px;
-  z-index: 2;
-}
-.features .device-showcase {
-  position: absolute;
-  bottom: -365px;
-  right: 61%;
+.features .image-container .illustration-image {
+  width: 100%;
 }
 
 .features .responsive-feature-img, .features-extra .responsive-feature-img {
@@ -617,21 +607,16 @@ ul.features-stack li:last-child {
 .features-extra .btn {
   margin-top: 20px;
 }
-.features-extra .macbook-wrap {
-  position: absolute;
-  width: 916px;
-  height: 540px;
-  background: url("../img/macbook-pro.png") no-repeat center center;
-  top: 114px;
-  z-index: 4;
-  left: 50%;
+.features-extra .image-container {
+  padding: 0 0 0 0;
 }
-
+.features-extra .image-container img {
+  width: 100%;
+}
 /* ==========================================================================
 .hero-strip
 ========================================================================== */
 .hero-strip {
-  margin-top: 120px;
   background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
   padding-bottom: 190px;
   position: relative;
@@ -833,6 +818,10 @@ Sign up form
   text-align: left;
   position: relative;
 }
+.sign-up .signup-form .form-input-group.flexible {
+  height: auto;
+  padding: 5px;
+}
 .sign-up .signup-form .form-input-group i {
   color: #52A6FF;
   font-size: 14px;
@@ -861,6 +850,13 @@ Sign up form
   transform: translateY(-50%);
   margin-left: 20px;
 }
+.sign-up .signup-form .form-input-group i.fa-github {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+}
 .sign-up .signup-form .form-input-group input {
   padding-left: 68px;
   width: 100%;
@@ -869,6 +865,12 @@ Sign up form
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: none;
+}
+.sign-up .signup-form .form-input-group textarea {
+  border: none;
+  padding: 5px;
+  width: 100%;
+  min-height: 200px;
 }
 .sign-up .signup-form .form-input-group input::-webkit-input-placeholder {
   color: #BCC1C3;
@@ -933,7 +935,6 @@ footer a:hover {
   color: #52A6FF;
 }
 footer ul.footer-group {
-  border-top: solid 1px #4E566C;
   padding-top: 25px;
   margin-bottom: 45px;
 }
@@ -958,20 +959,20 @@ footer span.fa-heart {
   font-size: 15px;
   margin: 0 2px;
 }
-footer .social-share {
+footer .right-column {
   position: absolute;
   background-color: #373D4A;
   right: 0;
   width: 40%;
   height: 100%;
-  padding: 142px 0 0 70px;
+  padding: 50px 0 0 70px;
 }
-footer .social-share p {
+footer .right-column p {
   color: #fff;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-footer .social-share a.twitter-share {
+footer a.twitter-share {
   height: 60px;
   width: 60px;
   background-color: #1AB4EF;
@@ -981,32 +982,23 @@ footer .social-share a.twitter-share {
   text-align: center;
   margin-right: 20px;
 }
-footer .social-share a.twitter-share:hover, footer .social-share a.twitter-share:focus {
+footer a.twitter-share:hover, footer a.twitter-share:focus {
   background-color: #1590BF;
 }
-footer .social-share a.facebook-share:hover, footer .social-share a.facebook-share:focus {
-  background-color: #324C85;
-}
-footer .social-share a.facebook-share {
-  height: 60px;
-  width: 60px;
-  background-color: #3B5898;
-  border-radius: 3px;
-  font-size: 22px;
-  display: inline-block;
-  text-align: center;
-}
-footer .social-share a {
+footer .right-column a {
   color: #fff;
 }
-footer .social-share a:hover {
+footer .right-column a:hover {
   color: #fff;
 }
-footer .social-share a i {
+footer a i {
   margin-top: 20px;
 }
 footer .footer-links {
-  margin: 120px 0 120px 0;
+  margin: 50px 0;
+}
+footer .quote {
+  margin: 50px 30px;
 }
 
 /* ==========================================================================
@@ -1450,4 +1442,147 @@ you can use the generic selector below, but it's slower:
 
 .icon-dribbble:before {
   content: "\e063";
+}
+
+.pricing-table {
+  margin: 50px auto;
+  text-align: center;
+  padding: 10px;
+  padding-right: 0;
+  line-height: 1;
+}
+
+.pricing-table h1, .pricing-table h2, .pricing-table p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pricing-table .heading{
+  color: #9C9E9F;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+}
+.pricing-table .block, .pricing-table.block{
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+/*Shared properties*/
+.pricing-table  .title, .pricing-table  .pt-footer{
+  color: #FEFEFE;
+  text-transform: capitalize;
+  line-height: 2.5;
+  position: relative;
+}
+.pricing-table .content{
+  position: relative;
+  color: #FEFEFE;
+  padding: 20px 0 10px 0;
+  min-height: 100px;
+}
+/*arrow creation*/
+.pricing-table .content:after, .pricing-table .content:before,.pricing-table .pt-footer:before,.pricing-table .pt-footer:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+}
+.pricing-table .pt-footer:after,.pricing-table .pt-footer:before{
+  top:0;
+}
+.pricing-table .content:after,.pricing-table .pt-footer:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-width: 5px;
+  margin-left: -5px;
+}
+/*/arrow creation*/
+.pricing-table .price{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.625rem;
+}
+.pricing-table .price span{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.pricing-table .price sup{
+  font-size: 1.5rem;
+  position: absolute;
+  top: 12px;
+  left: -12px;
+}
+.pricing-table .hint{
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.pricing-table .features{
+  list-style-type: none;
+  background: #efefef;
+  text-align: left;
+  color: #9C9C9C;
+  padding: 30px;
+}
+.pricing-table .features li{
+  padding:15px 0;
+  width: 100%;
+}
+.pricing-table .features li span{
+  padding-right: 0.4rem;
+}
+.pricing-table .pt-footer{
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+/*PERSONAL*/
+.pricing-table .personal .title{
+  background: #78CFBF;
+}
+.pricing-table .personal .content,.personal .pt-footer{
+  background: #82DACA;
+}
+.pricing-table .personal .content:after{
+  border-top-color: #82DACA;
+}
+.pricing-table .personal .pt-footer:after{
+  border-top-color: #efefef;
+}
+/*PROFESSIONAL*/
+.pricing-table .professional .title{
+  background: #3EC6E0;
+}
+.pricing-table .professional .content,.professional .pt-footer{
+  background: #53CFE9;
+}
+.pricing-table .professional .content:after{
+  border-top-color: #53CFE9;
+}
+.pricing-table .professional .pt-footer:after{
+  border-top-color: #efefef;
+}
+/*BUSINESS*/
+.pricing-table .business .title{
+  background: #E3536C;
+}
+.pricing-table .business .content,.business .pt-footer{
+  background: #EB6379;
+}
+.pricing-table .business .content:after{
+  border-top-color: #EB6379;
+}
+.pricing-table .business .pt-footer:after {
+  border-top-color: #efefef;
 }

@@ -1,0 +1,21 @@
+{% extends "documentation/basics/layout.html.twig" %}
+{% block left_navigation_introduction_class %} class="active"{% endblock %}
+{% block content %}
+<h2>Introduction to ContinuousPipe</h2>
+
+<p>ContinuousPipe is a system for continuous automated deployment of multiple environments with simple configuration.
+Utilising <strong>Docker</strong> and <strong>Kubernetes</strong> to automatically deploy new environments, dramatically speeding
+up your feedback loop and cutting lead time.</p>
+
+<p>
+    <img style="margin-bottom: 20px;" src="{{ asset('/img/cp-overview.png') }}" alt="ContinuousPipe Overview" />
+</p>
+
+<p>Built on Docker and Kubernetes you can deploy your <a href="{{ path('documentation_basics', {'page': 'images'}) }}">
+Docker compatible application</a> on <a href="{{ path('documentation_basics', {'page': 'clusters'}) }}">any cluster</a>, this can be on
+your own infrastructure or on any cloud such as AWS or GCE.</p>
+
+<p>The <a href="{{ path('documentation_basics', {'page': 'workflow'}) }}">customizable workflow</a> allows you to integrate developers, 
+QA and Product Owner(s) to produce super-fast feedback cycles at per-feature granularity.</p>
+
+{% endblock %}

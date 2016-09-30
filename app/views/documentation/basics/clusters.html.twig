@@ -1,0 +1,17 @@
+{% extends "documentation/basics/layout.html.twig" %}
+{% block left_navigation_clusters_class %} class="active"{% endblock %}
+{% block content %}
+<h2>Clusters</h2>
+
+<p>ContinuousPipe's focus is to be able to deploy properly on any Kubernetes cluster. That means that you can deploy
+any application that can run in a Docker container (understand all of yours) on your bare metal infrastructure or
+any cloud such as AWS, GCE or even Azure.</p>
+
+<p>In a nutshell, <a href="http://kubernetes.io">Kubernetes</a> is a Docker container orchestration tool being written and
+maintained by Google, that is known as one of the best container orchestration platform. Google even provide a managed
+Kubernetes cluster that you can scale by one click, known as <a href="https://cloud.google.com/container-engine/">Google Container Engine</a>.</p>
+
+<p>It is important to notice that by using some <a href="{{ path('documentation_configure', {'page': 'configuration-files'}) }}#variables">configuration variables</a>,
+you can deploy different environments on different clusters. You can therefore deploy your production environment(s) on
+an AWS cluster, using AWS cloud-native services, and your UAT (User Acceptance Testing) environments on a Google Container Engine cluster.</p>
+{% endblock %}
