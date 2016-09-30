@@ -9,7 +9,16 @@ lead times and slow feedback loops that cost the site owner time and money.</p>
 <p>Using ContinuousPipe, you can actually achieve real continuous deployment. The point here is to <strong>reduce the lead time</strong>,
 meaning the time from when the feature development starts and the time when that given feature is to production.</p>
 
-[IMAGE - Reduced workflow]
+<p style="text-align: center;">
+    <img src="{{ asset('/img/workflow-before.png') }}" />
+</p>
+
+<p>We believe that this workflow <strong>can be improved</strong> by parallelising the review tasks and deploying directly
+to production small feature, but often.</p>
+
+<p style="text-align: center;">
+    <img src="{{ asset('/img/workflow-with-continuous-pipe.png') }}" />
+</p>
 
 <h2>Integrated with your code repository</h2>
 <p>Because GitHub is more than a code repository but actually your project repository! Your default branch can be <code>production</code>
