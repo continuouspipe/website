@@ -40,6 +40,12 @@
             </ul>
         </li>
     <li{% block left_navigation_commands_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'commands'}) }}">Running commands</a></li>
+    <li{% block left_navigation_notifications_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'notifications'}) }}">Notifications</a>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="{{ path('documentation_configure', {'page': 'notifications'}) }}#github">GitHub</a></li>
+            <li><a href="{{ path('documentation_configure', {'page': 'notifications'}) }}#slack">Slack</a></li>
+        </ul>
+    </li>
     <li class="separator"></li>
 {# <li{% block left_navigation_teams_credentials_class %}{% endblock %}><a href="{{ path('documentation_configure', {'page': 'teams-and-credentials'}) }}">Teams & Credentials</a></li> #}
 </ul>
