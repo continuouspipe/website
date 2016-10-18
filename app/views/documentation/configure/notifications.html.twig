@@ -22,11 +22,11 @@ notifications:
     slack_everything:
         slack:
             webhook_url: https://...
-            when:
-                - pending
-                - running
-                - success
-                - failure
+        when:
+            - pending
+            - running
+            - success
+            - failure
 {% endcodeblock %}
 
     <h2><a name="github"></a>GitHub</h2>
