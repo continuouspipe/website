@@ -2,14 +2,13 @@
 {% block left_navigation_images_class %} class="active"{% endblock %}
 {% block content %}
 <h2>Docker images</h2>
-<p>One of the first job of ContinuousPipe is to <a href="{{ path('documentation_configure', {'page': 'images'}) }}">build your Docker images</a>. Every time you need to deploy and/or run
-tests on your codebase, CP will build and push a Docker image from your code base, to any Docker Registry.</p>
+<p>Every time you need to deploy and/or run tests on your codebase, ContinuousPipe will build and push a Docker image from your code base to any Docker Registry.</p>
 
 <p>Your own image will be stored with its own name and tag, depending of the <a href="{{ path('documentation_configure', {'page': 'images'}) }}#build-strategy">build strategy</a>
-you'll chose. They can be stored in your own Docker Registry, to the famous <a href="https://hub.docker.com">Docker Hub</a>
+you chose. They can be stored in your own Docker Registry, to the famous <a href="https://hub.docker.com">Docker Hub</a>, 
 or to powerful private repositories such as <a href="https://quay.io">quay.io</a>.</p>
 
-<p>As most of the projects, ContinuousPipe allows you to inject <a href="{{ path('documentation_configure', {'page': 'images'}) }}#build-arguments">build arguments</a>
-and share <a href="{{ path('documentation_configure', {'page': 'images'}) }}#artifacts">artifacts</a> in order to download
+<p>ContinuousPipe allows you to inject <a href="{{ path('documentation_configure', {'page': 'images'}) }}#build-arguments">build arguments</a>
+and share <a href="{{ path('documentation_configure', {'page': 'images'}) }}#artifacts">artifacts</a> to download
 private dependencies or only uses the result of the build operation in a second Docker image.</p>
 {% endblock %}
