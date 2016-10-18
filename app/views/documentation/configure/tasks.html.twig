@@ -3,8 +3,8 @@
 
 {% block content %}
     <h2><a name="list"></a>Task list</h2>
-    <p>As you've seen in the configuration files section, most of CP's configuration is about tasks. These tasks achieve a
-    specific behaviour and can be picked up independently. As now, here are the 3 official tasks:</p>
+    <p>As you've seen in the configuration files section, most of ContinuousPipe's configuration is about tasks. These tasks achieve a
+    specific behaviour and can be picked up independently. As of now, here are the 3 official tasks:</p>
 
     <ul>
         <li><a href="{{ path('documentation_configure', {'page': 'images'}) }}"><code>build</code>: Will build and push your Docker image</a></li>
@@ -31,7 +31,7 @@ tasks:
 {% endcodeblock %}
 
     <p>As with the <a href="{{ path('documentation_configure', {'page': 'configuration-files'}) }}#conditional-variables">conditional variables</a>,
-    this expression have access to a context of objects. The first part of this context is tide-related values, that are:</p>
+    this expression has access to a context of objects. The first part of this context is tide-related values:</p>
 
     <ul>
         <li><code>code_reference</code> that contains the following properties:
@@ -49,8 +49,8 @@ tasks:
 
     <h3>Task-related informations</h3>
 
-    <p>Under the <code>tasks</code> value, you can have access to information that come from the different previous tasks.
-    You need to use named tasks like in the previous examples to access to them, by their names.</p>
+    <p>Under the <code>tasks</code> value, you can have access to information that come from the previous tasks.
+    You need to use named tasks, as in the previous examples, to access to them by their names.</p>
 
     <p>The <code>deploy</code> tasks exposes the following configuration:</p>
 
