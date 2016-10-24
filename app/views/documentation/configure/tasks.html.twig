@@ -10,10 +10,8 @@
         <li><a href="{{ path('documentation_configure', {'page': 'images'}) }}"><code>build</code>: Will build and push your Docker image</a></li>
         <li><a href="{{ path('documentation_configure', {'page': 'deployments'}) }}"><code>deploy</code>: Will deploy your service(s) to a cluster</a></li>
         <li><a href="{{ path('documentation_configure', {'page': 'commands'}) }}"><code>run</code>: Will run some commands inside a deployed context</a></li>
+        <li><a href="{{ path('documentation_configure', {'page': 'wait-statuses'}) }}"><code>wait</code>: Will wait for some other GitHub statuses</a></li>
     </ul>
-
-    <p><strong>Note:</strong> there is also a <code>wait</code> (waiting for other GitHub Commit Statuses) and a <code>webhook</code>
-    (calling and waiting call from an API) task that are activated on demand. <a href="{{ path('contact') }}">Contact us.</a></p>
 
     <h2><a name="filters"></a>Conditional tasks</h2>
 
