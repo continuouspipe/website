@@ -1,18 +1,18 @@
 <?php
 
-namespace spec\Inviqa;
+namespace spec\Inviqa\Blog;
 
 use Contentful\Delivery\DynamicEntry;
 use Contentful\ResourceNotFoundException;
 use Contentful\Delivery\Query;
 use Contentful\Delivery\Client;
 use Contentful\ResourceArray;
-use Inviqa\Blog;
-use Inviqa\QueryFactory;
+use Inviqa\Blog\Post;
+use Inviqa\Blog\QueryFactory;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
-class BlogSpec extends ObjectBehavior
+class PostSpec extends ObjectBehavior
 {
     private $contentTypeId = "2wlaskgda5";
 
@@ -23,7 +23,7 @@ class BlogSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType(Blog::class);
+        $this->shouldHaveType(Post::class);
     }
 
     function it_gets_blog_posts(Client $client, QueryFactory $queryFactory)

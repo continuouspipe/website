@@ -1,12 +1,11 @@
 <?php
 
-namespace Inviqa;
+namespace Inviqa\Blog;
 
 use Contentful\Delivery\Query;
 
 class QueryFactory
 {
-
     /**
      * @param string $contentType
      *

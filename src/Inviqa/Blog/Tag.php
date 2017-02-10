@@ -1,13 +1,11 @@
 <?php
 
-namespace Inviqa;
+namespace Inviqa\Blog;
 
 use Contentful\Delivery\Client;
-use Contentful\Delivery\DynamicEntry;
-use Contentful\ResourceArray;
 use Contentful\ResourceNotFoundException;
 
-class Blog
+class Tag
 {
     /**
      * @var Client
@@ -36,33 +34,19 @@ class Blog
         $this->postContentTypeId = $postContentTypeId;
     }
 
-    /**
-     * @return ResourceArray
-     */
-    public function getBlogPosts()
-    {
-        $query = $this->queryFactory->createQuery($this->postContentTypeId);
-        return $this->client->getEntries($query);
-    }
-
-    /**
-     * @param string $slug
-     *
-     * @return DynamicEntry
-     */
-    public function getSingleBlogPost($slug)
+    public function getSingleTagByName($name)
     {
         $query = $this->queryFactory->createQuery($this->postContentTypeId);
         $query
-            ->where('fields.slug', $slug)
+            ->where('fields.name', $name)
             ->setLimit(1);
 
-        $page = $this->client->getEntries($query);
+        $tags = $this->client->getEntries($query);
 
-        if ($page->getTotal() !== 1) {
+        if ($tags->getTotal() !== 1) {
             throw new ResourceNotFoundException();
         }
 
-        return $page->offsetGet(0);
+        return $tags->offsetGet(0);
     }
 }
