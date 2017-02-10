@@ -2,6 +2,7 @@
 
 use Aptoma\Twig\Extension\MarkdownExtension;
 use Aptoma\Twig\Extension\MarkdownEngine;
+use Contentful\Delivery\Client;
 use Inviqa\Blog\Post;
 use Inviqa\Blog\QueryFactory;
 use Inviqa\Blog\Tag;
@@ -40,15 +41,15 @@ $app['twig'] = $app->share($app->extend('twig', function(\Twig_Environment $twig
 }));
 
 $app['contentfulClient'] = $app->share(function ($app) {
-    return new Contentful\Delivery\Client(getenv('contentful.accessToken'), getenv('contentful.spaceId'));
+    return new Client(getenv('CONTENTFUL_ACCESS_TOKEN'), getenv('CONTENTFUL_SPACE_ID'));
 });
 
 $app['post'] = $app->share(function ($app) {
-    return new Post($app['contentfulClient'], new QueryFactory(), getenv('contentful.post.contentType'));
+    return new Post($app['contentfulClient'], new QueryFactory(), getenv('CONTENTFUL_POST_CONTENT_TYPE'));
 });
 
 $app['tags'] = $app->share(function ($app) {
-    return new Tag($app['contentfulClient'], new QueryFactory(), getenv('contentful.tag.contentType'));
+    return new Tag($app['contentfulClient'], new QueryFactory(), getenv('CONTENTFUL_TAG_CONTENT_TYPE'));
 });
 
 $app->mount('/', require '../app/controllers/home.php');
