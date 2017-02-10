@@ -20,6 +20,17 @@ tasks:
                                     cert: ${WILDCARD_SSL_CERT}
                                     key: ${WILDCARD_SSL_KEY}
 
+                    specification:
+                        environment_variables:
+                            - name: CONTENTFUL_ACCESS_TOKEN
+                              value: ${CONTENTFUL_ACCESS_TOKEN}
+                            - name: CONTENTFUL_SPACE_ID
+                              value: ${CONTENTFUL_SPACE_ID}
+                            - name: CONTENTFUL_POST_CONTENT_TYPE
+                              value: ${CONTENTFUL_POST_CONTENT_TYPE}
+                            - name: CONTENTFUL_TAG_CONTENT_TYPE
+                              value: ${CONTENTFUL_TAG_CONTENT_TYPE}
+                              
                     deployment_strategy:
                         readiness_probe:
                             type: http
