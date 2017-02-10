@@ -1,0 +1,12 @@
+{% extends "blog/layout.html.twig" %}
+{% block left_navigation_clusters_class %} class="active"{% endblock %}
+{% block content %}
+    <h1>Blog</h1>
+    {% for post in posts %}
+        <div>
+            <h2>{{ post.getTitle() }}</h2>
+            <p>{{ post.getBody() | markdown | striptags | truncate(350) }}</p>
+            <a href="{{ path('blog-single-post', {slug: post.getSlug()}) }}" class="btn btn-large">Read more</a>
+        </div>
+    {% endfor %}
+{% endblock %}

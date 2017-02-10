@@ -1,0 +1,18 @@
+{% extends "layout.html.twig" %}
+{% block body %}
+    <section class="navigation regular">
+        {% include "_partials/header.html.twig" %}
+    </section>
+    {% block hero %}{% endblock %}
+    <div class="container blog-inner">
+        <div class="row">
+            <div class="col-md-12">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('/css/vendor/pygmentize.css') }}">
+{% endblock %}

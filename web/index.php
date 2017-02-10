@@ -1,5 +1,9 @@
 <?php
 
+use Aptoma\Twig\Extension\MarkdownExtension;
+use Aptoma\Twig\Extension\MarkdownEngine;
+use Inviqa\Blog;
+use Inviqa\QueryFactory;
 use Ramsey\Twig\CodeBlock\TokenParser\CodeBlockParser;
 use Silex\Provider\FormServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
@@ -24,13 +28,25 @@ $app['twig'] = $app->share($app->extend('twig', function(\Twig_Environment $twig
     $twig->addFunction(new \Twig_SimpleFunction('asset', function ($asset) use ($app) {
         return $app['request']->getBasePath().$asset;
     }));
+    $twig->addExtension(new Twig_Extensions_Extension_Text());
+
+    $engine = new MarkdownEngine\MichelfMarkdownEngine();
+    $twig->addExtension(new MarkdownExtension($engine));
 
     $twig->addTokenParser(new CodeBlockParser('pygments', []));
 
     return $twig;
 }));
 
+$app['contentfulClient'] = $app->share(function ($app) {
+    return new Contentful\Delivery\Client(getenv('contentful.accessToken'), getenv('contentful.spaceId'));
+});
+
+$app['blog'] = $app->share(function ($app) {
+    return new Blog($app['contentfulClient'], new QueryFactory(), getenv('contentful.post.contentType'));
+});
 
 $app->mount('/', require '../app/controllers/home.php');
 $app->mount('/docs/', require '../app/controllers/documentation.php');
+$app->mount('/blog/', require '../app/controllers/blog.php');
 $app->run();
