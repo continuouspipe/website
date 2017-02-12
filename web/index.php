@@ -10,7 +10,7 @@ use Silex\Provider\ValidatorServiceProvider;
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Silex\Application([
-    'debug' => true,
+    'debug' => getenv('DEBUG_MODE'),
 ]);
 $app->register(new FormServiceProvider());
 $app->register(new TranslationServiceProvider());
