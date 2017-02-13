@@ -13,7 +13,7 @@ $routesFactory->match('/', function () use ($app) {
     return $app['twig']->render('blog/listing.html.twig', [
         'posts' => $posts
     ]);
-})->method('GET')->bind('blog-listing');
+})->method('GET')->bind('blog');
 
 $routesFactory->match('/{slug}', function ($slug) use ($app) {
     try {
