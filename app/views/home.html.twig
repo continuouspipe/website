@@ -1,0 +1,21 @@
+{% extends "layout.html.twig" %}
+{% block body %}
+<section class="hero">
+    <section class="navigation">
+        {% include "_partials/header.html.twig" %}
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="hero-content text-center">
+                    <h1>Build and deploy containers!</h1>
+                    <p class="intro">ContinuousPipe is a continuous deployment pipeline that allows frictionless deployment of application features in isolated application environments. All while you're drinking your coffee.</p>
+                    <a href="#overview" class="btn btn-fill btn-large btn-margin-right">Overview</a>
+                    <a href="{{ path('documentation') }}" class="btn btn-accent btn-large">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="down-arrow floating-arrow"><a href="#overview"><i class="fa fa-angle-down"></i></a></div>
+</section>
+{% endblock %}

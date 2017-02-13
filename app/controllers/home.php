@@ -118,7 +118,19 @@ $routes->get('/frequently-asked-questions', function() use ($app) {
 })->bind('faq');
 
 $routes->get('/', function() use ($app) {
-    return $app['twig']->render('index.html.twig');
+    return $app['twig']->render('home.html.twig');
 })->bind('homepage');
+
+$routes->get('/quality-assurance-and-collaboration', function() use ($app) {
+    return $app['twig']->render('quality-assurance-and-collaboration.html.twig');
+})->bind('area_qa');
+
+$routes->get('/production-workloads', function() use ($app) {
+    return $app['twig']->render('production-workloads.html.twig');
+})->bind('area_prod');
+
+$routes->get('/developer-environments', function() use ($app) {
+    return $app['twig']->render('developer-environments.html.twig');
+})->bind('area_dev');
 
 return $routes;

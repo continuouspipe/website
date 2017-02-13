@@ -3,5 +3,20 @@
 <section class="navigation regular">
     {% include "_partials/header.html.twig" %}
 </section>
+<section class="navigation regular navigation-area">
+    <header>
+        <div class="cp-areas">
+            <a class="area{% block nav_area_dev_class %}{% endblock %}" href="{{ path('area_dev') }}">
+                <span data-icon="&#xe033;" class="icon"></span> Developer environment
+            </a>
+            <a class="area{% block nav_area_qa_class %}{% endblock %}" href="{{ path('area_qa') }}">
+                <span data-icon="&#xe03e;" class="icon"></span> Quality assurance & Collaboration
+            </a>
+            <a class="area{% block nav_area_prod_class %}{% endblock %}" href="{{ path('area_prod') }}">
+                <span data-icon="&#xe04b;" class="icon"></span> Production
+            </a>
+        </div>
+    </header>
+</section>
 {% block content %}{% endblock %}
 {% endblock %}
