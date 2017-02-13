@@ -6,3 +6,7 @@ app:
         - 80
     environment:
         - DEBUG_MODE=true
+        - CONTENTFUL_ACCESS_TOKEN
+        - CONTENTFUL_SPACE_ID
+        - CONTENTFUL_POST_CONTENT_TYPE
+        - CONTENTFUL_TAG_CONTENT_TYPE

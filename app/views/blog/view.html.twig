@@ -1,0 +1,14 @@
+{% extends "blog/layout.html.twig" %}
+{% block left_navigation_clusters_class %} class="active"{% endblock %}
+{% block content %}
+    <h1>{{ post.getTitle() }}</h1>
+    <p>{{ post.getDate() | date('l jS \\of F Y') }}</p>
+
+    <p>{{ post.getBody() | markdown }}</p>
+
+    <div class="badges">
+        {% for tags in post.getTags() %}
+        <a href="{{ path('blog', {tag: tags.getName()}) }}" class="badge">{{ tags.getName() }}</a>
+        {% endfor %}
+    </div>
+{% endblock %}
