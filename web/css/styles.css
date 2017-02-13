@@ -399,7 +399,7 @@ Navigation
 
 .hero {
   min-height: 750px;
-  background: url("../img/containers.jpg") center center;
+  background: url("../img/backgrounds/busy-table-alt.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -420,9 +420,22 @@ Navigation
   margin-bottom: 80px;
 }
 .hero .hero-content {
-  padding-top: 26%;
+  padding-top: 200px;
 }
-
+.hero h1 {
+  margin-bottom: 10px;
+}
+.hero .area-list {
+  margin-bottom: 100px;
+}
+.hero .area-list .area {
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
 .navigation {
   transition: all 300ms ease-in-out;
   position: fixed;
