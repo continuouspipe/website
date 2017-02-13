@@ -4,11 +4,11 @@ use Contentful\ResourceNotFoundException;
 
 $routesFactory = $app['controllers_factory'];
 $routesFactory->match('/', function () use ($app) {
-    $tag = $tagName = $app['request']->query->get('name');
-    if ($tagName) {
+    if ($tagName = $app['request']->query->get('tag')) {
         $tag = $app['tags']->getSingleTagByName($tagName);
     }
-    $posts = $app['post']->getBlogPosts($tag);
+
+    $posts = $app['post']->getBlogPosts(isset($tag) ? $tag : null);
 
     return $app['twig']->render('blog/listing.html.twig', [
         'posts' => $posts

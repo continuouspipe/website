@@ -2,15 +2,13 @@
 {% block left_navigation_clusters_class %} class="active"{% endblock %}
 {% block content %}
     <h1>{{ post.getTitle() }}</h1>
-    <p>{{ post.getDate() | date('d-m-Y') }}</p>
+    <p>{{ post.getDate() | date('l jS \\of F Y') }}</p>
 
     <p>{{ post.getBody() | markdown }}</p>
 
-    <ul>
+    <div class="badges">
         {% for tags in post.getTags() %}
-            <li>
-                <a href="{{ path('blog-listing', {name: tags.getName()}) }}">{{ tags.getName() }}</a>
-            </li>
+        <a href="{{ path('blog', {tag: tags.getName()}) }}" class="badge">{{ tags.getName() }}</a>
         {% endfor %}
-    </ul>
+    </div>
 {% endblock %}
