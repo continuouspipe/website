@@ -1,0 +1,23 @@
+Log file created at: 2017/02/14 15:42:16
+Running on machine: Feros
+Binary: Built with gc go1.7.3 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0214 15:42:16.839430   31050 root.go:141] goroutine 1 [running]:
+runtime/debug.Stack(0xc420563b08, 0x1, 0x1)
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x79
+github.com/continuouspipe/remote-environment-client/cmd.exitWithMessage(0xc42030c540, 0x3c)
+	/Users/azucca/dev/golang/src/github.com/continuouspipe/remote-environment-client/cmd/root.go:140 +0x122
+github.com/continuouspipe/remote-environment-client/cmd.checkErr(0x6aee760, 0xc420400710)
+	/Users/azucca/dev/golang/src/github.com/continuouspipe/remote-environment-client/cmd/root.go:132 +0x58
+github.com/continuouspipe/remote-environment-client/cmd.NewWatchCmd.func1(0xc4203cab40, 0xc42031b540, 0x0, 0x2)
+	/Users/azucca/dev/golang/src/github.com/continuouspipe/remote-environment-client/cmd/watch.go:53 +0x41a
+github.com/continuouspipe/remote-environment-client/vendor/github.com/spf13/cobra.(*Command).execute(0xc4203cab40, 0xc42031b380, 0x2, 0x2, 0xc4203cab40, 0xc42031b380)
+	/Users/azucca/dev/golang/src/github.com/continuouspipe/remote-environment-client/vendor/github.com/spf13/cobra/command.go:603 +0x439
+github.com/continuouspipe/remote-environment-client/vendor/github.com/spf13/cobra.(*Command).ExecuteC(0x6b614c0, 0xc420070058, 0x0, 0xc42021bb00)
+	/Users/azucca/dev/golang/src/github.com/continuouspipe/remote-environment-client/vendor/github.com/spf13/cobra/command.go:689 +0x367
+github.com/continuouspipe/remote-environment-client/vendor/github.com/spf13/cobra.(*Command).Execute(0x6b614c0, 0x0, 0x0)
+	/Users/azucca/dev/golang/src/github.com/continuouspipe/remote-environment-client/vendor/github.com/spf13/cobra/command.go:648 +0x2b
+github.com/continuouspipe/remote-environment-client/cmd.Execute()
+	/Users/azucca/dev/golang/src/github.com/continuouspipe/remote-environment-client/cmd/root.go:69 +0x31
+main.main()
+	/Users/azucca/dev/golang/src/github.com/continuouspipe/remote-environment-client/main.go:6 +0x14

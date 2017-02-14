@@ -1,0 +1,116 @@
+{% extends "regular_layout.html.twig" %}
+{% block nav_area_qa_class %} active{% endblock %}
+{% block content %}
+    <section class="intro section-padding" id="overview">
+        <div class="container">
+            <div class="row">
+                <div class="page-header">
+                    <h1>Quality Assurance and Collaboration</h1>
+                    <p>ContinuousPipe can reduce the time it takes to get new features approved by the QA team and other
+                        stakeholders. By providing an isolated environment with every pull request, you don’t need to
+                        wait for changes to be merged before getting them signed off.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe033;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Isolated Environments</h5>
+                        <p>ContinuousPipe builds an isolated environment with every Pull Request. So when you’ve
+                            finished coding your feature, you can easily share your work with the QA team and anyone
+                            else who needs to review it. In turn, they can spend less time waiting for changes to be
+                            merged to a staging environment, and give you the feedback you need to let you move your
+                            user story from ‘Awaiting QA’ to ‘Done’.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe030;" class="icon"></span>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Another Feature</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore, eaque eveniet iure
+                            laborum nostrum quae recusandae! Ab accusantium, dignissimos eos explicabo inventore, ipsa
+                            iste maiores nesciunt nihil perspiciatis recusandae.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <span data-icon="&#xe040;" class="icon"></span>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>Another Feature</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore, eaque eveniet iure
+                            laborum nostrum quae recusandae! Ab accusantium, dignissimos eos explicabo inventore, ipsa
+                            iste maiores nesciunt nihil perspiciatis recusandae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features-extra section-padding" id="assets">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="feature-list">
+                        <h3>A complete integration with GitHub</h3>
+                        <p>We consider your GitHub not only as a code repository, but also as your project
+                            repository.</p>
+                        <ul class="features-stack">
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="&#xe030;" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>"Here is the address"</h5>
+                                    <p>When creating a pull-request, just wait and a comment will appear with the
+                                        deployed environment link.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Pipeline control</h5>
+                                    <p>By using comments and/or labels, you can seamlessly control and manage the
+                                        deployment pipeline.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <span data-icon="" class="icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>That quick feedback loop</h5>
+                                    <p>Developers and QAs can approve features in parallel, merging and easily deploy
+                                        them.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="image-container">
+                        <img src="{{ asset('/img/github-workflow.png') }}" alt="GitHub workflow"
+                             class="illustration-image"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero-strip section-padding">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h2>Built to embrace your application</h2>
+                <p>ContinuousPipe already supports many different workflows. If you’d like further information, or would
+                    like to discuss how ContinuousPipe could help your organisation, drop us a line.</p>
+                <a href="{{ path('contact') }}" class="btn btn-ghost btn-accent btn-large">Let's talk!</a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,963 @@
+Log file created at: 2017/02/14 16:25:11
+Running on machine: Feros
+Binary: Built with gc go1.7.3 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0214 16:25:11.154529   33074 fsevents_darwin.go:39] 16777220
+I0214 16:25:11.161506   33074 fsevents_darwin.go:40] 30533088
+I0214 16:25:11.162492   33074 fsevents_darwin.go:50] Moditoring directory /Users/tpiper/webdev/cp/website
+I0214 16:25:11.162590   33074 fsevents_darwin.go:51] Device UUID C3B46CCA-BBD8-4E04-A25F-166C570D8FB7
+I0214 16:25:11.666220   33074 fsevents_darwin.go:64] filesystem event for 30583602(Users/tpiper/webdev/cp/website/cp-remote-logs/cp-remote.Feros.tpiper.log.INFO.20170214-162511.33074) Created IsFile 
+I0214 16:25:11.666337   33074 fsevents_darwin.go:72] skipping Created IsFile  Users/tpiper/webdev/cp/website/cp-remote-logs/cp-remote.Feros.tpiper.log.INFO.20170214-162511.33074 as is in the exclusion list
+I0214 16:25:11.666346   33074 fsevents_darwin.go:64] filesystem event for 30583608(Users/tpiper/webdev/cp/website/cp-remote-logs/cp-remote.INFO) Created IsSymLink Removed 
+I0214 16:25:11.666393   33074 fsevents_darwin.go:72] skipping Created IsSymLink Removed  Users/tpiper/webdev/cp/website/cp-remote-logs/cp-remote.INFO as is in the exclusion list
+I0214 16:25:49.817267   33074 fsevents_darwin.go:64] filesystem event for 30584756(Users/tpiper/webdev/cp/website/.git/index.lock) Removed Created IsFile 
+I0214 16:25:49.817394   33074 fsevents_darwin.go:72] skipping Removed Created IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:25:49.817405   33074 fsevents_darwin.go:64] filesystem event for 30584769(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Created Renamed Modified 
+I0214 16:25:49.817449   33074 fsevents_darwin.go:72] skipping IsFile Created Renamed Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:25:49.817463   33074 fsevents_darwin.go:64] filesystem event for 30584773(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 16:25:49.817506   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:25:49.817518   33074 fsevents_darwin.go:64] filesystem event for 30584776(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:25:49.817556   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:26:20.016346   33074 fsevents_darwin.go:64] filesystem event for 30585480(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile Removed 
+I0214 16:26:20.016736   33074 fsevents_darwin.go:72] skipping Created IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:26:22.758629   33074 fsevents_darwin.go:64] filesystem event for 30585499(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Created Renamed Modified 
+I0214 16:26:22.758788   33074 fsevents_darwin.go:72] skipping IsFile Created Renamed Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:26:22.758828   33074 fsevents_darwin.go:64] filesystem event for 30585503(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:26:22.758901   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:26:22.758910   33074 fsevents_darwin.go:64] filesystem event for 30585506(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 16:26:22.758959   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:28:00.428290   33074 fsevents_darwin.go:64] filesystem event for 30586747(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created IsFile Renamed Modified 
+I0214 16:28:00.428577   33074 fsevents_darwin.go:72] skipping Created IsFile Renamed Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:28:00.428596   33074 fsevents_darwin.go:64] filesystem event for 30586751(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:28:00.428802   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:28:00.428817   33074 fsevents_darwin.go:64] filesystem event for 30586754(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:28:00.428975   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:28:20.327540   33074 fsevents_darwin.go:64] filesystem event for 30587221(Users/tpiper/webdev/cp/website/.git/index.lock) Removed IsFile Created 
+I0214 16:28:20.327703   33074 fsevents_darwin.go:72] skipping Removed IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:28:22.359538   33074 fsevents_darwin.go:64] filesystem event for 30587266(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_tmp___) Created Renamed Modified IsFile 
+I0214 16:28:22.359647   33074 fsevents_darwin.go:72] skipping Created Renamed Modified IsFile  Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:28:22.359659   33074 fsevents_darwin.go:64] filesystem event for 30587270(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig) Renamed ChangeOwner IsFile 
+I0214 16:28:22.359970   33074 fsevents_darwin.go:64] filesystem event for 30587273(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_old___) Renamed Removed IsFile 
+I0214 16:28:22.360168   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_old___ as is in the exclusion list
+I0214 16:28:22.360182   33074 fsevents_darwin.go:64] filesystem event for 30587286(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified IsFile Renamed Created 
+I0214 16:28:22.360258   33074 fsevents_darwin.go:72] skipping Modified IsFile Renamed Created  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:28:22.360323   33074 fsevents_darwin.go:64] filesystem event for 30587290(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile ChangeOwner Renamed 
+I0214 16:28:22.360595   33074 fsevents_darwin.go:72] skipping IsFile ChangeOwner Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:28:22.360614   33074 fsevents_darwin.go:64] filesystem event for 30587293(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 16:28:22.360726   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:28:22.859528   33074 fsevents_darwin.go:64] filesystem event for 30587305(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:28:22.859764   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:28:23.165935   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:28:23.166158   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:28:23.166331   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=quality-assurance-and-collaboration.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:28:23.611290   33074 exec.go:60] sending incremental file list
+I0214 16:28:23.621415   33074 exec.go:60] ./
+I0214 16:28:23.621447   33074 exec.go:60] quality-assurance-and-collaboration.html.twig
+I0214 16:28:23.693434   33074 exec.go:60] 
+I0214 16:28:23.693473   33074 exec.go:60] sent 1,454 bytes  received 80 bytes  3,068.00 bytes/sec
+I0214 16:28:23.693479   33074 exec.go:60] total size is 5,292  speedup is 3.45
+I0214 16:28:26.587036   33074 fsevents_darwin.go:64] filesystem event for 30587355(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:28:26.587573   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:28:36.419262   33074 fsevents_darwin.go:64] filesystem event for 30587514(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_tmp___) Created Modified Renamed IsFile 
+I0214 16:28:36.419597   33074 fsevents_darwin.go:72] skipping Created Modified Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:28:36.419610   33074 fsevents_darwin.go:64] filesystem event for 30587518(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig) Renamed IsFile ChangeOwner 
+I0214 16:28:36.419853   33074 fsevents_darwin.go:64] filesystem event for 30587521(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_old___) IsFile Removed Renamed 
+I0214 16:28:36.419906   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_old___ as is in the exclusion list
+I0214 16:28:36.419918   33074 fsevents_darwin.go:64] filesystem event for 30587534(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Created Renamed Modified 
+I0214 16:28:36.419962   33074 fsevents_darwin.go:72] skipping IsFile Created Renamed Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:28:36.419972   33074 fsevents_darwin.go:64] filesystem event for 30587538(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile ChangeOwner Renamed 
+I0214 16:28:36.420010   33074 fsevents_darwin.go:72] skipping IsFile ChangeOwner Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:28:36.420019   33074 fsevents_darwin.go:64] filesystem event for 30587541(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 16:28:36.420060   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:28:36.919173   33074 fsevents_darwin.go:64] filesystem event for 30587573(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 16:28:36.919300   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:28:37.164509   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:28:37.164574   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:28:37.164780   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=quality-assurance-and-collaboration.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:28:37.589230   33074 exec.go:60] sending incremental file list
+I0214 16:28:37.598586   33074 exec.go:60] ./
+I0214 16:28:37.598669   33074 exec.go:60] quality-assurance-and-collaboration.html.twig
+I0214 16:28:37.675770   33074 exec.go:60] 
+I0214 16:28:37.675801   33074 exec.go:60] sent 956 bytes  received 86 bytes  2,084.00 bytes/sec
+I0214 16:28:37.675814   33074 exec.go:60] total size is 5,306  speedup is 5.09
+I0214 16:28:39.985022   33074 fsevents_darwin.go:64] filesystem event for 30587847(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified Created Renamed IsFile 
+I0214 16:28:39.985167   33074 fsevents_darwin.go:72] skipping Modified Created Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:28:39.985190   33074 fsevents_darwin.go:64] filesystem event for 30587851(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner Renamed IsFile 
+I0214 16:28:39.985244   33074 fsevents_darwin.go:72] skipping ChangeOwner Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:28:39.985253   33074 fsevents_darwin.go:64] filesystem event for 30587854(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Removed Renamed 
+I0214 16:28:39.985289   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:28:50.075962   33074 fsevents_darwin.go:64] filesystem event for 30587964(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created 
+I0214 16:28:50.076103   33074 fsevents_darwin.go:72] skipping IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:28:50.575522   33074 fsevents_darwin.go:64] filesystem event for 30587967(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Removed 
+I0214 16:28:50.575652   33074 fsevents_darwin.go:72] skipping IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:29:00.756336   33074 fsevents_darwin.go:64] filesystem event for 30588367(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_tmp___) Modified Created Renamed IsFile 
+I0214 16:29:00.758548   33074 fsevents_darwin.go:72] skipping Modified Created Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:29:00.759339   33074 fsevents_darwin.go:64] filesystem event for 30588371(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig) Renamed ChangeOwner IsFile 
+I0214 16:29:00.759887   33074 fsevents_darwin.go:64] filesystem event for 30588374(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_old___) Removed IsFile Renamed 
+I0214 16:29:00.760039   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_old___ as is in the exclusion list
+I0214 16:29:00.760064   33074 fsevents_darwin.go:64] filesystem event for 30588387(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Created Modified IsFile 
+I0214 16:29:00.760156   33074 fsevents_darwin.go:72] skipping Renamed Created Modified IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:29:00.760165   33074 fsevents_darwin.go:64] filesystem event for 30588391(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner Renamed IsFile 
+I0214 16:29:00.760220   33074 fsevents_darwin.go:72] skipping ChangeOwner Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:29:00.760228   33074 fsevents_darwin.go:64] filesystem event for 30588394(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 16:29:00.760292   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:29:01.256624   33074 fsevents_darwin.go:64] filesystem event for 30588426(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile Removed 
+I0214 16:29:01.256792   33074 fsevents_darwin.go:72] skipping Created IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:29:01.666254   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:29:01.666298   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:29:01.666515   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=quality-assurance-and-collaboration.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:29:02.090220   33074 exec.go:60] sending incremental file list
+I0214 16:29:02.102541   33074 exec.go:60] ./
+I0214 16:29:02.102578   33074 exec.go:60] quality-assurance-and-collaboration.html.twig
+I0214 16:29:02.179876   33074 exec.go:60] 
+I0214 16:29:02.179919   33074 exec.go:60] sent 6,188 bytes  received 86 bytes  4,182.67 bytes/sec
+I0214 16:29:02.179928   33074 exec.go:60] total size is 5,974  speedup is 0.95
+I0214 16:29:06.864281   33074 fsevents_darwin.go:64] filesystem event for 30588488(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Modified Renamed IsFile 
+I0214 16:29:06.864418   33074 fsevents_darwin.go:72] skipping Created Modified Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:29:06.864432   33074 fsevents_darwin.go:64] filesystem event for 30588492(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:29:06.864516   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:29:06.864525   33074 fsevents_darwin.go:64] filesystem event for 30588495(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed IsFile Removed 
+I0214 16:29:06.864584   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:29:15.719856   33074 fsevents_darwin.go:64] filesystem event for 30588663(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 16:29:15.720089   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:29:55.597279   33074 fsevents_darwin.go:64] filesystem event for 30589278(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_tmp___) Modified Created Renamed IsFile 
+I0214 16:29:55.597552   33074 fsevents_darwin.go:72] skipping Modified Created Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:29:55.597568   33074 fsevents_darwin.go:64] filesystem event for 30589282(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig) Renamed ChangeOwner IsFile 
+I0214 16:29:55.597966   33074 fsevents_darwin.go:64] filesystem event for 30589285(Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_old___) IsFile Renamed Removed 
+I0214 16:29:55.598125   33074 fsevents_darwin.go:72] skipping IsFile Renamed Removed  Users/tpiper/webdev/cp/website/app/views/features/quality-assurance-and-collaboration.html.twig___jb_old___ as is in the exclusion list
+I0214 16:29:55.598140   33074 fsevents_darwin.go:64] filesystem event for 30589298(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Renamed Modified IsFile 
+I0214 16:29:55.598234   33074 fsevents_darwin.go:72] skipping Created Renamed Modified IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:29:55.598245   33074 fsevents_darwin.go:64] filesystem event for 30589302(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 16:29:55.598316   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:29:55.598327   33074 fsevents_darwin.go:64] filesystem event for 30589305(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:29:55.598425   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:29:55.598436   33074 fsevents_darwin.go:64] filesystem event for 30589346(Users/tpiper/webdev/cp/website/.git/index.lock) Removed Created IsFile 
+I0214 16:29:55.598529   33074 fsevents_darwin.go:72] skipping Removed Created IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:29:56.166467   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:29:56.166550   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:29:56.166681   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=quality-assurance-and-collaboration.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:29:56.592426   33074 exec.go:60] sending incremental file list
+I0214 16:29:56.602654   33074 exec.go:60] ./
+I0214 16:29:56.602718   33074 exec.go:60] quality-assurance-and-collaboration.html.twig
+I0214 16:29:56.682173   33074 exec.go:60] 
+I0214 16:29:56.682204   33074 exec.go:60] sent 2,739 bytes  received 92 bytes  5,662.00 bytes/sec
+I0214 16:29:56.682210   33074 exec.go:60] total size is 6,375  speedup is 2.25
+I0214 16:30:21.555045   33074 fsevents_darwin.go:64] filesystem event for 30589528(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified IsFile Created Renamed 
+I0214 16:30:21.555226   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:30:21.555248   33074 fsevents_darwin.go:64] filesystem event for 30589532(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 16:30:21.555304   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:30:21.555320   33074 fsevents_darwin.go:64] filesystem event for 30589535(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:30:21.555385   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:30:39.329621   33074 fsevents_darwin.go:64] filesystem event for 30589746(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 16:30:39.329752   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:30:50.186970   33074 fsevents_darwin.go:64] filesystem event for 30590121(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Modified IsFile Created Renamed 
+I0214 16:30:50.187175   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:30:50.187200   33074 fsevents_darwin.go:64] filesystem event for 30590125(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) Renamed ChangeOwner IsFile 
+I0214 16:30:50.187497   33074 fsevents_darwin.go:64] filesystem event for 30590128(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Removed Renamed IsFile 
+I0214 16:30:50.187761   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:30:50.688177   33074 fsevents_darwin.go:64] filesystem event for 30590141(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified IsFile Created Renamed 
+I0214 16:30:50.691147   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:30:50.691403   33074 fsevents_darwin.go:64] filesystem event for 30590145(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:30:50.691572   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:30:50.691595   33074 fsevents_darwin.go:64] filesystem event for 30590148(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Removed Renamed 
+I0214 16:30:50.691679   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:30:51.164562   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:30:51.164594   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:30:51.164899   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:30:51.188905   33074 fsevents_darwin.go:64] filesystem event for 30590180(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Removed Created 
+I0214 16:30:51.189229   33074 fsevents_darwin.go:72] skipping IsFile Removed Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:30:51.678538   33074 exec.go:60] sending incremental file list
+I0214 16:30:51.689504   33074 exec.go:60] ./
+I0214 16:30:51.689522   33074 exec.go:60] production-workloads.html.twig
+I0214 16:30:51.759896   33074 exec.go:60] 
+I0214 16:30:51.759931   33074 exec.go:60] sent 1,386 bytes  received 80 bytes  2,932.00 bytes/sec
+I0214 16:30:51.759937   33074 exec.go:60] total size is 4,987  speedup is 3.40
+I0214 16:30:55.484049   33074 fsevents_darwin.go:64] filesystem event for 30590244(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Renamed Modified IsFile 
+I0214 16:30:55.484177   33074 fsevents_darwin.go:72] skipping Created Renamed Modified IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:30:55.484189   33074 fsevents_darwin.go:64] filesystem event for 30590248(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile ChangeOwner Renamed 
+I0214 16:30:55.484251   33074 fsevents_darwin.go:72] skipping IsFile ChangeOwner Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:30:55.484259   33074 fsevents_darwin.go:64] filesystem event for 30590251(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:30:55.484327   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:31:01.607173   33074 fsevents_darwin.go:64] filesystem event for 30590300(Users/tpiper/webdev/cp/website/.git/index.lock) Removed IsFile Created 
+I0214 16:31:01.607478   33074 fsevents_darwin.go:72] skipping Removed IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:31:05.776998   33074 fsevents_darwin.go:64] filesystem event for 30590367(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) IsFile Created Modified Renamed 
+I0214 16:31:05.777945   33074 fsevents_darwin.go:72] skipping IsFile Created Modified Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:31:05.778049   33074 fsevents_darwin.go:64] filesystem event for 30590371(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) ChangeOwner IsFile Renamed 
+I0214 16:31:05.778650   33074 fsevents_darwin.go:64] filesystem event for 30590374(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed IsFile Removed 
+I0214 16:31:05.778877   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:31:05.778890   33074 fsevents_darwin.go:64] filesystem event for 30590387(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Modified Created IsFile 
+I0214 16:31:05.778974   33074 fsevents_darwin.go:72] skipping Renamed Modified Created IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:31:05.778992   33074 fsevents_darwin.go:64] filesystem event for 30590391(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:31:05.779123   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:31:05.779132   33074 fsevents_darwin.go:64] filesystem event for 30590394(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 16:31:05.779199   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:31:06.303917   33074 fsevents_darwin.go:64] filesystem event for 30590426(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile Removed 
+I0214 16:31:06.304124   33074 fsevents_darwin.go:72] skipping Created IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:31:06.666292   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:31:06.666317   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:31:06.666549   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:31:07.071955   33074 exec.go:60] sending incremental file list
+I0214 16:31:07.082338   33074 exec.go:60] ./
+I0214 16:31:07.082407   33074 exec.go:60] production-workloads.html.twig
+I0214 16:31:07.156352   33074 exec.go:60] 
+I0214 16:31:07.156400   33074 exec.go:60] sent 887 bytes  received 86 bytes  648.67 bytes/sec
+I0214 16:31:07.156406   33074 exec.go:60] total size is 4,962  speedup is 5.10
+I0214 16:31:16.801891   33074 fsevents_darwin.go:64] filesystem event for 30590813(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Modified IsFile Created 
+I0214 16:31:16.802066   33074 fsevents_darwin.go:72] skipping Renamed Modified IsFile Created  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:31:16.802098   33074 fsevents_darwin.go:64] filesystem event for 30590817(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed IsFile ChangeOwner 
+I0214 16:31:16.802208   33074 fsevents_darwin.go:72] skipping Renamed IsFile ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:31:16.802246   33074 fsevents_darwin.go:64] filesystem event for 30590820(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Removed Renamed 
+I0214 16:31:16.802351   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:31:25.807130   33074 fsevents_darwin.go:64] filesystem event for 30591153(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile Removed 
+I0214 16:31:25.807845   33074 fsevents_darwin.go:72] skipping Created IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:31:54.124967   33074 fsevents_darwin.go:64] filesystem event for 30591367(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Created IsFile Modified Renamed 
+I0214 16:31:54.125233   33074 fsevents_darwin.go:72] skipping Created IsFile Modified Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:31:54.125249   33074 fsevents_darwin.go:64] filesystem event for 30591371(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) IsFile ChangeOwner Renamed 
+I0214 16:31:54.125601   33074 fsevents_darwin.go:64] filesystem event for 30591374(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed IsFile Removed 
+I0214 16:31:54.125777   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:31:54.125807   33074 fsevents_darwin.go:64] filesystem event for 30591387(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Modified Renamed IsFile 
+I0214 16:31:54.125927   33074 fsevents_darwin.go:72] skipping Created Modified Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:31:54.125940   33074 fsevents_darwin.go:64] filesystem event for 30591391(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed IsFile ChangeOwner 
+I0214 16:31:54.126047   33074 fsevents_darwin.go:72] skipping Renamed IsFile ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:31:54.126058   33074 fsevents_darwin.go:64] filesystem event for 30591394(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Renamed Removed 
+I0214 16:31:54.126137   33074 fsevents_darwin.go:72] skipping IsFile Renamed Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:31:54.626135   33074 fsevents_darwin.go:64] filesystem event for 30591426(Users/tpiper/webdev/cp/website/.git/index.lock) Removed IsFile Created 
+I0214 16:31:54.626388   33074 fsevents_darwin.go:72] skipping Removed IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:31:54.665367   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:31:54.665399   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:31:54.665553   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:31:55.079189   33074 exec.go:60] sending incremental file list
+I0214 16:31:55.089313   33074 exec.go:60] ./
+I0214 16:31:55.089341   33074 exec.go:60] production-workloads.html.twig
+I0214 16:31:55.164502   33074 exec.go:60] 
+I0214 16:31:55.164535   33074 exec.go:60] sent 5,739 bytes  received 86 bytes  3,883.33 bytes/sec
+I0214 16:31:55.164540   33074 exec.go:60] total size is 5,555  speedup is 0.95
+I0214 16:32:45.226976   33074 fsevents_darwin.go:64] filesystem event for 30591787(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified Renamed IsFile Created 
+I0214 16:32:45.227208   33074 fsevents_darwin.go:72] skipping Modified Renamed IsFile Created  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:32:45.227227   33074 fsevents_darwin.go:64] filesystem event for 30591791(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:32:45.227328   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:32:45.227341   33074 fsevents_darwin.go:64] filesystem event for 30591794(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Removed Renamed 
+I0214 16:32:45.229710   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:32:56.984576   33074 fsevents_darwin.go:64] filesystem event for 30591981(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Created IsFile Modified 
+I0214 16:32:56.984709   33074 fsevents_darwin.go:72] skipping Renamed Created IsFile Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:32:56.984730   33074 fsevents_darwin.go:64] filesystem event for 30591985(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:32:56.984817   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:32:56.984920   33074 fsevents_darwin.go:64] filesystem event for 30591988(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:32:56.985018   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:33:10.347107   33074 fsevents_darwin.go:64] filesystem event for 30592196(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Modified IsFile Renamed 
+I0214 16:33:10.347277   33074 fsevents_darwin.go:72] skipping Created Modified IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:33:10.347299   33074 fsevents_darwin.go:64] filesystem event for 30592200(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:33:10.347388   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:33:10.347403   33074 fsevents_darwin.go:64] filesystem event for 30592203(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:33:10.347457   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:33:14.931422   33074 fsevents_darwin.go:64] filesystem event for 30592225(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Created Modified IsFile 
+I0214 16:33:14.931570   33074 fsevents_darwin.go:72] skipping Renamed Created Modified IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:33:14.931589   33074 fsevents_darwin.go:64] filesystem event for 30592229(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 16:33:14.931668   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:33:14.931682   33074 fsevents_darwin.go:64] filesystem event for 30592232(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 16:33:14.931772   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:33:36.088615   33074 fsevents_darwin.go:64] filesystem event for 30592677(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified IsFile Created Renamed 
+I0214 16:33:36.088748   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:33:36.088769   33074 fsevents_darwin.go:64] filesystem event for 30592681(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:33:36.088919   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:33:36.088931   33074 fsevents_darwin.go:64] filesystem event for 30592684(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:33:36.088996   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:33:52.788328   33074 fsevents_darwin.go:64] filesystem event for 30592831(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile Removed 
+I0214 16:33:52.788513   33074 fsevents_darwin.go:72] skipping Created IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:34:01.015663   33074 fsevents_darwin.go:64] filesystem event for 30593246(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Renamed Created Modified IsFile 
+I0214 16:34:01.015953   33074 fsevents_darwin.go:72] skipping Renamed Created Modified IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:34:01.015970   33074 fsevents_darwin.go:64] filesystem event for 30593250(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) ChangeOwner IsFile Renamed 
+I0214 16:34:01.016304   33074 fsevents_darwin.go:64] filesystem event for 30593253(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed IsFile Removed 
+I0214 16:34:01.016447   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:34:01.515859   33074 fsevents_darwin.go:64] filesystem event for 30593266(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Modified IsFile Renamed 
+I0214 16:34:01.515986   33074 fsevents_darwin.go:72] skipping Created Modified IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:34:01.516003   33074 fsevents_darwin.go:64] filesystem event for 30593270(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed IsFile ChangeOwner 
+I0214 16:34:01.516105   33074 fsevents_darwin.go:72] skipping Renamed IsFile ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:34:01.516119   33074 fsevents_darwin.go:64] filesystem event for 30593273(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed IsFile Removed 
+I0214 16:34:01.516192   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:34:01.667703   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:34:01.667803   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:34:01.667952   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:34:02.016307   33074 fsevents_darwin.go:64] filesystem event for 30593285(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 16:34:02.016639   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:34:02.110235   33074 exec.go:60] sending incremental file list
+I0214 16:34:02.119939   33074 exec.go:60] ./
+I0214 16:34:02.119955   33074 exec.go:60] production-workloads.html.twig
+I0214 16:34:02.203364   33074 exec.go:60] 
+I0214 16:34:02.203382   33074 exec.go:60] sent 810 bytes  received 86 bytes  597.33 bytes/sec
+I0214 16:34:02.203488   33074 exec.go:60] total size is 6,149  speedup is 6.86
+I0214 16:34:07.107773   33074 fsevents_darwin.go:64] filesystem event for 30593382(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified IsFile Created Renamed 
+I0214 16:34:07.107908   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:34:07.107946   33074 fsevents_darwin.go:64] filesystem event for 30593386(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:34:07.108025   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:34:07.108038   33074 fsevents_darwin.go:64] filesystem event for 30593389(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 16:34:07.108115   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:34:13.771516   33074 fsevents_darwin.go:64] filesystem event for 30593492(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 16:34:13.771740   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:34:20.306454   33074 fsevents_darwin.go:64] filesystem event for 30593831(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Modified Renamed Created IsFile 
+I0214 16:34:20.306743   33074 fsevents_darwin.go:72] skipping Modified Renamed Created IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:34:20.306760   33074 fsevents_darwin.go:64] filesystem event for 30593835(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) ChangeOwner IsFile Renamed 
+I0214 16:34:20.307187   33074 fsevents_darwin.go:64] filesystem event for 30593838(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed Removed IsFile 
+I0214 16:34:20.307425   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:34:20.307447   33074 fsevents_darwin.go:64] filesystem event for 30593851(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified Created IsFile Renamed 
+I0214 16:34:20.307589   33074 fsevents_darwin.go:72] skipping Modified Created IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:34:20.307679   33074 fsevents_darwin.go:64] filesystem event for 30593855(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:34:20.309760   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:34:20.309816   33074 fsevents_darwin.go:64] filesystem event for 30593858(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed IsFile Removed 
+I0214 16:34:20.310421   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:34:20.806444   33074 fsevents_darwin.go:64] filesystem event for 30593917(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Removed Created 
+I0214 16:34:20.806574   33074 fsevents_darwin.go:72] skipping IsFile Removed Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:34:21.163880   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:34:21.163908   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:34:21.164018   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:34:21.713695   33074 exec.go:60] sending incremental file list
+I0214 16:34:21.726170   33074 exec.go:60] ./
+I0214 16:34:21.726183   33074 exec.go:60] production-workloads.html.twig
+I0214 16:34:21.801642   33074 exec.go:60] 
+I0214 16:34:21.801668   33074 exec.go:60] sent 1,295 bytes  received 92 bytes  2,774.00 bytes/sec
+I0214 16:34:21.801677   33074 exec.go:60] total size is 6,528  speedup is 4.71
+I0214 16:34:39.931727   33074 fsevents_darwin.go:64] filesystem event for 30594752(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:34:39.932042   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:34:44.715052   33074 fsevents_darwin.go:64] filesystem event for 30594819(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Modified Created IsFile Renamed 
+I0214 16:34:44.715359   33074 fsevents_darwin.go:72] skipping Modified Created IsFile Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:34:44.715370   33074 fsevents_darwin.go:64] filesystem event for 30594823(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) Renamed ChangeOwner IsFile 
+I0214 16:34:44.715612   33074 fsevents_darwin.go:64] filesystem event for 30594826(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Removed IsFile Renamed 
+I0214 16:34:44.715719   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:34:44.715734   33074 fsevents_darwin.go:64] filesystem event for 30594839(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified IsFile Created Renamed 
+I0214 16:34:44.715800   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:34:44.715817   33074 fsevents_darwin.go:64] filesystem event for 30594843(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner Renamed IsFile 
+I0214 16:34:44.715866   33074 fsevents_darwin.go:72] skipping ChangeOwner Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:34:44.715883   33074 fsevents_darwin.go:64] filesystem event for 30594846(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:34:44.715965   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:34:45.215605   33074 fsevents_darwin.go:64] filesystem event for 30594914(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:34:45.215813   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:34:45.667256   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:34:45.667285   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:34:45.667474   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:34:46.145572   33074 exec.go:60] sending incremental file list
+I0214 16:34:46.157587   33074 exec.go:60] ./
+I0214 16:34:46.157610   33074 exec.go:60] production-workloads.html.twig
+I0214 16:34:46.242274   33074 exec.go:60] 
+I0214 16:34:46.242311   33074 exec.go:60] sent 928 bytes  received 98 bytes  684.00 bytes/sec
+I0214 16:34:46.242320   33074 exec.go:60] total size is 6,536  speedup is 6.37
+I0214 16:35:11.683703   33074 fsevents_darwin.go:64] filesystem event for 30595801(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Modified IsFile Created 
+I0214 16:35:11.683966   33074 fsevents_darwin.go:72] skipping Renamed Modified IsFile Created  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:35:11.683998   33074 fsevents_darwin.go:64] filesystem event for 30595805(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:35:11.684159   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:35:11.684182   33074 fsevents_darwin.go:64] filesystem event for 30595808(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:35:11.684396   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:35:20.964947   33074 fsevents_darwin.go:64] filesystem event for 30596214(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile 
+I0214 16:35:20.965160   33074 fsevents_darwin.go:72] skipping Created IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:35:21.464709   33074 fsevents_darwin.go:64] filesystem event for 30596217(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Removed 
+I0214 16:35:21.464948   33074 fsevents_darwin.go:72] skipping IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:35:30.867950   33074 fsevents_darwin.go:64] filesystem event for 30596388(Users/tpiper/webdev/cp/website/app/views/features/developer-environments.html.twig___jb_tmp___) IsFile Created Renamed Modified 
+I0214 16:35:30.868242   33074 fsevents_darwin.go:72] skipping IsFile Created Renamed Modified  Users/tpiper/webdev/cp/website/app/views/features/developer-environments.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:35:30.868281   33074 fsevents_darwin.go:64] filesystem event for 30596392(Users/tpiper/webdev/cp/website/app/views/features/developer-environments.html.twig) IsFile Renamed ChangeOwner 
+I0214 16:35:30.868729   33074 fsevents_darwin.go:64] filesystem event for 30596395(Users/tpiper/webdev/cp/website/app/views/features/developer-environments.html.twig___jb_old___) Removed Renamed IsFile 
+I0214 16:35:30.868909   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/developer-environments.html.twig___jb_old___ as is in the exclusion list
+I0214 16:35:30.868920   33074 fsevents_darwin.go:64] filesystem event for 30596408(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Modified IsFile Renamed 
+I0214 16:35:30.868998   33074 fsevents_darwin.go:72] skipping Created Modified IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:35:30.869008   33074 fsevents_darwin.go:64] filesystem event for 30596412(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile ChangeOwner Renamed 
+I0214 16:35:30.869106   33074 fsevents_darwin.go:72] skipping IsFile ChangeOwner Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:35:30.869117   33074 fsevents_darwin.go:64] filesystem event for 30596415(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed IsFile Removed 
+I0214 16:35:30.869190   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:35:31.367790   33074 fsevents_darwin.go:64] filesystem event for 30596447(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:35:31.367928   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:35:31.664785   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:35:31.664811   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:35:31.665557   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=developer-environments.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:35:32.091237   33074 exec.go:60] sending incremental file list
+I0214 16:35:32.101962   33074 exec.go:60] ./
+I0214 16:35:32.101995   33074 exec.go:60] developer-environments.html.twig
+I0214 16:35:32.175492   33074 exec.go:60] 
+I0214 16:35:32.175519   33074 exec.go:60] sent 1,039 bytes  received 128 bytes  778.00 bytes/sec
+I0214 16:35:32.175525   33074 exec.go:60] total size is 5,664  speedup is 4.85
+I0214 16:35:45.914084   33074 fsevents_darwin.go:64] filesystem event for 30596697(Users/tpiper/webdev/cp/website/.git/index.lock) Removed IsFile Created 
+I0214 16:35:45.914316   33074 fsevents_darwin.go:72] skipping Removed IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:35:48.067914   33074 fsevents_darwin.go:64] filesystem event for 30596719(Users/tpiper/webdev/cp/website/app/views/features/developer-environments.html.twig___jb_tmp___) IsFile Created Modified Renamed 
+I0214 16:35:48.068280   33074 fsevents_darwin.go:72] skipping IsFile Created Modified Renamed  Users/tpiper/webdev/cp/website/app/views/features/developer-environments.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:35:48.068300   33074 fsevents_darwin.go:64] filesystem event for 30596723(Users/tpiper/webdev/cp/website/app/views/features/developer-environments.html.twig) IsFile Renamed ChangeOwner 
+I0214 16:35:48.070670   33074 fsevents_darwin.go:64] filesystem event for 30596726(Users/tpiper/webdev/cp/website/app/views/features/developer-environments.html.twig___jb_old___) Removed Renamed IsFile 
+I0214 16:35:48.070827   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/developer-environments.html.twig___jb_old___ as is in the exclusion list
+I0214 16:35:48.070843   33074 fsevents_darwin.go:64] filesystem event for 30596739(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Modified IsFile Renamed 
+I0214 16:35:48.070928   33074 fsevents_darwin.go:72] skipping Created Modified IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:35:48.070938   33074 fsevents_darwin.go:64] filesystem event for 30596743(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:35:48.071002   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:35:48.071011   33074 fsevents_darwin.go:64] filesystem event for 30596746(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 16:35:48.071098   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:35:48.592552   33074 fsevents_darwin.go:64] filesystem event for 30596787(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 16:35:48.592793   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:35:48.663219   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:35:48.663268   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:35:48.663431   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=developer-environments.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:35:49.142713   33074 exec.go:60] sending incremental file list
+I0214 16:35:49.153055   33074 exec.go:60] ./
+I0214 16:35:49.153104   33074 exec.go:60] developer-environments.html.twig
+I0214 16:35:49.230138   33074 exec.go:60] 
+I0214 16:35:49.230154   33074 exec.go:60] sent 688 bytes  received 92 bytes  520.00 bytes/sec
+I0214 16:35:49.230166   33074 exec.go:60] total size is 3,284  speedup is 4.21
+I0214 16:39:03.386283   33074 fsevents_darwin.go:64] filesystem event for 30599720(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Modified Created IsFile 
+I0214 16:39:03.386590   33074 fsevents_darwin.go:72] skipping Renamed Modified Created IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:39:03.386621   33074 fsevents_darwin.go:64] filesystem event for 30599724(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:39:03.386708   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:39:03.386724   33074 fsevents_darwin.go:64] filesystem event for 30599727(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed IsFile Removed 
+I0214 16:39:03.386832   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:41:37.733036   33074 fsevents_darwin.go:64] filesystem event for 30602009(Users/tpiper/webdev/cp/website/.git/index.lock) Removed IsFile Created 
+I0214 16:41:37.733153   33074 fsevents_darwin.go:72] skipping Removed IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:43:09.959471   33074 fsevents_darwin.go:64] filesystem event for 30602696(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Renamed Modified IsFile Created 
+I0214 16:43:09.959691   33074 fsevents_darwin.go:72] skipping Renamed Modified IsFile Created  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:43:09.959711   33074 fsevents_darwin.go:64] filesystem event for 30602700(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) IsFile Renamed ChangeOwner 
+I0214 16:43:09.960060   33074 fsevents_darwin.go:64] filesystem event for 30602703(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Removed Renamed IsFile 
+I0214 16:43:09.960218   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:43:09.960228   33074 fsevents_darwin.go:64] filesystem event for 30602716(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified Created Renamed IsFile 
+I0214 16:43:09.960353   33074 fsevents_darwin.go:72] skipping Modified Created Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:43:09.960368   33074 fsevents_darwin.go:64] filesystem event for 30602720(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner Renamed IsFile 
+I0214 16:43:09.960458   33074 fsevents_darwin.go:72] skipping ChangeOwner Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:43:09.960467   33074 fsevents_darwin.go:64] filesystem event for 30602723(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:43:09.960573   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:43:10.459827   33074 fsevents_darwin.go:64] filesystem event for 30602815(Users/tpiper/webdev/cp/website/.git/index.lock) Removed IsFile Created 
+I0214 16:43:10.460096   33074 fsevents_darwin.go:72] skipping Removed IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:43:10.663089   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:43:10.663164   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:43:10.663277   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:43:11.165621   33074 exec.go:60] sending incremental file list
+I0214 16:43:11.178772   33074 exec.go:60] ./
+I0214 16:43:11.178787   33074 exec.go:60] production-workloads.html.twig
+I0214 16:43:11.261624   33074 exec.go:60] 
+I0214 16:43:11.261652   33074 exec.go:60] sent 977 bytes  received 98 bytes  716.67 bytes/sec
+I0214 16:43:11.261667   33074 exec.go:60] total size is 7,057  speedup is 6.56
+I0214 16:43:28.848170   33074 fsevents_darwin.go:64] filesystem event for 30603099(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Renamed IsFile Modified 
+I0214 16:43:28.848359   33074 fsevents_darwin.go:72] skipping Created Renamed IsFile Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:43:28.848373   33074 fsevents_darwin.go:64] filesystem event for 30603103(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 16:43:28.848488   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:43:28.848506   33074 fsevents_darwin.go:64] filesystem event for 30603106(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:43:28.848611   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:44:45.518415   33074 fsevents_darwin.go:64] filesystem event for 30604232(Users/tpiper/webdev/cp/website/.git/index.lock) Removed Created IsFile 
+I0214 16:44:45.518627   33074 fsevents_darwin.go:72] skipping Removed Created IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:44:52.852689   33074 fsevents_darwin.go:64] filesystem event for 30604298(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Modified IsFile Created Renamed 
+I0214 16:44:52.852955   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:44:52.852979   33074 fsevents_darwin.go:64] filesystem event for 30604302(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) Renamed IsFile ChangeOwner 
+I0214 16:44:52.853412   33074 fsevents_darwin.go:64] filesystem event for 30604305(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) IsFile Removed Renamed 
+I0214 16:44:52.853599   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:44:52.853613   33074 fsevents_darwin.go:64] filesystem event for 30604318(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Modified Created Renamed 
+I0214 16:44:52.853768   33074 fsevents_darwin.go:72] skipping IsFile Modified Created Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:44:52.853780   33074 fsevents_darwin.go:64] filesystem event for 30604322(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:44:52.853855   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:44:52.853866   33074 fsevents_darwin.go:64] filesystem event for 30604325(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:44:52.853965   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:44:53.352666   33074 fsevents_darwin.go:64] filesystem event for 30604618(Users/tpiper/webdev/cp/website/.git/index.lock) Removed IsFile Created 
+I0214 16:44:53.352889   33074 fsevents_darwin.go:72] skipping Removed IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:44:53.667793   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:44:53.667819   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:44:53.667949   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:44:54.115527   33074 exec.go:60] sending incremental file list
+I0214 16:44:54.125889   33074 exec.go:60] ./
+I0214 16:44:54.125934   33074 exec.go:60] production-workloads.html.twig
+I0214 16:44:54.204793   33074 exec.go:60] 
+I0214 16:44:54.204824   33074 exec.go:60] sent 916 bytes  received 104 bytes  680.00 bytes/sec
+I0214 16:44:54.204830   33074 exec.go:60] total size is 7,049  speedup is 6.91
+I0214 16:44:58.968436   33074 fsevents_darwin.go:64] filesystem event for 30604683(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 16:44:58.969215   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:45:19.188967   33074 fsevents_darwin.go:64] filesystem event for 30605069(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Created Renamed Modified IsFile 
+I0214 16:45:19.189299   33074 fsevents_darwin.go:72] skipping Created Renamed Modified IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:45:19.189310   33074 fsevents_darwin.go:64] filesystem event for 30605073(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) IsFile Renamed ChangeOwner 
+I0214 16:45:19.189684   33074 fsevents_darwin.go:64] filesystem event for 30605076(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed Removed IsFile 
+I0214 16:45:19.189869   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:45:19.189891   33074 fsevents_darwin.go:64] filesystem event for 30605089(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Renamed Created Modified 
+I0214 16:45:19.189991   33074 fsevents_darwin.go:72] skipping IsFile Renamed Created Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:45:19.190003   33074 fsevents_darwin.go:64] filesystem event for 30605093(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:45:19.190084   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:45:19.190095   33074 fsevents_darwin.go:64] filesystem event for 30605096(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Removed Renamed 
+I0214 16:45:19.190228   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:45:19.190241   33074 fsevents_darwin.go:64] filesystem event for 30605180(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:45:19.190371   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:45:20.174710   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:45:20.174739   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:45:20.175214   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:45:20.818336   33074 exec.go:60] sending incremental file list
+I0214 16:45:20.829890   33074 exec.go:60] ./
+I0214 16:45:20.829944   33074 exec.go:60] production-workloads.html.twig
+I0214 16:45:20.910835   33074 exec.go:60] 
+I0214 16:45:20.910855   33074 exec.go:60] sent 1,017 bytes  received 104 bytes  2,242.00 bytes/sec
+I0214 16:45:20.910860   33074 exec.go:60] total size is 7,142  speedup is 6.37
+I0214 16:45:24.812954   33074 fsevents_darwin.go:64] filesystem event for 30605461(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed IsFile Modified Created 
+I0214 16:45:24.813150   33074 fsevents_darwin.go:72] skipping Renamed IsFile Modified Created  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:45:24.813167   33074 fsevents_darwin.go:64] filesystem event for 30605465(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 16:45:24.813319   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:45:24.813333   33074 fsevents_darwin.go:64] filesystem event for 30605468(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Removed Renamed 
+I0214 16:45:24.813443   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:47:16.626806   33074 fsevents_darwin.go:64] filesystem event for 30607036(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Modified Renamed IsFile 
+I0214 16:47:16.626962   33074 fsevents_darwin.go:72] skipping Created Modified Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:47:16.626983   33074 fsevents_darwin.go:64] filesystem event for 30607040(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:47:16.627041   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:47:16.627049   33074 fsevents_darwin.go:64] filesystem event for 30607043(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:47:16.627127   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:47:22.644849   33074 fsevents_darwin.go:64] filesystem event for 30607111(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:47:22.645047   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:47:23.144769   33074 fsevents_darwin.go:64] filesystem event for 30607124(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Modified Renamed Created IsFile 
+I0214 16:47:23.145015   33074 fsevents_darwin.go:72] skipping Modified Renamed Created IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:47:23.145032   33074 fsevents_darwin.go:64] filesystem event for 30607128(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) IsFile ChangeOwner Renamed 
+I0214 16:47:23.145278   33074 fsevents_darwin.go:64] filesystem event for 30607131(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Removed Renamed IsFile 
+I0214 16:47:23.145410   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:47:23.145424   33074 fsevents_darwin.go:64] filesystem event for 30607144(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Modified IsFile Renamed 
+I0214 16:47:23.145491   33074 fsevents_darwin.go:72] skipping Created Modified IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:47:23.145502   33074 fsevents_darwin.go:64] filesystem event for 30607148(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed IsFile ChangeOwner 
+I0214 16:47:23.145566   33074 fsevents_darwin.go:72] skipping Renamed IsFile ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:47:23.145577   33074 fsevents_darwin.go:64] filesystem event for 30607151(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 16:47:23.145662   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:47:23.645747   33074 fsevents_darwin.go:64] filesystem event for 30607163(Users/tpiper/webdev/cp/website/.git/index.lock) Removed IsFile Created 
+I0214 16:47:23.645977   33074 fsevents_darwin.go:72] skipping Removed IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:47:23.664467   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:47:23.664505   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:47:23.664608   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:47:24.229343   33074 exec.go:60] sending incremental file list
+I0214 16:47:24.238955   33074 exec.go:60] ./
+I0214 16:47:24.239053   33074 exec.go:60] production-workloads.html.twig
+I0214 16:47:24.302030   33074 fsevents_darwin.go:64] filesystem event for 30607169(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:47:24.302277   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:47:24.314120   33074 exec.go:60] 
+I0214 16:47:24.314156   33074 exec.go:60] sent 925 bytes  received 104 bytes  686.00 bytes/sec
+I0214 16:47:24.314163   33074 exec.go:60] total size is 7,143  speedup is 6.94
+I0214 16:47:37.448298   33074 fsevents_darwin.go:64] filesystem event for 30607523(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Created Modified Renamed IsFile 
+I0214 16:47:37.448595   33074 fsevents_darwin.go:72] skipping Created Modified Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:47:37.448614   33074 fsevents_darwin.go:64] filesystem event for 30607527(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) IsFile Renamed ChangeOwner 
+I0214 16:47:37.448967   33074 fsevents_darwin.go:64] filesystem event for 30607530(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) IsFile Removed Renamed 
+I0214 16:47:37.449168   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:47:37.449179   33074 fsevents_darwin.go:64] filesystem event for 30607543(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created IsFile Modified Renamed 
+I0214 16:47:37.449257   33074 fsevents_darwin.go:72] skipping Created IsFile Modified Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:47:37.449279   33074 fsevents_darwin.go:64] filesystem event for 30607547(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner Renamed IsFile 
+I0214 16:47:37.449378   33074 fsevents_darwin.go:72] skipping ChangeOwner Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:47:37.449398   33074 fsevents_darwin.go:64] filesystem event for 30607550(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:47:37.449495   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:47:37.948398   33074 fsevents_darwin.go:64] filesystem event for 30607582(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile Removed 
+I0214 16:47:37.948583   33074 fsevents_darwin.go:72] skipping Created IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:47:38.165971   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:47:38.165994   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:47:38.166128   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:47:38.557018   33074 exec.go:60] sending incremental file list
+I0214 16:47:38.567290   33074 exec.go:60] ./
+I0214 16:47:38.567333   33074 exec.go:60] production-workloads.html.twig
+I0214 16:47:38.646459   33074 exec.go:60] 
+I0214 16:47:38.646499   33074 exec.go:60] sent 1,098 bytes  received 104 bytes  2,404.00 bytes/sec
+I0214 16:47:38.646504   33074 exec.go:60] total size is 7,178  speedup is 5.97
+I0214 16:49:41.638325   33074 fsevents_darwin.go:64] filesystem event for 30613067(Users/tpiper/webdev/cp/website/web/img/logos) Created IsDir 
+I0214 16:49:42.131155   33074 fsevents_darwin.go:64] filesystem event for 30613073(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile Removed 
+I0214 16:49:42.131459   33074 fsevents_darwin.go:72] skipping Created IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:49:42.167315   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:49:42.167424   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:49:42.167684   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=logos --exclude=* -- /Users/tpiper/webdev/cp/website/web/img/ --:/app/web/img/]
+I0214 16:49:42.602645   33074 exec.go:60] sending incremental file list
+I0214 16:49:42.615279   33074 exec.go:60] ./
+I0214 16:49:42.618942   33074 exec.go:60] logos/
+I0214 16:49:42.685542   33074 exec.go:60] 
+I0214 16:49:42.685582   33074 exec.go:60] sent 86 bytes  received 23 bytes  218.00 bytes/sec
+I0214 16:49:42.685588   33074 exec.go:60] total size is 0  speedup is 0.00
+I0214 16:49:44.603252   33074 fsevents_darwin.go:64] filesystem event for 30613089(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Modified Created IsFile 
+I0214 16:49:44.603527   33074 fsevents_darwin.go:72] skipping Renamed Modified Created IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:49:44.603541   33074 fsevents_darwin.go:64] filesystem event for 30613093(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner Renamed IsFile 
+I0214 16:49:44.603654   33074 fsevents_darwin.go:72] skipping ChangeOwner Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:49:44.603666   33074 fsevents_darwin.go:64] filesystem event for 30613096(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:49:44.603799   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:49:52.166897   33074 fsevents_darwin.go:64] filesystem event for 30613264(Users/tpiper/webdev/cp/website/web/img/logos/slack.svg) Renamed IsFile 
+I0214 16:49:52.647339   33074 fsevents_darwin.go:64] filesystem event for 30613271(Users/tpiper/webdev/cp/website/web/img/logos/bitbucket.svg) IsFile Renamed 
+I0214 16:49:52.647693   33074 fsevents_darwin.go:64] filesystem event for 30613275(Users/tpiper/webdev/cp/website/web/img/logos/github-icon.svg) IsFile Renamed 
+I0214 16:49:52.648088   33074 fsevents_darwin.go:64] filesystem event for 30613279(Users/tpiper/webdev/cp/website/web/img/logos/docker.svg) IsFile Renamed 
+I0214 16:49:52.648481   33074 fsevents_darwin.go:64] filesystem event for 30613283(Users/tpiper/webdev/cp/website/web/img/logos/quay-1.svg) IsFile Renamed 
+I0214 16:49:52.649121   33074 fsevents_darwin.go:64] filesystem event for 30613287(Users/tpiper/webdev/cp/website/web/img/logos/cloudflare.svg) Renamed IsFile 
+I0214 16:49:52.649555   33074 fsevents_darwin.go:64] filesystem event for 30613291(Users/tpiper/webdev/cp/website/web/img/logos/google-cloud.svg) IsFile Renamed 
+I0214 16:49:53.148165   33074 fsevents_darwin.go:64] filesystem event for 30613301(Users/tpiper/webdev/cp/website/web/img/logos/logo-kubernetes-h.svg) Renamed IsFile 
+I0214 16:49:53.646866   33074 fsevents_darwin.go:64] filesystem event for 30613307(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:49:53.647066   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:49:53.666174   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:49:53.666212   33074 syncrsh.go:61] individual file sync, files to sync 8, threshold: 10
+I0214 16:49:53.666363   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=logo-kubernetes-h.svg --exclude=* -- /Users/tpiper/webdev/cp/website/web/img/logos/ --:/app/web/img/logos/]
+I0214 16:49:53.666421   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=github-icon.svg --exclude=* -- /Users/tpiper/webdev/cp/website/web/img/logos/ --:/app/web/img/logos/]
+I0214 16:49:53.666509   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=docker.svg --exclude=* -- /Users/tpiper/webdev/cp/website/web/img/logos/ --:/app/web/img/logos/]
+I0214 16:49:53.666536   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=cloudflare.svg --exclude=* -- /Users/tpiper/webdev/cp/website/web/img/logos/ --:/app/web/img/logos/]
+I0214 16:49:53.666649   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=google-cloud.svg --exclude=* -- /Users/tpiper/webdev/cp/website/web/img/logos/ --:/app/web/img/logos/]
+I0214 16:49:53.666650   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=slack.svg --exclude=* -- /Users/tpiper/webdev/cp/website/web/img/logos/ --:/app/web/img/logos/]
+I0214 16:49:53.666701   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=bitbucket.svg --exclude=* -- /Users/tpiper/webdev/cp/website/web/img/logos/ --:/app/web/img/logos/]
+I0214 16:49:53.669884   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=quay-1.svg --exclude=* -- /Users/tpiper/webdev/cp/website/web/img/logos/ --:/app/web/img/logos/]
+I0214 16:49:54.693095   33074 exec.go:60] sending incremental file list
+I0214 16:49:54.717509   33074 exec.go:60] ./
+I0214 16:49:54.717528   33074 exec.go:60] slack.svg
+I0214 16:49:54.794585   33074 exec.go:60] sending incremental file list
+I0214 16:49:54.811165   33074 exec.go:60] quay-1.svg
+I0214 16:49:54.811460   33074 exec.go:60] 
+I0214 16:49:54.811483   33074 exec.go:60] sent 5,192 bytes  received 38 bytes  3,486.67 bytes/sec
+I0214 16:49:54.811495   33074 exec.go:60] total size is 5,046  speedup is 0.96
+I0214 16:49:54.888283   33074 exec.go:60] sending incremental file list
+I0214 16:49:54.899719   33074 exec.go:60] bitbucket.svg
+I0214 16:49:54.967554   33074 exec.go:60] sending incremental file list
+I0214 16:49:54.977685   33074 exec.go:60] cloudflare.svg
+I0214 16:49:55.047524   33074 exec.go:60] sending incremental file list
+I0214 16:49:55.057763   33074 exec.go:60] google-cloud.svg
+I0214 16:49:55.131294   33074 exec.go:60] sending incremental file list
+I0214 16:49:55.141719   33074 exec.go:60] github-icon.svg
+I0214 16:49:55.224165   33074 exec.go:60] sending incremental file list
+I0214 16:49:55.246725   33074 exec.go:60] 
+I0214 16:49:55.246829   33074 exec.go:60] sent 3,288 bytes  received 35 bytes  1,329.20 bytes/sec
+I0214 16:49:55.246835   33074 exec.go:60] total size is 3,133  speedup is 0.94
+I0214 16:49:55.248415   33074 exec.go:60] logo-kubernetes-h.svg
+I0214 16:49:55.252230   33074 exec.go:60] 
+I0214 16:49:55.252246   33074 exec.go:60] sent 2,523 bytes  received 35 bytes  1,023.20 bytes/sec
+I0214 16:49:55.252260   33074 exec.go:60] total size is 2,366  speedup is 0.92
+I0214 16:49:55.252309   33074 exec.go:60] 
+I0214 16:49:55.252313   33074 exec.go:60] sent 4,327 bytes  received 35 bytes  2,908.00 bytes/sec
+I0214 16:49:55.252318   33074 exec.go:60] total size is 4,174  speedup is 0.96
+I0214 16:49:55.252355   33074 exec.go:60] 
+I0214 16:49:55.252360   33074 exec.go:60] sent 1,938 bytes  received 35 bytes  1,315.33 bytes/sec
+I0214 16:49:55.252364   33074 exec.go:60] total size is 1,793  speedup is 0.91
+I0214 16:49:55.253457   33074 exec.go:60] 
+I0214 16:49:55.253477   33074 exec.go:60] sent 1,244 bytes  received 35 bytes  852.67 bytes/sec
+I0214 16:49:55.253484   33074 exec.go:60] total size is 1,093  speedup is 0.85
+I0214 16:49:55.304110   33074 exec.go:60] sending incremental file list
+I0214 16:49:55.314569   33074 exec.go:60] docker.svg
+I0214 16:49:55.360445   33074 exec.go:60] 
+I0214 16:49:55.360468   33074 exec.go:60] sent 50,278 bytes  received 35 bytes  20,125.20 bytes/sec
+I0214 16:49:55.360476   33074 exec.go:60] total size is 50,107  speedup is 1.00
+I0214 16:49:55.414743   33074 exec.go:60] 
+I0214 16:49:55.414761   33074 exec.go:60] sent 9,716 bytes  received 35 bytes  3,900.40 bytes/sec
+I0214 16:49:55.414767   33074 exec.go:60] total size is 9,571  speedup is 0.98
+I0214 16:49:59.631296   33074 fsevents_darwin.go:64] filesystem event for 30613415(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified Renamed Created IsFile 
+I0214 16:49:59.631501   33074 fsevents_darwin.go:72] skipping Modified Renamed Created IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:49:59.631520   33074 fsevents_darwin.go:64] filesystem event for 30613419(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed IsFile ChangeOwner 
+I0214 16:49:59.631587   33074 fsevents_darwin.go:72] skipping Renamed IsFile ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:49:59.631596   33074 fsevents_darwin.go:64] filesystem event for 30613422(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Renamed Removed 
+I0214 16:49:59.631702   33074 fsevents_darwin.go:72] skipping IsFile Renamed Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:50:14.951891   33074 fsevents_darwin.go:64] filesystem event for 30613967(Users/tpiper/webdev/cp/website/.git/index.lock) Removed IsFile Created 
+I0214 16:50:14.952381   33074 fsevents_darwin.go:72] skipping Removed IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:50:36.604467   33074 fsevents_darwin.go:64] filesystem event for 30614145(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Renamed Modified IsFile Created 
+I0214 16:50:36.606679   33074 fsevents_darwin.go:72] skipping Renamed Modified IsFile Created  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:50:36.606725   33074 fsevents_darwin.go:64] filesystem event for 30614149(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) ChangeOwner Renamed IsFile 
+I0214 16:50:36.606964   33074 fsevents_darwin.go:64] filesystem event for 30614152(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) IsFile Renamed Removed 
+I0214 16:50:36.607067   33074 fsevents_darwin.go:72] skipping IsFile Renamed Removed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:50:36.607077   33074 fsevents_darwin.go:64] filesystem event for 30614165(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Created Modified IsFile 
+I0214 16:50:36.607122   33074 fsevents_darwin.go:72] skipping Renamed Created Modified IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:50:36.607132   33074 fsevents_darwin.go:64] filesystem event for 30614169(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner Renamed IsFile 
+I0214 16:50:36.607170   33074 fsevents_darwin.go:72] skipping ChangeOwner Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:50:36.607182   33074 fsevents_darwin.go:64] filesystem event for 30614172(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:50:36.607235   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:50:36.607244   33074 fsevents_darwin.go:64] filesystem event for 30614204(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:50:36.607327   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:50:37.167769   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:50:37.167809   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:50:37.168034   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:50:37.578079   33074 exec.go:60] sending incremental file list
+I0214 16:50:37.594220   33074 exec.go:60] ./
+I0214 16:50:37.594258   33074 exec.go:60] production-workloads.html.twig
+I0214 16:50:37.667035   33074 exec.go:60] 
+I0214 16:50:37.667072   33074 exec.go:60] sent 1,006 bytes  received 104 bytes  2,220.00 bytes/sec
+I0214 16:50:37.667077   33074 exec.go:60] total size is 7,260  speedup is 6.54
+I0214 16:50:50.874025   33074 fsevents_darwin.go:64] filesystem event for 30614376(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Removed Created 
+I0214 16:50:50.874335   33074 fsevents_darwin.go:72] skipping IsFile Removed Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:51:00.515724   33074 fsevents_darwin.go:64] filesystem event for 30614832(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) IsFile Created Renamed Modified 
+I0214 16:51:00.516050   33074 fsevents_darwin.go:72] skipping IsFile Created Renamed Modified  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:51:00.516074   33074 fsevents_darwin.go:64] filesystem event for 30614836(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) ChangeOwner IsFile Renamed 
+I0214 16:51:00.516402   33074 fsevents_darwin.go:64] filesystem event for 30614839(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed Removed IsFile 
+I0214 16:51:00.516562   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:51:01.016787   33074 fsevents_darwin.go:64] filesystem event for 30614852(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed IsFile Created Modified 
+I0214 16:51:01.016910   33074 fsevents_darwin.go:72] skipping Renamed IsFile Created Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:51:01.016923   33074 fsevents_darwin.go:64] filesystem event for 30614856(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 16:51:01.016987   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:51:01.016999   33074 fsevents_darwin.go:64] filesystem event for 30614859(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:51:01.017152   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:51:01.162908   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:51:01.162945   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:51:01.163064   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:51:01.517663   33074 fsevents_darwin.go:64] filesystem event for 30614905(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 16:51:01.517864   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:51:01.588209   33074 exec.go:60] sending incremental file list
+I0214 16:51:01.598735   33074 exec.go:60] ./
+I0214 16:51:01.598775   33074 exec.go:60] production-workloads.html.twig
+I0214 16:51:01.680867   33074 exec.go:60] 
+I0214 16:51:01.680906   33074 exec.go:60] sent 1,015 bytes  received 104 bytes  2,238.00 bytes/sec
+I0214 16:51:01.680913   33074 exec.go:60] total size is 7,351  speedup is 6.57
+I0214 16:51:05.433498   33074 fsevents_darwin.go:64] filesystem event for 30614940(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:51:05.433703   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:51:09.186895   33074 fsevents_darwin.go:64] filesystem event for 30614953(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Modified IsFile Created Renamed 
+I0214 16:51:09.187356   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:51:09.187399   33074 fsevents_darwin.go:64] filesystem event for 30614957(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) Renamed IsFile ChangeOwner 
+I0214 16:51:09.187887   33074 fsevents_darwin.go:64] filesystem event for 30614960(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Removed Renamed IsFile 
+I0214 16:51:09.188107   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:51:09.687440   33074 fsevents_darwin.go:64] filesystem event for 30614973(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified IsFile Created Renamed 
+I0214 16:51:09.687577   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:51:09.687615   33074 fsevents_darwin.go:64] filesystem event for 30614977(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:51:09.687802   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:51:09.687828   33074 fsevents_darwin.go:64] filesystem event for 30614980(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 16:51:09.687999   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:51:10.165674   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:51:10.165721   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:51:10.165872   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:51:10.194013   33074 fsevents_darwin.go:64] filesystem event for 30615042(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:51:10.194568   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:51:10.889752   33074 exec.go:60] sending incremental file list
+I0214 16:51:10.900062   33074 exec.go:60] ./
+I0214 16:51:10.900112   33074 exec.go:60] production-workloads.html.twig
+I0214 16:51:10.978720   33074 exec.go:60] 
+I0214 16:51:10.978770   33074 exec.go:60] sent 942 bytes  received 104 bytes  2,092.00 bytes/sec
+I0214 16:51:10.978778   33074 exec.go:60] total size is 7,369  speedup is 7.04
+I0214 16:51:24.960210   33074 fsevents_darwin.go:64] filesystem event for 30615835(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Modified Created Renamed 
+I0214 16:51:24.965105   33074 fsevents_darwin.go:72] skipping IsFile Modified Created Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:51:24.965606   33074 fsevents_darwin.go:64] filesystem event for 30615839(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner Renamed IsFile 
+I0214 16:51:24.965846   33074 fsevents_darwin.go:72] skipping ChangeOwner Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:51:24.965889   33074 fsevents_darwin.go:64] filesystem event for 30615842(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:51:24.966021   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:51:35.636974   33074 fsevents_darwin.go:64] filesystem event for 30616005(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed IsFile Created Modified 
+I0214 16:51:35.637092   33074 fsevents_darwin.go:72] skipping Renamed IsFile Created Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:51:35.637108   33074 fsevents_darwin.go:64] filesystem event for 30616009(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile ChangeOwner Renamed 
+I0214 16:51:35.637190   33074 fsevents_darwin.go:72] skipping IsFile ChangeOwner Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:51:35.637201   33074 fsevents_darwin.go:64] filesystem event for 30616012(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Removed Renamed 
+I0214 16:51:35.637286   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:52:37.812488   33074 fsevents_darwin.go:64] filesystem event for 30616591(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile Removed 
+I0214 16:52:37.812728   33074 fsevents_darwin.go:72] skipping Created IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:52:47.139557   33074 fsevents_darwin.go:64] filesystem event for 30616654(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) IsFile Created Renamed Modified 
+I0214 16:52:47.139844   33074 fsevents_darwin.go:72] skipping IsFile Created Renamed Modified  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:52:47.139856   33074 fsevents_darwin.go:64] filesystem event for 30616658(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) Renamed ChangeOwner IsFile 
+I0214 16:52:47.140127   33074 fsevents_darwin.go:64] filesystem event for 30616661(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed Removed IsFile 
+I0214 16:52:47.140370   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:52:47.140386   33074 fsevents_darwin.go:64] filesystem event for 30616674(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified Created Renamed IsFile 
+I0214 16:52:47.140487   33074 fsevents_darwin.go:72] skipping Modified Created Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:52:47.140498   33074 fsevents_darwin.go:64] filesystem event for 30616678(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:52:47.140579   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:52:47.140589   33074 fsevents_darwin.go:64] filesystem event for 30616681(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 16:52:47.140691   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:52:47.639364   33074 fsevents_darwin.go:64] filesystem event for 30616693(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 16:52:47.639552   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:52:47.667257   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:52:47.667365   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:52:47.667556   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:52:48.191855   33074 exec.go:60] sending incremental file list
+I0214 16:52:48.202164   33074 exec.go:60] ./
+I0214 16:52:48.202181   33074 exec.go:60] production-workloads.html.twig
+I0214 16:52:48.275765   33074 exec.go:60] 
+I0214 16:52:48.275805   33074 exec.go:60] sent 1,039 bytes  received 104 bytes  762.00 bytes/sec
+I0214 16:52:48.275816   33074 exec.go:60] total size is 7,484  speedup is 6.55
+I0214 16:52:49.147855   33074 fsevents_darwin.go:64] filesystem event for 30616699(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile Removed 
+I0214 16:52:49.148185   33074 fsevents_darwin.go:72] skipping Created IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:52:53.747357   33074 fsevents_darwin.go:64] filesystem event for 30616738(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Modified IsFile Created Renamed 
+I0214 16:52:53.747674   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:52:53.747692   33074 fsevents_darwin.go:64] filesystem event for 30616742(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) Renamed IsFile ChangeOwner 
+I0214 16:52:53.748094   33074 fsevents_darwin.go:64] filesystem event for 30616745(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Removed Renamed IsFile 
+I0214 16:52:53.748351   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:52:53.748364   33074 fsevents_darwin.go:64] filesystem event for 30616758(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Created Renamed Modified 
+I0214 16:52:53.748465   33074 fsevents_darwin.go:72] skipping IsFile Created Renamed Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:52:53.748477   33074 fsevents_darwin.go:64] filesystem event for 30616762(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 16:52:53.748580   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:52:53.748622   33074 fsevents_darwin.go:64] filesystem event for 30616765(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed IsFile Removed 
+I0214 16:52:53.748752   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:52:54.247206   33074 fsevents_darwin.go:64] filesystem event for 30616798(Users/tpiper/webdev/cp/website/.git/index.lock) Removed Created IsFile 
+I0214 16:52:54.247413   33074 fsevents_darwin.go:72] skipping Removed Created IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:52:54.666421   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:52:54.666461   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:52:54.666747   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:52:55.167596   33074 exec.go:60] sending incremental file list
+I0214 16:52:55.177063   33074 exec.go:60] ./
+I0214 16:52:55.177107   33074 exec.go:60] production-workloads.html.twig
+I0214 16:52:55.251423   33074 exec.go:60] 
+I0214 16:52:55.251633   33074 exec.go:60] sent 1,041 bytes  received 104 bytes  763.33 bytes/sec
+I0214 16:52:55.251640   33074 exec.go:60] total size is 7,817  speedup is 6.83
+I0214 16:53:26.751644   33074 fsevents_darwin.go:64] filesystem event for 30617736(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 16:53:26.751905   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:54:24.377148   33074 fsevents_darwin.go:64] filesystem event for 30618209(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Renamed Modified IsFile Created 
+I0214 16:54:24.377343   33074 fsevents_darwin.go:72] skipping Renamed Modified IsFile Created  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:54:24.377356   33074 fsevents_darwin.go:64] filesystem event for 30618213(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) ChangeOwner IsFile Renamed 
+I0214 16:54:24.377596   33074 fsevents_darwin.go:64] filesystem event for 30618216(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed IsFile Removed 
+I0214 16:54:24.377711   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:54:24.377721   33074 fsevents_darwin.go:64] filesystem event for 30618229(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Created Modified Renamed 
+I0214 16:54:24.377780   33074 fsevents_darwin.go:72] skipping IsFile Created Modified Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:54:24.377790   33074 fsevents_darwin.go:64] filesystem event for 30618233(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:54:24.377834   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:54:24.377842   33074 fsevents_darwin.go:64] filesystem event for 30618236(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Removed Renamed 
+I0214 16:54:24.377898   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:54:24.877383   33074 fsevents_darwin.go:64] filesystem event for 30618274(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Removed Created 
+I0214 16:54:24.877614   33074 fsevents_darwin.go:72] skipping IsFile Removed Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:54:25.163787   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:54:25.163821   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:54:25.164025   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:54:25.672619   33074 exec.go:60] sending incremental file list
+I0214 16:54:25.682912   33074 exec.go:60] ./
+I0214 16:54:25.682969   33074 exec.go:60] production-workloads.html.twig
+I0214 16:54:25.763500   33074 exec.go:60] 
+I0214 16:54:25.763648   33074 exec.go:60] sent 3,158 bytes  received 110 bytes  6,536.00 bytes/sec
+I0214 16:54:25.763654   33074 exec.go:60] total size is 10,047  speedup is 3.07
+I0214 16:54:42.919683   33074 fsevents_darwin.go:64] filesystem event for 30618602(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified IsFile Renamed Created 
+I0214 16:54:42.919856   33074 fsevents_darwin.go:72] skipping Modified IsFile Renamed Created  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:54:42.919870   33074 fsevents_darwin.go:64] filesystem event for 30618606(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner Renamed IsFile 
+I0214 16:54:42.919985   33074 fsevents_darwin.go:72] skipping ChangeOwner Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:54:42.919997   33074 fsevents_darwin.go:64] filesystem event for 30618609(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:54:42.920087   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:54:50.232990   33074 fsevents_darwin.go:64] filesystem event for 30618697(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:54:50.233322   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:55:02.633979   33074 fsevents_darwin.go:64] filesystem event for 30619069(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Renamed Modified IsFile Created 
+I0214 16:55:02.634284   33074 fsevents_darwin.go:72] skipping Renamed Modified IsFile Created  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 16:55:02.634298   33074 fsevents_darwin.go:64] filesystem event for 30619073(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) ChangeOwner IsFile Renamed 
+I0214 16:55:02.634631   33074 fsevents_darwin.go:64] filesystem event for 30619076(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed Removed IsFile 
+I0214 16:55:02.634837   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 16:55:03.137384   33074 fsevents_darwin.go:64] filesystem event for 30619089(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed IsFile Modified Created 
+I0214 16:55:03.137514   33074 fsevents_darwin.go:72] skipping Renamed IsFile Modified Created  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:55:03.137532   33074 fsevents_darwin.go:64] filesystem event for 30619093(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:55:03.137599   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:55:03.137613   33074 fsevents_darwin.go:64] filesystem event for 30619096(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed IsFile Removed 
+I0214 16:55:03.137707   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:55:03.162815   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 16:55:03.162851   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 16:55:03.163006   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 16:55:03.634511   33074 fsevents_darwin.go:64] filesystem event for 30619155(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 16:55:03.634747   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 16:55:03.654752   33074 exec.go:60] sending incremental file list
+I0214 16:55:03.664291   33074 exec.go:60] ./
+I0214 16:55:03.664327   33074 exec.go:60] production-workloads.html.twig
+I0214 16:55:03.734247   33074 exec.go:60] 
+I0214 16:55:03.734288   33074 exec.go:60] sent 1,622 bytes  received 128 bytes  3,500.00 bytes/sec
+I0214 16:55:03.734300   33074 exec.go:60] total size is 10,033  speedup is 5.73
+I0214 16:55:17.698487   33074 fsevents_darwin.go:64] filesystem event for 30619350(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified Renamed IsFile Created 
+I0214 16:55:17.698645   33074 fsevents_darwin.go:72] skipping Modified Renamed IsFile Created  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:55:17.698661   33074 fsevents_darwin.go:64] filesystem event for 30619354(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 16:55:17.698803   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:55:17.698823   33074 fsevents_darwin.go:64] filesystem event for 30619357(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Removed Renamed 
+I0214 16:55:17.698971   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 16:57:41.107663   33074 fsevents_darwin.go:64] filesystem event for 30622261(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Created Modified Renamed 
+I0214 16:57:41.107895   33074 fsevents_darwin.go:72] skipping IsFile Created Modified Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 16:57:41.107910   33074 fsevents_darwin.go:64] filesystem event for 30622265(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed ChangeOwner IsFile 
+I0214 16:57:41.108016   33074 fsevents_darwin.go:72] skipping Renamed ChangeOwner IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 16:57:41.108028   33074 fsevents_darwin.go:64] filesystem event for 30622268(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 16:57:41.108126   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 17:00:11.257801   33074 fsevents_darwin.go:64] filesystem event for 30626988(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Created IsFile Modified 
+I0214 17:00:11.257876   33074 fsevents_darwin.go:72] skipping Renamed Created IsFile Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 17:00:11.257892   33074 fsevents_darwin.go:64] filesystem event for 30626992(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner IsFile Renamed 
+I0214 17:00:11.257925   33074 fsevents_darwin.go:72] skipping ChangeOwner IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 17:00:11.257934   33074 fsevents_darwin.go:64] filesystem event for 30626995(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed IsFile Removed 
+I0214 17:00:11.257981   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 17:02:09.315020   33074 fsevents_darwin.go:64] filesystem event for 30628343(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Renamed Created Modified 
+I0214 17:02:09.315104   33074 fsevents_darwin.go:72] skipping IsFile Renamed Created Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 17:02:09.315118   33074 fsevents_darwin.go:64] filesystem event for 30628347(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 17:02:09.315159   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 17:02:09.315170   33074 fsevents_darwin.go:64] filesystem event for 30628350(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed IsFile Removed 
+I0214 17:02:09.315211   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 17:02:14.161180   33074 fsevents_darwin.go:64] filesystem event for 30628378(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Modified Created IsFile 
+I0214 17:02:14.161482   33074 fsevents_darwin.go:72] skipping Renamed Modified Created IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 17:02:14.161530   33074 fsevents_darwin.go:64] filesystem event for 30628382(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile ChangeOwner Renamed 
+I0214 17:02:14.161701   33074 fsevents_darwin.go:72] skipping IsFile ChangeOwner Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 17:02:14.161723   33074 fsevents_darwin.go:64] filesystem event for 30628385(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Removed Renamed 
+I0214 17:02:14.161810   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 17:02:28.099063   33074 fsevents_darwin.go:64] filesystem event for 30628651(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 17:02:28.099724   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 17:02:32.092198   33074 fsevents_darwin.go:64] filesystem event for 30628923(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Modified IsFile Created Renamed 
+I0214 17:02:32.092542   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 17:02:32.092569   33074 fsevents_darwin.go:64] filesystem event for 30628927(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) IsFile Renamed ChangeOwner 
+I0214 17:02:32.093021   33074 fsevents_darwin.go:64] filesystem event for 30628930(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed IsFile Removed 
+I0214 17:02:32.093184   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 17:02:32.093194   33074 fsevents_darwin.go:64] filesystem event for 30628943(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Created Renamed Modified IsFile 
+I0214 17:02:32.093279   33074 fsevents_darwin.go:72] skipping Created Renamed Modified IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 17:02:32.093288   33074 fsevents_darwin.go:64] filesystem event for 30628947(Users/tpiper/webdev/cp/website/.idea/workspace.xml) ChangeOwner Renamed IsFile 
+I0214 17:02:32.093352   33074 fsevents_darwin.go:72] skipping ChangeOwner Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 17:02:32.093359   33074 fsevents_darwin.go:64] filesystem event for 30628950(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 17:02:32.093442   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 17:02:32.600324   33074 fsevents_darwin.go:64] filesystem event for 30628962(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 17:02:32.601278   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 17:02:32.667920   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 17:02:32.668070   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 17:02:32.668604   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 17:02:33.537695   33074 exec.go:60] sending incremental file list
+I0214 17:02:33.560780   33074 exec.go:60] ./
+I0214 17:02:33.560796   33074 exec.go:60] production-workloads.html.twig
+I0214 17:02:33.641368   33074 exec.go:60] 
+I0214 17:02:33.641402   33074 exec.go:60] sent 850 bytes  received 128 bytes  652.00 bytes/sec
+I0214 17:02:33.641408   33074 exec.go:60] total size is 9,714  speedup is 9.93
+I0214 17:02:59.632770   33074 fsevents_darwin.go:64] filesystem event for 30629395(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Renamed Created Modified IsFile 
+I0214 17:02:59.632958   33074 fsevents_darwin.go:72] skipping Renamed Created Modified IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 17:02:59.632987   33074 fsevents_darwin.go:64] filesystem event for 30629399(Users/tpiper/webdev/cp/website/.idea/workspace.xml) Renamed IsFile ChangeOwner 
+I0214 17:02:59.633097   33074 fsevents_darwin.go:72] skipping Renamed IsFile ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 17:02:59.633122   33074 fsevents_darwin.go:64] filesystem event for 30629402(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed Renamed IsFile 
+I0214 17:02:59.633259   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 17:04:24.246507   33074 fsevents_darwin.go:64] filesystem event for 30634924(Users/tpiper/webdev/cp/website/web/img/logos/amazon-web-services.svg) Renamed IsFile 
+I0214 17:04:24.247154   33074 fsevents_darwin.go:64] filesystem event for 30634958(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 17:04:24.247341   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 17:04:25.167300   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 17:04:25.167440   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 17:04:25.167756   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=amazon-web-services.svg --exclude=* -- /Users/tpiper/webdev/cp/website/web/img/logos/ --:/app/web/img/logos/]
+I0214 17:04:25.659628   33074 exec.go:60] sending incremental file list
+I0214 17:04:25.669612   33074 exec.go:60] ./
+I0214 17:04:25.669637   33074 exec.go:60] amazon-web-services.svg
+I0214 17:04:25.755859   33074 exec.go:60] 
+I0214 17:04:25.755899   33074 exec.go:60] sent 8,632 bytes  received 38 bytes  17,340.00 bytes/sec
+I0214 17:04:25.755905   33074 exec.go:60] total size is 8,458  speedup is 0.98
+I0214 17:04:36.741917   33074 fsevents_darwin.go:64] filesystem event for 30635549(Users/tpiper/webdev/cp/website/.git/index.lock) Created IsFile Removed 
+I0214 17:04:36.742199   33074 fsevents_darwin.go:72] skipping Created IsFile Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 17:05:02.371824   33074 fsevents_darwin.go:64] filesystem event for 30635790(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Created Renamed Modified IsFile 
+I0214 17:05:02.372186   33074 fsevents_darwin.go:72] skipping Created Renamed Modified IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 17:05:02.372200   33074 fsevents_darwin.go:64] filesystem event for 30635794(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) ChangeOwner Renamed IsFile 
+I0214 17:05:02.372609   33074 fsevents_darwin.go:64] filesystem event for 30635797(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) IsFile Removed Renamed 
+I0214 17:05:02.372831   33074 fsevents_darwin.go:72] skipping IsFile Removed Renamed  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 17:05:02.372846   33074 fsevents_darwin.go:64] filesystem event for 30635810(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified IsFile Created Renamed 
+I0214 17:05:02.372961   33074 fsevents_darwin.go:72] skipping Modified IsFile Created Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 17:05:02.372971   33074 fsevents_darwin.go:64] filesystem event for 30635814(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 17:05:02.373061   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 17:05:02.373070   33074 fsevents_darwin.go:64] filesystem event for 30635817(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Removed IsFile Renamed 
+I0214 17:05:02.373185   33074 fsevents_darwin.go:72] skipping Removed IsFile Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 17:05:02.373197   33074 fsevents_darwin.go:64] filesystem event for 30635869(Users/tpiper/webdev/cp/website/.git/index.lock) Removed Created IsFile 
+I0214 17:05:02.373333   33074 fsevents_darwin.go:72] skipping Removed Created IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 17:05:03.165819   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 17:05:03.165857   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 17:05:03.166108   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 17:05:03.552189   33074 exec.go:60] sending incremental file list
+I0214 17:05:03.563313   33074 exec.go:60] ./
+I0214 17:05:03.563334   33074 exec.go:60] production-workloads.html.twig
+I0214 17:05:03.669877   33074 exec.go:60] 
+I0214 17:05:03.669912   33074 exec.go:60] sent 1,570 bytes  received 122 bytes  3,384.00 bytes/sec
+I0214 17:05:03.669923   33074 exec.go:60] total size is 9,734  speedup is 5.75
+I0214 17:05:15.196107   33074 fsevents_darwin.go:64] filesystem event for 30636127(Users/tpiper/webdev/cp/website/.git/index.lock) Removed IsFile Created 
+I0214 17:05:15.196381   33074 fsevents_darwin.go:72] skipping Removed IsFile Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 17:05:20.619379   33074 fsevents_darwin.go:64] filesystem event for 30636196(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Created Renamed Modified IsFile 
+I0214 17:05:20.619805   33074 fsevents_darwin.go:72] skipping Created Renamed Modified IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 17:05:20.619828   33074 fsevents_darwin.go:64] filesystem event for 30636200(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) Renamed IsFile ChangeOwner 
+I0214 17:05:20.620661   33074 fsevents_darwin.go:64] filesystem event for 30636203(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Removed Renamed IsFile 
+I0214 17:05:20.621244   33074 fsevents_darwin.go:72] skipping Removed Renamed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 17:05:20.621292   33074 fsevents_darwin.go:64] filesystem event for 30636216(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified IsFile Renamed Created 
+I0214 17:05:20.621405   33074 fsevents_darwin.go:72] skipping Modified IsFile Renamed Created  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 17:05:20.621424   33074 fsevents_darwin.go:64] filesystem event for 30636220(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 17:05:20.621567   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 17:05:20.621582   33074 fsevents_darwin.go:64] filesystem event for 30636223(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed Removed IsFile 
+I0214 17:05:20.621787   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 17:05:21.119160   33074 fsevents_darwin.go:64] filesystem event for 30636255(Users/tpiper/webdev/cp/website/.git/index.lock) Created Removed IsFile 
+I0214 17:05:21.119348   33074 fsevents_darwin.go:72] skipping Created Removed IsFile  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 17:05:21.166482   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 17:05:21.166526   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 17:05:21.166680   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 17:05:21.758080   33074 exec.go:60] sending incremental file list
+I0214 17:05:21.767693   33074 exec.go:60] ./
+I0214 17:05:21.767839   33074 exec.go:60] production-workloads.html.twig
+I0214 17:05:21.840117   33074 exec.go:60] 
+I0214 17:05:21.840166   33074 exec.go:60] sent 935 bytes  received 122 bytes  2,114.00 bytes/sec
+I0214 17:05:21.840177   33074 exec.go:60] total size is 9,733  speedup is 9.21
+I0214 17:05:26.250917   33074 fsevents_darwin.go:64] filesystem event for 30636549(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Created Removed 
+I0214 17:05:26.251229   33074 fsevents_darwin.go:72] skipping IsFile Created Removed  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 17:05:32.902475   33074 fsevents_darwin.go:64] filesystem event for 30636734(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___) Modified IsFile Renamed Created 
+I0214 17:05:32.902865   33074 fsevents_darwin.go:72] skipping Modified IsFile Renamed Created  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_tmp___ as is in the exclusion list
+I0214 17:05:32.902895   33074 fsevents_darwin.go:64] filesystem event for 30636738(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig) Renamed ChangeOwner IsFile 
+I0214 17:05:32.903170   33074 fsevents_darwin.go:64] filesystem event for 30636741(Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___) Renamed Removed IsFile 
+I0214 17:05:32.903317   33074 fsevents_darwin.go:72] skipping Renamed Removed IsFile  Users/tpiper/webdev/cp/website/app/views/features/production-workloads.html.twig___jb_old___ as is in the exclusion list
+I0214 17:05:33.402602   33074 fsevents_darwin.go:64] filesystem event for 30636754(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) Modified Created Renamed IsFile 
+I0214 17:05:33.402724   33074 fsevents_darwin.go:72] skipping Modified Created Renamed IsFile  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 17:05:33.402740   33074 fsevents_darwin.go:64] filesystem event for 30636758(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile ChangeOwner Renamed 
+I0214 17:05:33.402803   33074 fsevents_darwin.go:72] skipping IsFile ChangeOwner Renamed  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 17:05:33.402814   33074 fsevents_darwin.go:64] filesystem event for 30636761(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) Renamed IsFile Removed 
+I0214 17:05:33.402881   33074 fsevents_darwin.go:72] skipping Renamed IsFile Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list
+I0214 17:05:33.667346   33074 syncrsh.go:47] setting RSYNC_RSH to cp-remote kubectl --context=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper --namespace=21007f64-cad5-11e5-ba80-95a1b42a5d44-remote-tonypiper exec -i app-2056766804-030ai
+I0214 17:05:33.667374   33074 syncrsh.go:61] individual file sync, files to sync 1, threshold: 10
+I0214 17:05:33.667506   33074 syncrsh.go:145] rsync arguments: [-rlptDv --delete --blocking-io --checksum --include=production-workloads.html.twig --exclude=* -- /Users/tpiper/webdev/cp/website/app/views/features/ --:/app/app/views/features/]
+I0214 17:05:33.902899   33074 fsevents_darwin.go:64] filesystem event for 30636793(Users/tpiper/webdev/cp/website/.git/index.lock) IsFile Removed Created 
+I0214 17:05:33.903112   33074 fsevents_darwin.go:72] skipping IsFile Removed Created  Users/tpiper/webdev/cp/website/.git/index.lock as is in the exclusion list
+I0214 17:05:34.207341   33074 exec.go:60] sending incremental file list
+I0214 17:05:34.228708   33074 exec.go:60] ./
+I0214 17:05:34.228729   33074 exec.go:60] production-workloads.html.twig
+I0214 17:05:34.353002   33074 exec.go:60] 
+I0214 17:05:34.353053   33074 exec.go:60] sent 1,658 bytes  received 122 bytes  1,186.67 bytes/sec
+I0214 17:05:34.353061   33074 exec.go:60] total size is 9,759  speedup is 5.48
+I0214 17:10:04.894189   33074 fsevents_darwin.go:64] filesystem event for 30639923(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___) IsFile Created Renamed Modified 
+I0214 17:10:04.894344   33074 fsevents_darwin.go:72] skipping IsFile Created Renamed Modified  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_tmp___ as is in the exclusion list
+I0214 17:10:04.894363   33074 fsevents_darwin.go:64] filesystem event for 30639927(Users/tpiper/webdev/cp/website/.idea/workspace.xml) IsFile Renamed ChangeOwner 
+I0214 17:10:04.894437   33074 fsevents_darwin.go:72] skipping IsFile Renamed ChangeOwner  Users/tpiper/webdev/cp/website/.idea/workspace.xml as is in the exclusion list
+I0214 17:10:04.894451   33074 fsevents_darwin.go:64] filesystem event for 30639930(Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___) IsFile Renamed Removed 
+I0214 17:10:04.894541   33074 fsevents_darwin.go:72] skipping IsFile Renamed Removed  Users/tpiper/webdev/cp/website/.idea/workspace.xml___jb_old___ as is in the exclusion list

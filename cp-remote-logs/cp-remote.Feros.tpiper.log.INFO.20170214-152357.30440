@@ -1,0 +1,11 @@
+Log file created at: 2017/02/14 15:23:57
+Running on machine: Feros
+Binary: Built with gc go1.7.3 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0214 15:23:57.572337   30440 benchmarklog.go:28] keen.io settings disabled
+I0214 15:23:57.574900   30440 exec.go:27] executing command path: "/usr/bin/git" with arguments: []string{"git", "ls-remote", "--quiet", ".", "origin/remote-tonypiper"}
+I0214 15:23:57.621399   30440 build.go:143] list of remote branches that matches remote name and branch are 
+I0214 15:23:57.621440   30440 build.go:89] remoteExists value is %!b(bool=false)
+I0214 15:23:57.621564   30440 exec.go:27] executing command path: "/usr/bin/git" with arguments: []string{"git", "rev-parse", "--abbrev-ref", "HEAD"}
+I0214 15:23:57.630638   30440 build.go:112] local branch name value is split-the-website-in-3-areas
+I0214 15:23:57.630713   30440 exec.go:27] executing command path: "/usr/bin/git" with arguments: []string{"git", "push", "--force", "origin", "split-the-website-in-3-areas:remote-tonypiper"}
