@@ -571,7 +571,19 @@ Intro
   display: inline-block;
   width: 80%;
 }
+.intro-feature {
+  margin-top: 20px;
+}
 
+.intro img {
+  max-width:100%;
+}
+.intro.section-padding {
+  padding: 50px 0;
+}
+.intro .page-header h1 {
+  margin-bottom: 40px;
+}
 /* ==========================================================================
 Features-stack
 ========================================================================== */
