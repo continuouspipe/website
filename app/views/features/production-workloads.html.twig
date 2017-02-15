@@ -1,5 +1,6 @@
 {% extends "regular_layout.html.twig" %}
 {% block nav_area_prod_class %} active{% endblock %}
+{% block title %}Production{% endblock %}
 {% block content %}
     <section class="features section-padding">
         <div class="container">
@@ -7,7 +8,9 @@
                 <div class="page-header">
                     <h1>Production</h1>
                     <p>ContinuousPipe can reduce the time it takes to deploy your website to any Kubernetes cluster. You
-                        can easily host your cluster on Google Container Engine, Amazon EC2 Container Service or your
+                        can easily host your cluster on <a href="https://cloud.google.com/container-engine/">Google
+                            Container Engine</a>, <a href="https://aws.amazon.com/ecs/">Amazon EC2 Container Service</a>
+                        or your
                         own private Kubernetes cluster.</p>
                 </div>
             </div>
@@ -25,7 +28,7 @@
                         <ul class="features-stack">
                             <li class="feature-item">
                                 <div class="feature-icon">
-                                    <span data-icon="&#xe03e;" class="icon"></span>
+                                    <i class="fa fa-recycle" aria-hidden="true"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h5>Keep pace</h5>
@@ -34,7 +37,7 @@
                             </li>
                             <li class="feature-item">
                                 <div class="feature-icon">
-                                    <span data-icon="&#xe033;" class="icon"></span>
+                                    <i class="fa fa-truck" aria-hidden="true"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h5>Your own technology</h5>
@@ -48,17 +51,7 @@
             </div>
         </div>
     </section>
-    <section class="hero-strip section-padding">
-        <div class="container">
-            <div class="col-md-12 text-center">
-                <h2>Built to embrace your application</h2>
-                <p>ContinuousPipe already supports many different workflows. If you’d like further information, or would
-                    like to discuss how ContinuousPipe could help your organisation, drop us a line.</p>
-                <a href="{{ path('contact') }}" class="btn btn-ghost btn-accent btn-large">Let's talk!</a>
-            </div>
-        </div>
-    </section>
-
+    {% include "_partials/call-to-action.html.twig" %}
     <section class="features-extra section-padding">
         <div class="container">
             <div class="row">
@@ -70,7 +63,7 @@
                         <ul class="features-stack">
                             <li class="feature-item">
                                 <div class="feature-icon">
-                                    <span data-icon="&#xe031;" class="icon"></span>
+                                    <i class="fa fa-object-group" aria-hidden="true"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h5>Application stack</h5>
@@ -80,7 +73,7 @@
                             </li>
                             <li class="feature-item">
                                 <div class="feature-icon">
-                                    <span data-icon="&#xe04b;" class="icon"></span>
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h5>Infrastructure independent</h5>
@@ -90,7 +83,7 @@
                             </li>
                             <li class="feature-item">
                                 <div class="feature-icon">
-                                    <span data-icon="&#xe04b;" class="icon"></span>
+                                    <i class="fa fa-cubes" aria-hidden="true"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h5>Bring your own Cluster</h5>
@@ -121,53 +114,29 @@
                 <h2>Integrations</h2>
             </div>
             <div class="row">
-                <div class="col-md-3 col-xs-6">
-                    <a href="#" class="thumbnail">
-                        <img src="{{ asset('/img/logos/google-cloud.svg') }}" alt="Google Cloud"
-                             class="illustration-image"/>
+                <div class="col-md-3">
+                    <a href="https://cloud.google.com/container-engine/">
+                        <img src="{{ asset('/img/logos/google-cloud-vertical.png') }}" alt="Google Cloud"
+                             class="img-responsive"/>
                     </a>
-                    <div class="caption">
-                        <h3>Google Cloud</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur, cupiditate dolor,
-                            dolore doloribus et explicabo iure laborum maxime nisi nostrum placeat possimus quae
-                            quibusdam recusandae repellat reprehenderit repudiandae voluptatibus!</p>
-                    </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
-                    <a href="#" class="thumbnail">
+                <div class="col-md-3">
+                    <a href="https://aws.amazon.com/ecs/">
                         <img src="{{ asset('/img/logos/amazon-web-services.svg') }}" alt="Amazon EC2 Container Service"
-                             class="illustration-image"/>
+                             class="img-responsive"/>
                     </a>
-                    <div class="caption">
-                        <h3>Amazon EC2 Container Service</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur, cupiditate dolor,
-                            dolore doloribus et explicabo iure laborum maxime nisi nostrum placeat possimus quae
-                            quibusdam recusandae repellat reprehenderit repudiandae voluptatibus!</p>
-                    </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
-                    <a href="#" class="thumbnail">
+                <div class="col-md-3">
+                    <a href="https://quay.io/">
                         <img src="{{ asset('/img/logos/quay-1.svg') }}" alt="Quay.io"
-                             class="illustration-image"/>
+                             class="img-responsive"/>
                     </a>
-                    <div class="caption">
-                        <h3>Quay.io</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur, cupiditate dolor,
-                            dolore doloribus et explicabo iure laborum maxime nisi nostrum placeat possimus quae
-                            quibusdam recusandae repellat reprehenderit repudiandae voluptatibus!</p>
-                    </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
-                    <a href="#" class="thumbnail">
+                <div class="col-md-3">
+                    <a href="https://hub.docker.com/">
                         <img src="{{ asset('/img/logos/docker.svg') }}" alt="Dockerhub"
-                             class="illustration-image"/>
+                             class="img-responsive"/>
                     </a>
-                    <div class="caption">
-                        <h3>Dockerhub</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur, cupiditate dolor,
-                            dolore doloribus et explicabo iure laborum maxime nisi nostrum placeat possimus quae
-                            quibusdam recusandae repellat reprehenderit repudiandae voluptatibus!</p>
-                    </div>
                 </div>
             </div>
         </div>

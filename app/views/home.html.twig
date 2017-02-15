@@ -1,14 +1,12 @@
 {% extends "layout.html.twig" %}
+{% block title %}ContinuousPipe - for a faster development workflow{% endblock %}
 {% block body %}
 <section class="hero">
-    <section class="navigation">
-        {% include "_partials/header.html.twig" %}
-    </section>
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="hero-content text-center">
-                    <h1>ContinuousPipe</h1>
+                    <img src="{{  asset('img/logos/cp-logo-with-wordmark.svg') }}" class="transparent">
                     <p class="intro">For a faster development workflow.</p>
                 </div>
             </div>

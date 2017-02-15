@@ -10,8 +10,8 @@ $routes->get('/production-workloads', function() use ($app) {
     return $app['twig']->render('features/production-workloads.html.twig');
 })->bind('area_prod');
 
-$routes->get('/developer-environments', function() use ($app) {
-    return $app['twig']->render('features/developer-environments.html.twig');
+$routes->get('/developer-environment', function() use ($app) {
+    return $app['twig']->render('features/developer-environment.html.twig');
 })->bind('area_dev');
 
 return $routes;

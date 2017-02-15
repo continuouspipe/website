@@ -1,0 +1,98 @@
+{% extends "regular_layout.html.twig" %}
+{% block nav_area_dev_class %} active{% endblock %}
+{% block title %}Developer Environment{% endblock %}
+{% block content %}
+
+    <section class="intro section-padding" id="overview">
+        <div class="container">
+            <div class="row">
+                <div class="page-header">
+                    <h1>Developer Environment</h1>
+                    <p>ContinuousPipe can be used as a development environment. By removing the need to
+                        install and run Docker locally, you benefit from fast project and developer onboarding, minimal
+                        downtime
+                        per
+                        month,
+                        and production-like performance.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Fast Onboarding</h5>
+                        <p>Onboarding a new developer is as simple and as quick as creating a new remote development
+                            branch, pushing to your repo and waiting for the environment to build - less than
+                            15 minutes from end to end.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Minimal Downtime</h5>
+                        <p>Docker isn't installed locally, so there’s not much that can break. Further, you
+                            don’t need to have lots of memory on your laptop or remember to shut down containers when
+                            you switch projects.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <i class="fa fa-fire" aria-hidden="true"></i>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>Production-like Performance</h5>
+                        <p>We run your containers on production-like hardware, so you get to develop
+                            in an environment with production-like performance. Work faster, confident that your work will perform in production!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <h2>Laravel Demo</h2>
+                <p>This demo shows how your code changes are synchronised in the background to ContinuousPipe. Please
+                    note - Docker is
+                    not installed on the development machine - all you need is our cross-platform <a
+                            href="https://github.com/continuouspipe/remote-environment-client">Remote Environment
+                        Client</a>.</p>
+                <img src="{{ asset('/img/cp-remote-laravel.gif') }}" class="img-responsive">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2>Integrations</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://github.com/">
+                        <img src="{{ asset('/img/logos/github-icon.svg') }}" alt="Github"
+                             class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://bitbucket.org/">
+                        <img src="{{ asset('/img/logos/bitbucket.svg') }}" alt="Bitbucket"
+                             class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://slack.com/">
+                        <img src="{{ asset('/img/logos/slack.svg') }}" alt="Slack"
+                             class="img-responsive"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "_partials/call-to-action.html.twig" %}
+{% endblock %}

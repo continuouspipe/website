@@ -563,6 +563,7 @@ Intro
   padding: 6px 0 0 0;
   margin-right: 20px;
   width: 40px;
+  font-size: 3em;
 }
 
 .intro-content {
@@ -623,6 +624,7 @@ ul.features-stack .feature-icon {
   padding: 6px 0 0 0;
   margin-right: 20px;
   width: 35px;
+  font-size: 3em;
 }
 ul.features-stack .feature-content {
   display: inline-block;
@@ -1581,4 +1583,8 @@ you can use the generic selector below, but it's slower:
 .navigation.navigation-area div.cp-areas .area.active {
   background: #FFFFFF;
   color: #3076ff;
+}
+
+.transparent{
+  background:rgba(255,255,255,0.8);
 }
