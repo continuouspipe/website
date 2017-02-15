@@ -1,14 +1,10 @@
-{% extends "layout.html.twig" %}
+{% extends "regular_layout.html.twig" %}
 {% block title %}Blog{% endblock %}
-{% block body %}
-    <section class="navigation regular">
-        {% include "_partials/header.html.twig" %}
-    </section>
-    {% block hero %}{% endblock %}
+{% block content %}
     <div class="container blog-inner blog">
         <div class="row">
             <div class="col-md-12">
-                {% block content %}{% endblock %}
+                {% block blog_content %}{% endblock %}
             </div>
         </div>
     </div>

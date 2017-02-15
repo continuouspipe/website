@@ -1,6 +1,6 @@
 {% extends "blog/layout.html.twig" %}
 {% block left_navigation_clusters_class %} class="active"{% endblock %}
-{% block content %}
+{% block blog_content %}
     <h1>{{ post.getTitle() }}</h1>
     <p>{{ post.getDate() | date('l jS \\of F Y') }}</p>
 
