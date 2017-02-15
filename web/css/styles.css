@@ -1607,3 +1607,14 @@ you can use the generic selector below, but it's slower:
 .transparent{
   background:rgba(255,255,255,0.8);
 }
+
+.integrations.section-padding {
+  padding-bottom: 100px;
+}
+.integrations .integration-list {
+  text-align: center;
+}
+.integrations a > img {
+  height: 50px;
+  margin-bottom: 20px;
+}
