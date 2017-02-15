@@ -418,9 +418,12 @@ Navigation
   position: absolute;
   height: 26px;
   right: 10px;
-  top: 48px;
+  top: 28px;
   visibility: hidden;
   transition: all 300ms ease-in-out;
+}
+.hero.hero-home .navicon {
+  top: 48px;
 }
 
 .hero {
@@ -1576,24 +1579,27 @@ you can use the generic selector below, but it's slower:
   margin-bottom: 20px;
 }
 
-.navigation.navigation-area > header {
+.navigation-area {
+  background-color: #232731;
+}
+.navigation-area > header {
   padding: 20px 0 0 0 !important;
   border-bottom: none;
 }
-.navigation.navigation-area div.cp-areas {
+.navigation-area div.cp-areas {
   display: flex;
   flex-direction: row;
 }
 
-.navigation.navigation-area div.cp-areas .area {
+.navigation-area div.cp-areas .area {
   flex: 1;
   text-align: center;
   padding: 20px 0;
 }
-.navigation.navigation-area div.cp-areas .area .icon {
+.navigation-area div.cp-areas .area .icon {
   margin-right: 10px;
 }
-.navigation.navigation-area div.cp-areas .area.active {
+.navigation-area div.cp-areas .area.active {
   background: #FFFFFF;
   color: #3076ff;
 }
