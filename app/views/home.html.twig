@@ -1,16 +1,22 @@
 {% extends "layout.html.twig" %}
 {% block title %}ContinuousPipe - for a faster development workflow{% endblock %}
 {% block body %}
-<section class="hero">
+<section class="hero hero-home">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="hero-content text-center">
-                    <img src="{{  asset('img/logos/cp-logo-with-wordmark.svg') }}" class="transparent">
+                    <i class="cp-icon-logo"></i>
+                    <h1>ContinuousPipe</h1>
                     <p class="intro">For a faster development workflow.</p>
                 </div>
             </div>
         </div>
+        <div class="down-arrow floating-arrow"><a href="#features"><i class="fa fa-angle-down"></i></a></div>
+    </div>
+</section>
+<section class="hero-strip section-padding" id="features">
+    <div class="container">
         <div class="row area-list">
             <div class="col-md-4">
                 <div class="area">

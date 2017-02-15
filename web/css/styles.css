@@ -424,8 +424,8 @@ Navigation
 }
 
 .hero {
-  min-height: 750px;
-  background: url("../img/backgrounds/busy-table-alt.jpg") center center;
+  min-height: 650px;
+  background: url("../img/backgrounds/busy-table.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -444,19 +444,20 @@ Navigation
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 80px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 .hero .hero-content {
-  padding-top: 200px;
+  padding-top: 150px;
+}
+.hero.hero-home .hero-content .cp-icon-logo {
+  color: #fff;
+  font-size: 5em;
 }
 .hero h1 {
   margin-bottom: 10px;
 }
-.hero .area-list {
-  margin-bottom: 100px;
-}
-.hero .area-list .area {
+.area-list .area {
   border: 1px solid white;
-  background: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
