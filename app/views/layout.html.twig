@@ -7,11 +7,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>ContinuousPipe</title>
+    <title>{% block title %}ContinuousPipe{% endblock %}</title>
     <meta name="description" content="ContinuousPipe, the continuous deployment pipeline based on Docker and Kubernetes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" type="image/png" href="{{ asset('/favicon.png') }}" />
 
     {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('/css/vendor/normalize.min.css') }}">
@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="{{ asset('/css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/documentation.css') }}">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    {#<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">#}
+    <script src="https://use.fontawesome.com/ae9153e864.js"></script>
     {% endblock %}
 
     <script src="{{ asset('/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
@@ -61,11 +62,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="col-md-7">
                 <div class="footer-links">
                     <ul class="footer-group">
+                        <li><a href="{{ path('area_dev') }}">Features</a></li>
                         <li><a href="{{ path('pricing') }}">Pricing</a></li>
                         <li><a href="{{ path('faq') }}">FAQ</a></li>
                         <li><a href="{{ path('blog') }}">Blog</a></li>
                         <li><a href="{{ path('contact') }}">Contact Us</a></li>
-                        <li><a href="{{ path('documentation') }}">Documentation</a></li>
+                        <li><a href="https://docs.continuouspipe.io">Documentation</a></li>
                         <li><a href="https://ui.continuouspipe.io">Console</a></li>
                     </ul>
                     <p>Crafted with <span class="fa fa-heart pulse2"></span> by <a href="https://inviqa.com">Inviqa</a> & <a href="https://twitter.com/samuelroze">Samuel Roze</a>.</p>

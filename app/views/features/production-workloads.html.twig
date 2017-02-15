@@ -1,0 +1,138 @@
+{% extends "features/layout.html.twig" %}
+{% block nav_area_prod_class %} active{% endblock %}
+{% block title %}Production{% endblock %}
+{% block content %}
+    <section class="intro section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="page-header">
+                    <h1>Production</h1>
+                    <p>ContinuousPipe can reduce the time it takes to deploy your website to any Kubernetes cluster. You
+                        can easily host your cluster on <a href="https://cloud.google.com/container-engine/">Google
+                            Container Engine</a>, <a href="https://aws.amazon.com/ecs/">Amazon EC2 Container Service</a>
+                        or your
+                        own private Kubernetes cluster.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="image-container">
+                        <img src="{{ asset('/img/home-page-screen.png') }}" class="illustration-image"
+                             alt="ContinuousPipe UI"/>
+                    </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="feature-list">
+                        <h3>Continuous deployment with containers</h3>
+                        <p>Enable fast changes by applying continuous deployment with your Docker based application.</p>
+                        <ul class="features-stack">
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-recycle" aria-hidden="true"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Keep pace</h5>
+                                    <p>A shorter lead time with ContinuousPipe means faster deployments.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-truck" aria-hidden="true"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Your own technology</h5>
+                                    <p>Based on Docker containers, the pipeline can build and deploy any kind
+                                        of technology stack. You can be using Go, Java, PHP or anything else – all you
+                                        need is the Docker configuration.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "_partials/call-to-action.html.twig" %}
+    <section class="features-extra section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="feature-list">
+                        <h3>Deploy at scale with Kubernetes</h3>
+                        <p>For an experimental feature, whatever your staging or production environment, the deployment
+                            will always be the same.</p>
+                        <ul class="features-stack">
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-object-group" aria-hidden="true"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Application stack</h5>
+                                    <p>Your entire application will be deployed and orchestrated from your Docker
+                                        Compose configuration.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Infrastructure independent</h5>
+                                    <p>Kubernetes can run everywhere, on your laptop as well as in large-scale
+                                        clouds.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-cubes" aria-hidden="true"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Bring your own Cluster</h5>
+                                    <p>Most of our clients choose to use Kubernetes clusters hosted by Google or Amazon.
+                                        As well as getting a highly managed service, they benefit from compliance with
+                                        security frameworks such as PCI and ISO27001. If you’d prefer to build and
+                                        manage your own Kubernetes platform, we’d be
+                                        delighted to introduce you to our partner, Jetstack. </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <p style="text-align: center;"><a href="http://kubernetes.io/" class="btn btn-ghost btn-small"
+                                                          target="_blank">What is Kubernetes?</a></p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-md-offset-2">
+                    <div class="image-container">
+                        <img src="{{ asset('/img/kubernetes-logo.png') }}" alt="Kubernetes" class="illustration-image"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="integrations features section-padding">
+        <div class="container">
+            <div class="row integration-list">
+                <div class="col-md-3">
+                    <a href="https://cloud.google.com/container-engine/">
+                        <img src="{{ asset('/img/logos/google-cloud-vertical.png') }}" alt="Google Cloud" />
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://aws.amazon.com/ecs/">
+                        <img src="{{ asset('/img/logos/amazon-web-services.svg') }}" alt="AWS" />
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://quay.io/">
+                        <img src="{{ asset('/img/logos/quay-1.svg') }}" alt="Quay.io" />
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://hub.docker.com/">
+                        <img src="{{ asset('/img/logos/docker.svg') }}" alt="Dockerhub" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

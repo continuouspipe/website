@@ -205,7 +205,12 @@
     display: block; }
 
   footer .footer-links {
-    margin: 50px 0 50px 0; } }
+    margin: 50px 0 50px 0; }
+
+  .intro .page-header h1, .blog h1 {
+    font-size: 40px;
+  }
+}
 @media screen and (max-width: 480px) {
   .hero .hero-content {
     padding-top: 41%; }

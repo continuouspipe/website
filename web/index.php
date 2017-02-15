@@ -55,4 +55,5 @@ $app['tags'] = $app->share(function ($app) {
 $app->mount('/', require '../app/controllers/home.php');
 $app->mount('/docs/', require '../app/controllers/documentation.php');
 $app->mount('/blog/', require '../app/controllers/blog.php');
+$app->mount('/features/', require '../app/controllers/features.php');
 $app->run();

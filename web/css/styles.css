@@ -108,11 +108,15 @@ section.features, section.blog-intro, section.blog {
 
 @font-face {
   font-family: 'cp';
-  src: url("../fonts/cp.eot?scd30j");
-  src: url("../fonts/cp.eot?scd30j#iefix") format("embedded-opentype"), url("../fonts/cp.ttf?scd30j") format("truetype"), url("../fonts/cp.woff?scd30j") format("woff"), url("../fonts/cp.svg?scd30j#cp") format("svg");
+  src:  url('../fonts/cp.eot?x6hk92');
+  src:  url('../fonts/cp.eot?x6hk92#iefix') format('embedded-opentype'),
+  url('../fonts/cp.ttf?x6hk92') format('truetype'),
+  url('../fonts/cp.woff?x6hk92') format('woff'),
+  url('../fonts/cp.svg?x6hk92#cp') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
 [class^="cp-icon-"], [class*=" cp-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'cp' !important;
@@ -122,13 +126,35 @@ section.features, section.blog-intro, section.blog {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .cp-icon-logo:before {
+  content: "\e906";
+}
+.cp-icon-old-logo:before {
+  content: "\e901";
+}
+.cp-icon-github:before {
+  content: "\e902";
+}
+.cp-icon-git-branch:before {
+  content: "\e903";
+}
+.cp-icon-arrow-right-up:before {
+  content: "\e904";
+}
+.cp-icon-commit:before {
+  content: "\e905";
+}
+.cp-icon-bitbucket:before {
   content: "\e900";
+}
+.cp-icon-google:before {
+  content: "\ea8a";
 }
 
 /* ==========================================================================
@@ -392,14 +418,17 @@ Navigation
   position: absolute;
   height: 26px;
   right: 10px;
-  top: 48px;
+  top: 28px;
   visibility: hidden;
   transition: all 300ms ease-in-out;
 }
+.hero.hero-home .navicon {
+  top: 48px;
+}
 
 .hero {
-  min-height: 750px;
-  background: url("../img/containers.jpg") center center;
+  min-height: 650px;
+  background: url("../img/backgrounds/busy-table-40-black.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -418,11 +447,25 @@ Navigation
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 80px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 .hero .hero-content {
-  padding-top: 26%;
+  padding-top: 150px;
 }
-
+.hero.hero-home .hero-content .cp-icon-logo {
+  color: #fff;
+  font-size: 5em;
+}
+.hero h1 {
+  margin-bottom: 10px;
+}
+.area-list .area {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
 .navigation {
   transition: all 300ms ease-in-out;
   position: fixed;
@@ -455,9 +498,11 @@ header a.login {
 }
 header .logo {
   display: inline-block;
+  padding-top: 5px;
+  padding-left: 15px;
 }
 header .logo i.cp-icon-logo {
-  font-size: 3em;
+  font-size: 30px;
 }
 header ul.primary-nav {
   margin: 0 0 0 75px;
@@ -522,13 +567,26 @@ Intro
   padding: 6px 0 0 0;
   margin-right: 20px;
   width: 40px;
+  font-size: 3em;
 }
 
 .intro-content {
   display: inline-block;
   width: 80%;
 }
+.intro-feature {
+  margin-top: 20px;
+}
 
+.intro img {
+  max-width:100%;
+}
+.intro.section-padding {
+  padding: 50px 0;
+}
+.intro .page-header h1 {
+  margin-bottom: 40px;
+}
 /* ==========================================================================
 Features-stack
 ========================================================================== */
@@ -582,6 +640,7 @@ ul.features-stack .feature-icon {
   padding: 6px 0 0 0;
   margin-right: 20px;
   width: 35px;
+  font-size: 3em;
 }
 ul.features-stack .feature-content {
   display: inline-block;
@@ -1517,5 +1576,45 @@ you can use the generic selector below, but it's slower:
   margin-bottom: 20px;
 }
 .blog .badges {
+  margin-bottom: 20px;
+}
+
+.navigation-area {
+  background-color: #232731;
+}
+.navigation-area > header {
+  padding: 20px 0 0 0 !important;
+  border-bottom: none;
+}
+.navigation-area div.cp-areas {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-area div.cp-areas .area {
+  flex: 1;
+  text-align: center;
+  padding: 20px 0;
+}
+.navigation-area div.cp-areas .area .icon {
+  margin-right: 10px;
+}
+.navigation-area div.cp-areas .area.active {
+  background: #FFFFFF;
+  color: #3076ff;
+}
+
+.transparent{
+  background:rgba(255,255,255,0.8);
+}
+
+.integrations.section-padding {
+  padding-bottom: 100px;
+}
+.integrations .integration-list {
+  text-align: center;
+}
+.integrations a > img {
+  height: 50px;
   margin-bottom: 20px;
 }

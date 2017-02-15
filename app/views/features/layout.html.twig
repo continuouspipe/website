@@ -1,0 +1,19 @@
+{% extends "regular_layout.html.twig" %}
+{% block header %}
+{{ parent() }}
+<section class="regular navigation-area">
+    <header>
+        <div class="cp-areas">
+            <a class="area{% block nav_area_dev_class %}{% endblock %}" href="{{ path('area_dev') }}">
+                <i class="fa fa-pencil" aria-hidden="true"></i> Developer environment
+            </a>
+            <a class="area{% block nav_area_qa_class %}{% endblock %}" href="{{ path('area_qa') }}">
+                <i class="fa fa-recycle" aria-hidden="true"></i> Quality assurance & Collaboration
+            </a>
+            <a class="area{% block nav_area_prod_class %}{% endblock %}" href="{{ path('area_prod') }}">
+                <i class="fa fa-cloud" aria-hidden="true"></i> Production
+            </a>
+        </div>
+    </header>
+</section>
+{% endblock %}
