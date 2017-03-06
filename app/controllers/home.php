@@ -7,6 +7,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormError;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\Form\FormInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Validator\Constraints\NotBlank;
@@ -117,8 +118,13 @@ $routes->get('/frequently-asked-questions', function() use ($app) {
     return $app['twig']->render('faq.html.twig');
 })->bind('faq');
 
+$routes->get('/early-access', function() use ($app) {
+    return new RedirectResponse('https://authenticator.continuouspipe.io/early-access/');
+});
+
 $routes->get('/', function() use ($app) {
     return $app['twig']->render('home.html.twig');
 })->bind('homepage');
+
 
 return $routes;
