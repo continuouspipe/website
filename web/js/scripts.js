@@ -26,11 +26,6 @@
 			offset: '75%'
 		});
 
-		/***************** Initiate Flexslider ******************/
-		$('.flexslider').flexslider({
-			animation: "slide"
-		});
-
 		/***************** Initiate Fancybox ******************/
 
 		$('.single_image').fancybox({
