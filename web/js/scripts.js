@@ -43,50 +43,47 @@
 			$('.header-nav').toggleClass('open');
 			event.preventDefault();
 		});
-		/* When user clicks a link */
-		$('.header-nav li a').click(function() {
-			$('.nav-toggle').toggleClass('active');
-			$('.header-nav').toggleClass('open');
-
-		});
 
 		/***************** Header BG Scroll ******************/
 
 		$(function() {
 			// Check if already scrolled on load (eg a refresh)
+			var $sectionNav = $('section.navigation'),
+				$header = $('header');
+
 			$(window).load(function() {
 				var scroll = this.scrollY;
 				if ( scroll > 0) {
-					$('section.navigation').addClass('fixed');
+					$sectionNav.addClass('fixed');
 				}
 			});
 			$(window).scroll(function() {
 				var scroll = $(window).scrollTop();
 
-				if ($('section.navigation').hasClass('regular')) {
+				if ($sectionNav.hasClass('regular')) {
 					return;
 				}
 
 				if (scroll >= 20) {
-					$('section.navigation').addClass('fixed');
-					$('header').css({
+					$sectionNav.addClass('fixed');
+					$header.css({
 						"padding": "25px 0"
 					});
-					$('header .member-actions').css({
+					$header.find('.member-actions').css({
 						"top": "26px",
 					});
-					$('header .navicon').css({
+					$header.find('.navicon').css({
 						"top": "34px",
 					});
 				} else {
-					$('section.navigation').removeClass('fixed');
-					$('header').css({
+					$sectionNav.removeClass('fixed');
+					$header.css({
 						"padding": "40px 0"
 					});
-					$('header .member-actions').css({
+					$header.find('.member-actions').css({
 						"top": "41px",
 					});
-					$('header .navicon').css({
+					$header.find('.navicon').css({
 						"top": "48px",
 					});
 				}
