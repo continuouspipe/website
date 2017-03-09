@@ -6,3 +6,4 @@
 cp-remote-logs/
 .DS_Store
 cp-remote-logs/
+node_modules/
