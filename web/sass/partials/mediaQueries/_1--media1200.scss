@@ -1,0 +1,19 @@
+@media screen and (max-width: 1200px) {
+  header {
+    width: 90%;
+    margin: 0 auto; 
+  }
+
+  .intro-content {
+    display: inline-block;
+    width: 70%; 
+  }
+
+  .hero .hero-content {
+    padding-top: 28%; 
+  } 
+
+  .hero-strip h2 {
+    font-size: 30px;
+  }
+}
