@@ -1,0 +1,23 @@
+{
+  "name": "continuous-pipe",
+  "version": "1.0.0",
+  "description": "ContinuousPipe, the continuous deployment pipeline based on Docker and Kubernetes",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/continuouspipe/website.git"
+  },
+  "author": "Inviqa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/continuouspipe/website/issues"
+  },
+  "homepage": "https://github.com/continuouspipe/website#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

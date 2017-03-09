@@ -1,0 +1,38 @@
+@media screen and (max-width: 400px) {
+  header {
+    width: 100%;
+  }
+
+  header a {
+    font-size: 12px;
+  }
+
+  header a .fa {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .navigation-area div.cp-areas .area {
+    padding: 20px 10px;
+  }
+
+  .area-list .area {
+    margin: 20px 0px;
+  }
+
+  .hero h1 {
+    font-size: 38px; 
+  }
+
+  .hero p.intro {
+    font-size: 18px;
+  }
+
+  .intro-content {
+    width: 100%;
+  }
+
+  .sign-up .signup-form .form-input-group, .sign-up .signup-form .sign-up-btn {
+    width: 100%;
+  }
+}
