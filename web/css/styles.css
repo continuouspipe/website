@@ -108,11 +108,11 @@ section.features, section.blog-intro, section.blog {
 
 @font-face {
   font-family: 'cp';
-  src:  url('../fonts/cp.eot?x6hk92');
-  src:  url('../fonts/cp.eot?x6hk92#iefix') format('embedded-opentype'),
-  url('../fonts/cp.ttf?x6hk92') format('truetype'),
-  url('../fonts/cp.woff?x6hk92') format('woff'),
-  url('../fonts/cp.svg?x6hk92#cp') format('svg');
+  src:  url('./fonts/cp.eot?x6hk92');
+  src:  url('./fonts/cp.eot?x6hk92#iefix') format('embedded-opentype'),
+  url('./fonts/cp.ttf?x6hk92') format('truetype'),
+  url('./fonts/cp.woff?x6hk92') format('woff'),
+  url('./fonts/cp.svg?x6hk92#cp') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -991,8 +991,8 @@ Icon font (http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style
 ========================================================================== */
 @font-face {
   font-family: 'et-line';
-  src: url("../fonts/et-line.eot");
-  src: url("../fonts/et-line.eot?#iefix") format("embedded-opentype"), url("../fonts/et-line.woff") format("woff"), url("../fonts/et-line.ttf") format("truetype"), url("../fonts/et-line.svg#et-line") format("svg");
+  src: url("./fonts/et-line.eot");
+  src: url("./fonts/et-line.eot?#iefix") format("embedded-opentype"), url("./fonts/et-line.woff") format("woff"), url("./fonts/et-line.ttf") format("truetype"), url("./fonts/et-line.svg#et-line") format("svg");
   font-weight: normal;
   font-style: normal;
 }
