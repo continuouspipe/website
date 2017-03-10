@@ -7,3 +7,5 @@ cp-remote-logs/
 .DS_Store
 cp-remote-logs/
 node_modules/
+/.cp-remote-settings.yml
+cp-remote-logs
