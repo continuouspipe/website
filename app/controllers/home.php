@@ -118,6 +118,10 @@ $routes->get('/frequently-asked-questions', function() use ($app) {
     return $app['twig']->render('faq.html.twig');
 })->bind('faq');
 
+$routes->get('/why', function() use ($app) {
+    return $app['twig']->render('why.html.twig');
+})->bind('why');
+
 $routes->get('/early-access', function() use ($app) {
     return new RedirectResponse('https://authenticator.continuouspipe.io/early-access/');
 });
