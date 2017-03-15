@@ -1,6 +1,6 @@
 /\.[^/]*$
-\.idea
-\.git
+.idea
+.git
 ___jb_old___
 ___jb_tmp___
 cp-remote-logs
