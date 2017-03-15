@@ -19,3 +19,4 @@ filter:
     excluded_paths:
         - "web/js/jquery.flexslider-min.js"
         - "web/js/jquery.fancybox.pack.js"
+        - "web/js/vendor/"
