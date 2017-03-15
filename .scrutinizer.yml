@@ -15,3 +15,7 @@ tools:
     php_pdepend: true
     php_analyzer: true
     sensiolabs_security_checker: true
+filter:
+    excluded_paths:
+        - "web/js/jquery.flexslider-min.js"
+        - "web/js/jquery.fancybox.pack.js"
