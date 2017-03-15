@@ -20,3 +20,4 @@ filter:
         - "web/js/jquery.flexslider-min.js"
         - "web/js/jquery.fancybox.pack.js"
         - "web/js/vendor/"
+        - "web/js/min/"
