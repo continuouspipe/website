@@ -25,6 +25,16 @@
                     <p>From days, to under and hour</p>
                 </div>
                 <div class="col-md-2">
+                    <a href="#deployment"><img src="http://placehold.it/150x150" class="img-responsive"></a>
+                    <h3><a href="#deployment">Feature Deployment</a></h3>
+                    <p>from days to minutes</p>
+                </div>
+                <div class="col-md-2">
+                    <a href="#qa-feedback"><img src="{{ asset('/img/icons/feedback.png') }}" class="img-responsive"></a>
+                    <h3><a href="#qa-feedback">QA &amp; Stakeholder Feedback</a></h3>
+                    <p>from hours to minutes</p>
+                </div>
+                <div class="col-md-2">
                     <a href="#onboarding"><img src="{{ asset('/img/icons/onboarding.png') }}" class="img-responsive"></a>
                     <h3><a href="#onboarding">Onboarding a Developer</a></h3>
                     <p>from days to 15 minutes</p>
@@ -39,16 +49,6 @@
                     <h3><a href="#performance">Page Performance</a></h3>
                     <p>from 30 seconds to less than 1 second</p>
                 </div>
-                <div class="col-md-2">
-                    <a href="#qa-feedback"><img src="{{ asset('/img/icons/feedback.png') }}" class="img-responsive"></a>
-                    <h3><a href="#qa-feedback">QA &amp; Stakeholder Feedback</a></h3>
-                    <p>from hours to minutes</p>
-                </div>
-                <div class="col-md-2">
-                    <a href="#deployment"><img src="http://placehold.it/150x150" class="img-responsive"></a>
-                    <h3><a href="#deployment">Feature Deployment</a></h3>
-                    <p>from days to minutes</p>
-                </div>
             </div>
 
         </div>
@@ -62,6 +62,25 @@
             creating Dev, QA and integration environments is as simple as <a
                     href="https://docs.continuouspipe.io/configuration/">configuring ContinuousPipe</a> and pushing
             branches to your repository. Within minutes, your environments are built and you're ready to go.</p>
+
+        <h3 id="deployment">Feature Deployment</h3>
+        <p>When a feature is approved, it can take a long time to get it into pipeline environments.
+            ContinuousPipe can run your automated tests and automatically deploy into staging, or enable <a
+                    href="https://docs.continuouspipe.io/faq/how-do-I-set-up-manual-approval-of-deployments/">manual
+                deployment into production</a>.
+            You don't need to host your production site on ContinuousPipe (or even Docker) to get these benefits - we
+            can run your existing
+            deployment workflow and get your features deployed in minutes, not days.</p>
+
+        <h3 id="qa-feedback">QA and Stakeholder Feedback</h3>
+        <p>Waiting for QA and other stakeholders to give feedback to developers really does slow down the development
+            process. Previously you might have shared access to your dev environment via a hangout or tunnel, or merged
+            your feature to a staging environment (and risk breaking it for everyone else). ContinuousPipe creates an
+            <a href="{{ path('area_qa') }}">isolated environment</a> with every pull request so
+            minutes after creating your Pull Request your QA team and
+            other stakeholders can be reviewing your work (from wherever they are in the world) and giving you the
+            feedback
+            you need on order to get the feature approved in minutes, not days.</p>
 
         <h3 id="onboarding">Onboarding a developer</h3>
         <p>Virtual Machines tend to rot, and often a new team member can spend days
@@ -84,27 +103,6 @@
             ContinuousPipe's <a
                     href="{{ path('area_dev') }}">Developer Environment</a> runs your code on
             production-grade containers, so you benefit from production-like performance.</p>
-
-        <h3 id="qa-feedback">QA and Stakeholder Feedback</h3>
-        <p>Waiting for QA and other stakeholders to give feedback to developers really does slow down the development
-            process. Previously you might have shared access to your dev environment via a hangout or tunnel, or merged
-            your feature to a staging environment (and risk breaking it for everyone else). ContinuousPipe creates an
-            <a href="area_qa">isolated environment</a> with every pull request so
-            minutes after creating your Pull Request your QA team and
-            other stakeholders can be reviewing your work (from wherever they are in the world) and giving you the
-            feedback
-            you need on order to get the feature approved in minutes, not days.</p>
-
-        <h3 id="deployment">Feature Deployment</h3>
-        <p>When a feature is approved, it can take a long time to get it into pipeline environments.
-            ContinuousPipe can run your automated tests and automatically deploy into staging, or enable <a
-                    href="https://docs.continuouspipe.io/faq/how-do-I-set-up-manual-approval-of-deployments/">manual
-                deployment into production</a>.
-            You don't need to host your production site on ContinuousPipe (or even Docker) to get these benefits - we
-            can run your existing
-            deployment workflow and get your features deployed in minutes, not days.</p>
-
-
         </div>
     </section>
     {% include "_partials/call-to-action.html.twig" %}
