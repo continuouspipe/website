@@ -1,48 +1,52 @@
 {% extends "regular_layout.html.twig" %}
 {% block title %}Why ContinuousPipe?{% endblock %}
 {% block content %}
-    <section>
+    <section class="hero-strip section-padding no-icon">
         <div class="container">
             <div class="col-md-12 text-center">
                 <h2>Why ContinuousPipe?</h2>
                 <p>ContinuousPipe can be used to solve many problems in the Software Development Lifecycle. In
                     particular, we believe
-                    that enabling developers to have a faster development workflow is critical to delivering value in IT
-                    projects. Here's how:</p>
+                    that enabling developers to have a <b>faster development workflow</b> is critical to delivering
+                    value in IT
+                    projects.</p>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+                    <p>Here are some key metrics we can impact:</p>
+                </div>
                 <div class="col-md-2">
-                    <img src="{{ asset('/img/icons/sprint-zero.png') }}" class="img-responsive">
+                    <a href="#sprint-zero"><img src="{{ asset('/img/icons/sprint-zero.png') }}" class="img-responsive"></a>
                     <h3><a href="#sprint-zero">Sprint Zero Time</a></h3>
                     <p>From days, to under and hour</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="{{ asset('/img/icons/onboarding.png') }}" class="img-responsive">
+                    <a href="#onboarding"><img src="{{ asset('/img/icons/onboarding.png') }}" class="img-responsive"></a>
                     <h3><a href="#onboarding">Onboarding a Developer</a></h3>
                     <p>from days to 15 minutes</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="{{ asset('/img/icons/downtime.png') }}" class="img-responsive">
+                    <a href="#downtime"><img src="{{ asset('/img/icons/downtime.png') }}" class="img-responsive"></a>
                     <h3><a href="#downtime">Monthly Developer Downtime</a></h3>
                     <p>from hours to minutes</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="{{ asset('/img/icons/page-performance.png') }}" class="img-responsive">
+                    <a href="#performance"><img src="{{ asset('/img/icons/page-performance.png') }}" class="img-responsive"></a>
                     <h3><a href="#performance">Page Performance</a></h3>
                     <p>from 30 seconds to less than 1 second</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="{{ asset('/img/icons/feedback.png') }}" class="img-responsive">
+                    <a href="#qa-feedback"><img src="{{ asset('/img/icons/feedback.png') }}" class="img-responsive"></a>
                     <h3><a href="#qa-feedback">QA &amp; Stakeholder Feedback</a></h3>
                     <p>from hours to minutes</p>
                 </div>
                 <div class="col-md-2">
-                    <img src="{{ asset('/img/icons/feedback.png') }}" class="img-responsive">
-                    <h3><a href="deployment">Feature Deployment</a></h3>
+                    <a href="#deployment"><img src="http://placehold.it/150x150" class="img-responsive"></a>
+                    <h3><a href="#deployment">Feature Deployment</a></h3>
                     <p>from days to minutes</p>
                 </div>
             </div>
@@ -61,7 +65,7 @@
 
         <h3 id="onboarding">Onboarding a developer</h3>
         <p>Virtual Machines tend to rot, and often a new team member can spend days
-            trying to get up and running. ContinuousPipe's <a href="/features/developer-environment">Developer
+            trying to get up and running. ContinuousPipe's <a href="{{ path('area_dev') }}">Developer
                 Environment</a> makes the onboarding process
             really simple and quick - create a new environment in the Control Panel, wait for it to build, and install
             and setup our <a href="https://docs.continuouspipe.io/remote-development/getting-started/">Remote
@@ -70,35 +74,39 @@
         <h3 id="downtime">Monthly Developer Downtime</h3>
         <p>As mentioned above, Virtual Machines tend to rot and laptops run out of memory. This causes frustration
             for developers who might lose half a day or more per month and quickly adds up. ContinuousPipe's <a
-                    href="/features/developer-environment">Developer Environment</a> is reliable and dramatically
+                    href="{{ path('area_dev') }}">Developer Environment</a> is reliable and dramatically
             reduces this downtime, from hours to minutes per month.</p>
 
         <h3 id="performance">Page Performance</h3>
         <p>Virtual Machines and Docker can be really slow, especially on Mac and Windows. This is often because of large
             frameworks with thousands of classes being autoloaded with each page request. It's not uncommon to
-            experience a 10 second page load time for a Symfony or Magento application. ContinuousPipe's <a
-                    href="/features/developer-environment">Developer Environment</a> runs your code on
+            experience a 10 second page load time for a Symfony or Magento application in devloper mode.
+            ContinuousPipe's <a
+                    href="{{ path('area_dev') }}">Developer Environment</a> runs your code on
             production-grade containers, so you benefit from production-like performance.</p>
 
         <h3 id="qa-feedback">QA and Stakeholder Feedback</h3>
         <p>Waiting for QA and other stakeholders to give feedback to developers really does slow down the development
             process. Previously you might have shared access to your dev environment via a hangout or tunnel, or merged
             your feature to a staging environment (and risk breaking it for everyone else). ContinuousPipe creates an
-            <a href="/features/quality-assurance-and-collaboration">isolated environment</a> with every pull request so
+            <a href="area_qa">isolated environment</a> with every pull request so
             minutes after creating your Pull Request your QA team and
             other stakeholders can be reviewing your work (from wherever they are in the world) and giving you the
             feedback
             you need on order to get the feature approved in minutes, not days.</p>
 
-        <h3 id="performance">Feature Deployment</h3>
+        <h3 id="deployment">Feature Deployment</h3>
         <p>When a feature is approved, it can take a long time to get it into pipeline environments.
             ContinuousPipe can run your automated tests and automatically deploy into staging, or enable <a
                     href="https://docs.continuouspipe.io/faq/how-do-I-set-up-manual-approval-of-deployments/">manual
                 deployment into production</a>.
-            You don't need to host your site on ContinuousPipe to get these benefits - we can run your existing
+            You don't need to host your production site on ContinuousPipe (or even Docker) to get these benefits - we
+            can run your existing
             deployment workflow and get your features deployed in minutes, not days.</p>
 
 
         </div>
     </section>
+    {% include "_partials/call-to-action.html.twig" %}
+
 {% endblock %}
