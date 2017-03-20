@@ -4,7 +4,10 @@ app:
         - ./:/app
     expose:
         - 80
+    ports:
+        - 80:80
     environment:
+        - WEB_HTTP=true
         - DEBUG_MODE=true
         - CONTENTFUL_ACCESS_TOKEN
         - CONTENTFUL_SPACE_ID
