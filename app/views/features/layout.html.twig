@@ -5,6 +5,7 @@
     <header>
         <div class="cp-areas">
             <a class="area{% block nav_area_dev_class %}{% endblock %}" href="{{ path('area_dev') }}">
+                {% block nav_area_dev_extra %}{% endblock %}
                 <i class="fa fa-pencil" aria-hidden="true"></i> Developer environment
             </a>
             <a class="area{% block nav_area_qa_class %}{% endblock %}" href="{{ path('area_qa') }}">

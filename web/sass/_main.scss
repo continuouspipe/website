@@ -461,9 +461,14 @@ Navigation
   border: 1px solid white;
   border-radius: 5px;
   margin: 20px;
-  padding: 20px;
   text-align: center;
+
+  .box {
+    padding: 20px;
+    position: relative;
+  }
 }
+
 .navigation {
   transition: all 300ms ease-in-out;
   position: fixed;
@@ -1593,6 +1598,7 @@ you can use the generic selector below, but it's slower:
   flex: 1;
   text-align: center;
   padding: 20px 0;
+  position: relative;
 }
 .navigation-area div.cp-areas .area .icon {
   margin-right: 10px;
@@ -1615,4 +1621,62 @@ you can use the generic selector below, but it's slower:
 .integrations a > img {
   height: 50px;
   margin-bottom: 20px;
+}
+
+/**
+ * Features
+ */
+.ribbon {
+  position: absolute;
+  left: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+
+  span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#2989d8 0%, #1e5799 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; left: -21px;
+
+    &::before {
+      content: "";
+      position: absolute; left: 0px; top: 100%;
+      z-index: -1;
+      border-left: 3px solid #1e5799;
+      border-right: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      border-top: 3px solid #1e5799;
+    }
+
+    &::after {
+      content: "";
+      position: absolute; right: 0px; top: 100%;
+      z-index: -1;
+      border-left: 3px solid transparent;
+      border-right: 3px solid #1e5799;
+      border-bottom: 3px solid transparent;
+      border-top: 3px solid #1e5799;
+    }
+  }
+
+  &.ribbon-small {
+    span {
+      width: 75px;
+      top: 10px;
+      left: -17px;
+    }
+  }
 }
