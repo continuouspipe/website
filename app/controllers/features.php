@@ -2,6 +2,10 @@
 
 $routes = $app['controllers_factory'];
 
+$routes->get('', function() use ($app) {
+    return $app['twig']->render('features/list.html.twig');
+})->bind('features');
+
 $routes->get('/quality-assurance-and-collaboration', function() use ($app) {
     return $app['twig']->render('features/quality-assurance-and-collaboration.html.twig');
 })->bind('area_qa');
