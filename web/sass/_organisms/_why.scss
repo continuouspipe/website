@@ -1,0 +1,24 @@
+.metrics {
+    &__title {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+
+        @media (min-width: 992px) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__img {
+        margin-top: 24px;
+
+        i {
+            font-size: 10em;
+            text-align: center;
+            color: #1c9dd9;
+        }
+    }
+}

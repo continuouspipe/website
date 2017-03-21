@@ -1,7 +1,8 @@
 /\.[^/]*$
-\.idea
-\.git
+.idea
+.git
 ___jb_old___
 ___jb_tmp___
 cp-remote-logs
 .cp-remote-env-settings.yml
+.cp-remote-settings.yml
