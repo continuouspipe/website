@@ -528,6 +528,12 @@ Features-stack
   padding-bottom: 0;
 }
 
+.feature-list ul, feature-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 ul.features-stack {
   margin-top: 50px;
 }
