@@ -4,8 +4,12 @@
 @import 'vendor/etline-font';
 @import 'vendor/animate.min';
 
-@import 'partials/colours';
+@import "_atoms/typography";
 
+@import 'partials/colours';
 @import "main";
 @import "partials/responsive";
 @import "partials/documentation";
+
+@import "_molecules/hero-strip";
+@import "_organisms/why";
