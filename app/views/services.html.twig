@@ -11,32 +11,40 @@
     </section>
 
     <section>
+        <div class="container metrics__title">
+            <div>
+                <h3>Our professional consulting services will help your organisation get the benefits and
+                        productivity of being containerised.</h3>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Our professional consulting services will help your organisation get the benefits and
-                        productivity of being containerised.</p>
-
-                    <p>ContinuousPipe is supported by over 200 technical professionals in the UK and Europe with deep
-                        experience in bringing continuous delivery to projects and DevOps environments.</p>
-
-                    <p>Engaging with <a href="https://inviqa.com">Inviqa</a>, we can help you in a number of ways to get the most out of
+                    <p>ContinuousPipe is <strong>supported by over 200 technical professionals in the UK and Europe</strong> with deep
+                        experience in bringing continuous delivery to projects and DevOps environments. Engaging with <a href="https://inviqa.com">Inviqa</a>, we can help you in a number of ways to get the most out of
                         ContinuousPipe:</p>
 
                     <ul>
-                        <li>Configure projects and Dockerise your environments</li>
-                        <li>Scaling projects with the cloud and Kubernetes</li>
-                        <li>Replatforming and solution upgrades (particularly PHP, Node.js, Scala, Java, Go)</li>
-                        <li>Agile training and development process optimisation</li>
-                        <li>Embedding and getting the benefits of ContinuousPipe with your testing teams</li>
+                        <li><p>Configure projects and Dockerise your environments</p></li>
+                        <li><p>Scaling projects with the cloud and Kubernetes</p></li>
+                        <li><p>Replatforming and solution upgrades (particularly PHP, Node.js, Scala, Java, Go)</p></li>
+                        <li><p>Agile training and development process optimisation</p></li>
+                        <li><p>Embedding and getting the benefits of ContinuousPipe with your testing teams</p></li>
                     </ul>
 
-                    <p>If you need a helping hand with your set-up or to move faster to continuous development, then
-                        <a href="{{ path('contact') }}">drop us a line</a> and we’ll arrange a meeting to review your current DevOps environment.</p>
+                    <p>&nbsp;</p>
                 </div>
             </div>
         </div>
     </section>
-    {% include "_partials/call-to-action.html.twig" %}
-
+    <section class="hero-strip section-padding">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h2 class="hero-strip__title">Let's discuss it !</h2>
+                <p>If you need a helping hand with your set-up or to move faster to continuous development, then
+                        drop us a line and we’ll arrange a meeting to review your current DevOps environment</p>
+                <a href="{{ path('contact') }}" class="btn btn-ghost btn-accent btn-large">Contact us</a>
+            </div>
+        </div>
+</section>
 {% endblock %}
