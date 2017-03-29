@@ -19,7 +19,7 @@ $routes->match('/contact', function (Request $request) use ($app) {
     $formFactory = $app['form.factory'];
 
     /** @var FormInterface $form */
-    $form = $formFactory->createBuilder(FormType::class)
+    $form = $formFactory->createBuilder(FormType::class, null, ['csrf_protection' => false])
         ->add('name', TextType::class, [
             'constraints' => [
                 new NotBlank([
