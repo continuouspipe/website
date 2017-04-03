@@ -1,0 +1,58 @@
+{% extends "regular_layout.html.twig" %}
+{% block title %}Get Started{% endblock %}
+{% block content %}
+    <section class="hero-strip section-padding no-icon">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h1 class="hero-strip__title">Get Started</h1>
+                <p>It's easy to get started with ContinuousPipe and we offer a <b>14 day free trial</b> so you can try
+                    it risk-free - just <a href="https://ui.continuouspipe.io">sign up!</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>To get started, you need a GitHub account to log in, and a project in a <a
+                                href="https://github.com/">GitHub</a> or <a href="https://bitbucket.org/">Bitbucket</a>
+                        repository that
+                        contains a
+                        Dockerfile and a docker-compose.yml.</p>
+                    <p>You will also need an account on a container registry service such as <a
+                                href="https://hub.docker.com/">Docker Hub</a> or <a
+                                href="https://quay.io/">Quay.io</a>.</p>
+                    <p>Finally you will need access to a Kubernetes cluster. If you don't have one, you can easily
+                        create one using <a href="https://cloud.google.com/container-engine/">Google Container
+                            Engine</a>.</a>
+                    </p>
+                    <p>If you don't have Docker-enabled project, you could fork one of our Demo Projects for <a
+                                href="https://github.com/continuouspipe/demo-symfony">Symfony</a>,
+                        <a href="https://github.com/continuouspipe/demo-laravel">Laravel</a>, <a
+                                href="https://github.com/continuouspipe/demo-drupal8">Drupal 8</a> or <a
+                                href="https://github.com/continuouspipe/demo-magento2">Magento 2</a>, or <a
+                                href="{{ path('contact') }}">talk to us</a> about how <a href="{{ path('services') }}">we
+                            can help</a> you get your application running on Docker.</p>
+                    <p>Be sure to check out our extensive library of <a
+                                href="https://docs.continuouspipe.io/">Documentation</a> and <a
+                                href="https://github.com/continuouspipe/dockerfiles">Dockerfiles</a>.</p>
+
+
+                    <p>This 10 minute video walks you through the setup process:</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d45YNe7umWI"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero-strip section-padding">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h2 class="hero-strip__title">Sign up for your 14 day Free Trial</h2>
+                <a href="https://ui.continuouspipe.io/" class="btn btn-ghost btn-accent btn-large">Sign Up</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

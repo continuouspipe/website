@@ -126,9 +126,14 @@ $routes->get('/services', function() use ($app) {
     return $app['twig']->render('services.html.twig');
 })->bind('services');
 
+$routes->get('/get-started', function() use ($app) {
+    return $app['twig']->render('get-started.html.twig');
+})->bind('get-started');
+
 $routes->get('/early-access', function() use ($app) {
     return new RedirectResponse('https://authenticator.continuouspipe.io/early-access/');
 });
+
 
 $routes->get('/', function() use ($app) {
     return $app['twig']->render('home.html.twig');
