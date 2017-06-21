@@ -119,7 +119,7 @@ $routes->get('/frequently-asked-questions', function() use ($app) {
 })->bind('faq');
 
 $routes->get('/why', function() use ($app) {
-    return $app['twig']->render('why.html.twig');
+    return new RedirectResponse($app['url_generator']->generate('homepage').'#why');
 })->bind('why');
 
 $routes->get('/services', function() use ($app) {
