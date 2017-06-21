@@ -115,7 +115,7 @@ $routes->get('/pricing', function() use ($app) {
 })->bind('pricing');
 
 $routes->get('/frequently-asked-questions', function() use ($app) {
-    return $app['twig']->render('faq.html.twig');
+    return new RedirectResponse('https://docs.continuouspipe.io/faq/#from-website');
 })->bind('faq');
 
 $routes->get('/why', function() use ($app) {
