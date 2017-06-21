@@ -4,16 +4,16 @@
     <section class="hero-strip section-padding large">
         <div class="container">
             <div class="col-md-12 text-center">
-                <h1 class="hero-strip__title">Contact Us</h1>
+                <h1 class="hero-strip__title">Get in touch</h1>
                 <p>If you want to have more information or believe you need dedicated assistance from our enterprise support, <br />simply drop us a message.</p>
                 <div class="logo-placeholder floating-logo"><img src="{{ asset('img/envelope.png') }}" alt="Contact us"></div>
             </div>
         </div>
     </section>
-    <section class="sign-up section-padding text-center large" id="form">
+    <section class="sign-up section-padding large" id="form">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-6 text-center">
                     {% if message is not null %}
                         <div class="message">{{ message }}</div>
 
@@ -53,6 +53,20 @@
                             <button type="submit" class="btn-fill sign-up-btn"><i class="fa fa-send"></i> Send</button>
                         </form>
                     {% endif %}
+                </div>
+                <div class="col-md-6">
+                    <h3>Did you know?</h3>
+                    <p>ContinuousPipe is <strong>supported by over 200 technical professionals in the UK and Europe</strong> with deep
+                        experience in bringing continuous delivery to projects and DevOps environments. Engaging with <a href="https://inviqa.com">Inviqa</a>, we can help you in a number of ways to get the most out of
+                        ContinuousPipe:</p>
+
+                    <ul>
+                        <li><p>Configure projects and Dockerise your environments</p></li>
+                        <li><p>Scaling projects with the cloud and Kubernetes</p></li>
+                        <li><p>Replatforming and solution upgrades (particularly PHP, Node.js, Scala, Java, Go)</p></li>
+                        <li><p>Agile training and development process optimisation</p></li>
+                        <li><p>Embedding and getting the benefits of ContinuousPipe with your testing teams</p></li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -123,7 +123,7 @@ $routes->get('/why', function() use ($app) {
 })->bind('why');
 
 $routes->get('/services', function() use ($app) {
-    return $app['twig']->render('services.html.twig');
+    return new RedirectResponse($app['url_generator']->generate('contact').'#services');
 })->bind('services');
 
 $routes->get('/get-started', function() use ($app) {
