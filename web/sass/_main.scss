@@ -365,6 +365,14 @@ Navigation
   .box {
     padding: 20px;
     position: relative;
+
+    &.highlighted {
+      background: #2885d3;
+
+      p {
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -1470,6 +1478,7 @@ you can use the generic selector below, but it's slower:
   padding: 20px 0;
   position: relative;
 }
+
 .navigation-area div.cp-areas .area .icon {
   margin-right: 10px;
 }
