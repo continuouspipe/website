@@ -127,7 +127,7 @@ $routes->get('/services', function() use ($app) {
 })->bind('services');
 
 $routes->get('/get-started', function() use ($app) {
-    return $app['twig']->render('get-started.html.twig');
+    return new RedirectResponse('https://docs.continuouspipe.io/guides/#from-website');
 })->bind('get-started');
 
 $routes->get('/early-access', function() use ($app) {
