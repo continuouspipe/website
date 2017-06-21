@@ -324,12 +324,8 @@ Navigation
 }
 
 .hero {
-  min-height: 700px;
-  background: url("../img/backgrounds/busy-table-40-black.jpg") center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #52a6ff;
+  min-height: 400px;
   position: relative;
 }
 .hero .down-arrow a {
@@ -339,15 +335,33 @@ Navigation
   color: #fff;
   margin-bottom: 40px;
 }
-.hero p.intro {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 80px;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-}
 .hero .hero-content {
   padding-top: 150px;
+}
+.hero.hero-home {
+  .hero-content {
+    padding-top: 100px;
+
+    .continuous-pipe-logo {
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #fff;
+      margin-bottom: 50px;
+    }
+    p.intro {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+
+  .btn-sign-in {
+    background: #ff415c;
+  }
 }
 .hero.hero-home .hero-content .cp-icon-logo {
   color: #fff;

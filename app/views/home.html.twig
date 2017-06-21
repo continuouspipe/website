@@ -1,21 +1,23 @@
-{% extends "layout.html.twig" %}
+{% extends "regular_layout.html.twig" %}
 {% block title %}ContinuousPipe - for a faster development workflow{% endblock %}
-{% block body %}
+{% block navigation_section_classes %}{{ parent() }} navigation-home{% endblock %}
+{% block content %}
 <section class="hero hero-home">
-    <section class="navigation">
-        {% include "_partials/header.html.twig" %}
-    </section>
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-6">
                 <div class="hero-content text-center">
-                    <i class="cp-icon-logo"></i>
-                    <h1>ContinuousPipe</h1>
+                    <div class="continuous-pipe-logo"><i class="cp-icon-logo"></i></div>
                     <p class="intro">For a faster development workflow</p>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="hero-content text-center">
+                    <h3>Continuous Deployment for your containerized applications to Kubernetes clusters</h3>
+                </div>
+            </div>
             <div class="text-center">
-                <a href="https://authenticator.continuouspipe.io/connect/github" class="btn btn-large btn-fill btn-margin-right">Sign in with GitHub</a>
+                <a href="https://authenticator.continuouspipe.io/connect/github" class="btn btn-large btn-fill btn-margin-right btn-sign-in">Sign in with GitHub</a>
                 <a href="{{ path('contact') }}" class="btn btn-accent btn-large">Get in touch</a>
             </div>
         </div>
@@ -25,7 +27,10 @@
     <div class="container">
         <div class="col-md-12 text-center">
             <h1 class="hero-strip__title">Why ContinuousPipe?</h1>
-            <p>ContinuousPipe can be used to solve many problems in the software development lifecycle. In particular, we believe that enabling developers to have a <b>faster development workflow</b> is critical to delivering value.</p>
+            <p>
+                ContinuousPipe will help you solve many problems in the software development lifecycle.
+                In particular, we believe that <strong>enabling a faster collaboration</strong> and <strong>reducing the cycle time</strong> is critical to delivering value.
+            </p>
         </div>
     </div>
 </section>
