@@ -130,6 +130,10 @@ $routes->get('/get-started', function() use ($app) {
     return new RedirectResponse('https://docs.continuouspipe.io/guides/#from-website');
 })->bind('get-started');
 
+$routes->get('/terms-and-conditions', function() use ($app) {
+    return $app['twig']->render('terms-and-conditions.html.twig');
+})->bind('terms-and-conditions');
+
 $routes->get('/early-access', function() use ($app) {
     return new RedirectResponse('https://authenticator.continuouspipe.io/early-access/');
 });
