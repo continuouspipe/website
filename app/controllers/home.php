@@ -43,10 +43,10 @@ $routes->match('/contact', function (Request $request) use ($app) {
                 'placeholder' => 'Your email address',
             ],
         ])
-        ->add('github', TextType::class, [
+        ->add('company', TextType::class, [
             'required' => false,
             'attr' => [
-                'placeholder' => 'Your GitHub username, if any.',
+                'placeholder' => 'Your company',
             ],
         ])
         ->add('message', TextareaType::class, [
@@ -82,7 +82,7 @@ $routes->match('/contact', function (Request $request) use ($app) {
                     'email' => $formData['email'],
                     'name' => $formData['name'],
                     'custom_attributes' => [
-                        'github_username' => (string) $formData['github'],
+                        'company' => (string) $formData['company'],
                     ]
                 ]);
             }

@@ -694,22 +694,18 @@ Sign up form
   left: 30px;
   transform: translateY(-50%);
 }
-.sign-up .signup-form .form-input-group i.fa-user {
-  font-size: 18px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 20px;
+.sign-up .signup-form .form-input-group {
+  i.fa-user, i.fa-building {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+  }
 }
+
 .sign-up .signup-form .form-input-group i.fa-envelope {
   font-size: 14px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 20px;
-}
-.sign-up .signup-form .form-input-group i.fa-github {
-  font-size: 18px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
