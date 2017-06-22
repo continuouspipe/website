@@ -361,6 +361,16 @@ Navigation
       font-weight: 300;
       font-style: italic;
     }
+
+  }
+  @media screen and (max-width: 1200px) {
+    .hero-content {
+      padding-top: 40px;
+    }
+
+    .home-buttons {
+      margin-bottom: 20px;
+    }
   }
 
   .btn-sign-in {
@@ -1331,8 +1341,6 @@ you can use the generic selector below, but it's slower:
 .pricing-table {
   margin: 50px auto;
   text-align: center;
-  padding: 10px;
-  padding-right: 0;
   line-height: 1;
 }
 
