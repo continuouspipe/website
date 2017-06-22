@@ -1,23 +1,97 @@
-{% extends "layout.html.twig" %}
+{% extends "regular_layout.html.twig" %}
 {% block title %}ContinuousPipe - for a faster development workflow{% endblock %}
-{% block body %}
+{% block navigation_section_classes %}{{ parent() }} navigation-home{% endblock %}
+{% block content %}
 <section class="hero hero-home">
-    <section class="navigation">
-        {% include "_partials/header.html.twig" %}
-    </section>
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-6">
                 <div class="hero-content text-center">
-                    <i class="cp-icon-logo"></i>
-                    <h1>ContinuousPipe</h1>
+                    <div class="continuous-pipe-logo"><i class="cp-icon-logo"></i></div>
                     <p class="intro">For a faster development workflow</p>
                 </div>
             </div>
-            <div class="text-center">
-                <a href="{{ path('why') }}" class="btn btn-fill btn-large btn-margin-right">Why</a>
-                <a href="{{ path('get-started') }}" class="btn btn-accent btn-large">Get Started with your 14 day Free Trial</a>
+            <div class="col-md-6">
+                <div class="hero-content text-center">
+                    <h3>Continuous Deployment for your containerized applications to Kubernetes clusters</h3>
+                </div>
             </div>
+            <div class="text-center home-buttons">
+                <a href="https://authenticator.continuouspipe.io/connect/github" class="btn btn-large btn-fill btn-margin-right btn-sign-in">Sign in with GitHub</a>
+                <a href="{{ path('contact') }}" class="btn btn-accent btn-large">Get in touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero-strip section-padding no-icon">
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h1 class="hero-strip__title">Why ContinuousPipe?</h1>
+            <p>
+                ContinuousPipe will help solve many problems in your software development lifecycle.
+                In particular, we believe that <strong>enabling faster collaboration</strong> and <strong>reducing the cycle time</strong> is critical to delivering value.
+            </p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container metrics__item">
+        <div class="col-md-6 col-md-push-6">
+            <h3>Say goodbye to QA and staging bottlenecks !</h3>
+            <p>Test and iterate on features in just minutes after a developer has created a commit or a pull-request. Gather non-technical feature before deploying to your staging environment to <strong>drastically reduce your cycle time</strong>.</p>
+        </div>
+        <div class="col-md-6 col-md-pull-6 metrics__img">
+            <img src="{{ asset('/img/branch-create-integrate.svg') }}" />
+            <p class="caption text-center"><b>from days to minutes</b></p>
+        </div>
+    </div>
+    <div class="container metrics__item">
+        <div class="col-md-6">
+            <h3>Technology freedom</h3>
+            <p>Using containers means that <strong>your pipeline is the same, regardless of the technology you're using</strong>. You can deploy new versions of PHP, Scala or Go applications the very same way, and allow your team to use the right solution for the right problem.</p>
+        </div>
+        <div class="col-md-6 metrics__img">
+            <img src="{{ asset('/img/technology-freedom.svg') }}" />
+        </div>
+    </div>
+    <div class="container metrics__item">
+        <div class="col-md-6 col-md-push-6">
+            <h3>Automatically generated configuration for Kubernetes</h3>
+            <p>Get started with container deployment at scale on Kubernetes cluster without Kubernetes configuration. <strong>Your Kubernetes configuration is automatically generated</strong> from the DockerCompose  and ContinuousPipe's files in the code repository !</p>
+        </div>
+        <div class="col-md-6 col-md-pull-6 metrics__img">
+            <img src="{{ asset('/img/kubernetes-automated.svg') }}" />
+            <p class="caption text-center"><b>from days to minutes</b></p>
+        </div>
+    </div>
+    <div class="container metrics__item">
+        <div class="col-md-6">
+            <h3>Code repository integration</h3>
+            <p>Your code repository is so much more than just that. By storing all the configuration in your code repository, you can also version your architecture. Deploy a runtime version change as if it were simply a feature change. <strong>Use branch names, pull-requests labels and much more to control your pipelines.</strong> <a href="https://docs.continuouspipe.io/faq/how-do-I-control-deployments-using-pr-labels/" target="_blank">Learn more here!</a></p>
+        </div>
+        <div class="col-md-6 metrics__img">
+            <img src="{{ asset('/img/this-new-feature-pull-request.png') }}" />
+        </div>
+    </div>
+    <div class="container metrics__item">
+        <div class="col-md-6 col-md-push-6">
+            <h3>Flexible configuration</h3>
+            <p>Your configuration is stored in your code repository in Yaml files. Compose your pipelines by ordering <a href="https://docs.continuouspipe.io/configuration/tasks/" target="_blank">tasks</a> that can build your Docker image, deploy your services, run tests or migrations, send webhooks and much more. Our API and integrations with <a href="https://docs.continuouspipe.io/configuration/notifications/#slack" target="_blank">Slack</a>, <a href="https://docs.continuouspipe.io/configuration/cloudflare-integration/" target="_blank">CloudFlare</a> and other third parties will allow you to build the perfect process.</p>
+        </div>
+        <div class="col-md-6 col-md-pull-6 metrics__img">
+            <img src="{{ asset('/img/deployed-branches.png') }}" />
+        </div>
+    </div>
+    <div class="container metrics__item">
+        <div class="col-md-6">
+            <h3>We've even created images for you!</h3>
+            <p>We've already invested time in creating <a href="https://github.com/continuouspipe/dockerfiles" target="_blank">base Docker images for many applications</a> so that you won't have to. Use these optional images to <strong>get started in a matter of minutes</strong>, rather than days. You can also use environments deployed by ContinuousPipe as your own development environments!</p>
+        </div>
+        <div class="col-md-6 metrics__img">
+            <a href="https://github.com/continuouspipe/dockerfiles" target="_blank">
+                <img src="{{ asset('/img/dockerfiles.png') }}" />
+            </a>
+            <p class="caption text-center"><b>from days to under an hour</b></p>
         </div>
     </div>
 </section>

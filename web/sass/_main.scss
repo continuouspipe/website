@@ -324,12 +324,8 @@ Navigation
 }
 
 .hero {
-  min-height: 700px;
-  background: url("../img/backgrounds/busy-table-40-black.jpg") center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #52a6ff;
+  min-height: 400px;
   position: relative;
 }
 .hero .down-arrow a {
@@ -339,15 +335,47 @@ Navigation
   color: #fff;
   margin-bottom: 40px;
 }
-.hero p.intro {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 80px;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-}
 .hero .hero-content {
   padding-top: 150px;
+}
+.hero.hero-home {
+  .btn.btn-accent:hover {
+    border-color: #b8dbff;
+  }
+
+  .hero-content {
+    padding-top: 100px;
+
+    .continuous-pipe-logo {
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #fff;
+      margin-bottom: 50px;
+    }
+    p.intro {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+    }
+
+  }
+  @media screen and (max-width: 1200px) {
+    .hero-content {
+      padding-top: 40px;
+    }
+
+    .home-buttons {
+      margin-bottom: 20px;
+    }
+  }
+
+  .btn-sign-in {
+    background: #ff415c;
+  }
 }
 .hero.hero-home .hero-content .cp-icon-logo {
   color: #fff;
@@ -365,6 +393,14 @@ Navigation
   .box {
     padding: 20px;
     position: relative;
+
+    &.highlighted {
+      background: #2885d3;
+
+      p {
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -642,6 +678,10 @@ ul.features-stack li:last-child {
 /* ==========================================================================
 Sign up form
 ========================================================================== */
+.sign-up .signup-form {
+  margin-top: 20px;
+}
+
 .sign-up .signup-form .sign-up-btn {
   padding: 15px 0;
   border-radius: 3px;
@@ -694,22 +734,18 @@ Sign up form
   left: 30px;
   transform: translateY(-50%);
 }
-.sign-up .signup-form .form-input-group i.fa-user {
-  font-size: 18px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 20px;
+.sign-up .signup-form .form-input-group {
+  i.fa-user, i.fa-building {
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+  }
 }
+
 .sign-up .signup-form .form-input-group i.fa-envelope {
   font-size: 14px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 20px;
-}
-.sign-up .signup-form .form-input-group i.fa-github {
-  font-size: 18px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1305,8 +1341,6 @@ you can use the generic selector below, but it's slower:
 .pricing-table {
   margin: 50px auto;
   text-align: center;
-  padding: 10px;
-  padding-right: 0;
   line-height: 1;
 }
 
@@ -1470,6 +1504,7 @@ you can use the generic selector below, but it's slower:
   padding: 20px 0;
   position: relative;
 }
+
 .navigation-area div.cp-areas .area .icon {
   margin-right: 10px;
 }

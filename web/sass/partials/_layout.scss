@@ -1,0 +1,18 @@
+section.navigation.regular {
+    background-color: #232731;
+    position: relative;
+
+    &.navigation-home {
+        background: #52a6ff;
+
+        header ul li a:hover {
+            color: #fff;
+        }
+    }
+}
+section.navigation.regular header {
+    padding: 20px 0;
+}
+section.navigation.regular .member-actions {
+    top: 22px;
+}

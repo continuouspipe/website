@@ -43,10 +43,10 @@ $routes->match('/contact', function (Request $request) use ($app) {
                 'placeholder' => 'Your email address',
             ],
         ])
-        ->add('github', TextType::class, [
+        ->add('company', TextType::class, [
             'required' => false,
             'attr' => [
-                'placeholder' => 'Your GitHub username, if any.',
+                'placeholder' => 'Your company',
             ],
         ])
         ->add('message', TextareaType::class, [
@@ -82,7 +82,7 @@ $routes->match('/contact', function (Request $request) use ($app) {
                     'email' => $formData['email'],
                     'name' => $formData['name'],
                     'custom_attributes' => [
-                        'github_username' => (string) $formData['github'],
+                        'company' => (string) $formData['company'],
                     ]
                 ]);
             }
@@ -115,19 +115,19 @@ $routes->get('/pricing', function() use ($app) {
 })->bind('pricing');
 
 $routes->get('/frequently-asked-questions', function() use ($app) {
-    return $app['twig']->render('faq.html.twig');
+    return new RedirectResponse('https://docs.continuouspipe.io/faq/#from-website');
 })->bind('faq');
 
 $routes->get('/why', function() use ($app) {
-    return $app['twig']->render('why.html.twig');
+    return new RedirectResponse($app['url_generator']->generate('homepage').'#why');
 })->bind('why');
 
 $routes->get('/services', function() use ($app) {
-    return $app['twig']->render('services.html.twig');
+    return new RedirectResponse($app['url_generator']->generate('contact').'#services');
 })->bind('services');
 
 $routes->get('/get-started', function() use ($app) {
-    return $app['twig']->render('get-started.html.twig');
+    return new RedirectResponse('https://docs.continuouspipe.io/guides/#from-website');
 })->bind('get-started');
 
 $routes->get('/terms-and-conditions', function() use ($app) {

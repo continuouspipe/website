@@ -1,7 +1,7 @@
 {% extends "layout.html.twig" %}
 {% block body %}
 {% block header %}
-<section class="navigation regular">
+<section class="{% block navigation_section_classes %}navigation regular{% endblock %}">
     {% include "_partials/header.html.twig" %}
 </section>
 {% endblock %}
