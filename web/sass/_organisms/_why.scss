@@ -5,15 +5,26 @@
     }
 
     &__item {
+        margin-top: 20px;
         margin-bottom: 20px;
 
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        align-items: center;
+
         @media (min-width: 992px) {
+            margin-top: 60px;
             margin-bottom: 60px;
         }
     }
 
     &__img {
         margin-top: 24px;
+
+        img {
+            max-width: 100%;
+        }
 
         i {
             font-size: 10em;
