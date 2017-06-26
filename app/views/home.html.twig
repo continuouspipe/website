@@ -17,8 +17,11 @@
                 </div>
             </div>
             <div class="text-center home-buttons">
-                <a href="https://authenticator.continuouspipe.io/connect/github" class="btn btn-large btn-fill btn-margin-right btn-sign-in">Sign in with GitHub</a>
-                <a href="{{ path('contact') }}" class="btn btn-accent btn-large">Get in touch</a>
+                <a href="https://authenticator.continuouspipe.io/connect/github" 
+                    class="btn btn-large btn-fill btn-margin-right btn-sign-in"
+                    ga-on="click" ga-event-category="Homepage CTA" ga-event-action="click">Sign in with GitHub</a>
+                <a href="{{ path('contact') }}" class="btn btn-accent btn-large" 
+                    ga-on="click" ga-event-category="Homepage CTA" ga-event-action="click">Get in touch</a>
             </div>
         </div>
     </div>
