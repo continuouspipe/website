@@ -143,5 +143,10 @@ $routes->get('/', function() use ($app) {
     return $app['twig']->render('home.html.twig');
 })->bind('homepage');
 
+$app->error(function (\Exception $e, $code) use ($app) {
+    return $app['twig']->render('exception/error.html.twig',[
+         'code' => $code,
+    ]);
+});
 
 return $routes;
