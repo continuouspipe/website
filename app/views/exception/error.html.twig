@@ -1,6 +1,15 @@
 {% extends "regular_layout.html.twig" %}
-{% block title %}ContinuousPipe - for a faster development workflow{% endblock %}
-{% block navigation_section_classes %}{{ parent() }} navigation-home{% endblock %}
 {% block content %}
-<h1>Test 404 page</h1>
+    <section class="hero-strip section-padding large">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                {% if code == 404 %}
+                    <h1 class="hero-strip__title">We're sorry but the page you're looking doesn't exist</h1>
+                {% else %}
+                    <h1 class="hero-strip__title">We're sorry but it looks like there's been a problem</h1>
+                {% endif %}
+                <p>Please try again from our <a href="{{ path('homepage') }}">homepage</a> or if you would like, <a href="{{ path('contact') }}">contact us</a>.</p>
+            </div>
+        </div>
+    </section>
 {% endblock %}
