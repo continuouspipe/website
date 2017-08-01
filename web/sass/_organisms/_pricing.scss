@@ -1,0 +1,189 @@
+.pricing-hero {
+    background: #2597F0;
+
+    &.hero-strip.section-padding {
+        padding-bottom: 150px;
+    }
+
+    p {
+        color: #fff;
+    }
+
+    .btn.btn-accent {
+        background: #1277C7;
+        border-color: #2597F0;
+
+        &:hover {
+            border-color: inherit;
+        }
+    }
+
+    div.image {
+        text-align: center;
+
+        > img {
+            max-height: 50%;
+            max-width: 50%;
+        }
+    }
+}
+
+section.pricing {
+    background: #F3F4F8;
+
+    .plan-list {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: -50px;
+
+        .plan-container {
+            flex: 1;
+        }
+
+        .plan {
+            background: #fff;
+            border-radius: 5px;
+            z-index: 50;
+            border: 2px solid #fff;
+
+            -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+
+            transition: all .2s ease-in-out;
+
+            &:hover, &.selected {
+                transform: scale(1.02);
+            }
+
+            &.selected {
+                border-color: #9bc7cc;
+                z-index: 150;
+            }
+
+            p, span, li {
+                color: #303146;
+            }
+
+            .plan-title {
+                border-bottom: 1px solid #F3F4F8;
+
+                h2 {
+                    font-size: 1.5em;
+                    margin: 0;
+                    padding: 20px 0;
+
+                    i {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+
+            .plan-note {
+                padding: 10px;
+                border-bottom: 1px solid #F3F4F8;
+            }
+
+            ul.plan-items {
+                list-style: none;
+                margin: 0;
+                padding: 10px;
+
+                li {
+                    padding: 5px;
+                }
+            }
+
+            .plan-price {
+                margin: 20px;
+                font-size: 0.8em;
+
+                .value {
+                    font-size: 1.5em;
+                }
+            }
+
+            .btn {
+                background: #2698F0;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                padding: 10px 20px;
+            }
+
+            &.plan-managed {
+                z-index: 100;
+                margin-top: -50px;
+
+                .plan-title h2 {
+                    color: #269AEA;
+                }
+            }
+
+            &.plan-enterprise {
+                background: #0868B5;
+                border-color: #0868B5;
+
+                .plan-title h2, p, span, li {
+                    color: #EBF4FB;
+                }
+            }
+        }
+    }
+
+    .pricing-calculator-placeholder {
+        padding: 200px 0;
+        font-style: italic;
+    }
+
+    .pricing-calculator {
+        background: #fff;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        border: 1px solid #ccc;
+        border-radius: 10px;
+
+        .pricing-list {
+            div.price-item {
+                padding: 10px;
+                text-align: left;
+                margin: 20px 0;
+
+                .item-header {
+                    margin-bottom: 10px;
+
+                    h2 {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 1.5em;
+                    }
+                }
+
+                .sliders {
+                    margin: 10px;
+                }
+
+                .quantity {
+                    display: flex;
+                    align-items: center;
+
+                    .sliders {
+                        flex: 1;
+                    }
+                    .price {
+                        flex: 0 0 5em;
+                        text-align: right;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            div.pricing-summary {
+                background: #efefef;
+            }
+        }
+    }
+}

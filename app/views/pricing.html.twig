@@ -1,69 +1,156 @@
 {% extends "regular_layout.html.twig" %}
 {% block title %}Pricing{% endblock %}
 {% block content %}
-<section class="hero-strip section-padding no-icon">
+<section class="hero-strip section-padding no-icon pricing-hero">
     <div class="container">
-        <div class="col-md-12 text-center">
-            <h1 class="hero-strip__title">Pricing</h1>
-            <p>It can't be easier. You can also get started for free without any credit card for 14 days!</p>
+        <div class="col-md-6 text-center">
+            <h1 class="hero-strip__title">Our Pricing Is Very Simple</h1>
+            <p>Pick what you need. You are covered by 15 days for free, without any credit card required!</p>
             <p>
-                <a href="https://authenticator.continuouspipe.io/connect/github" class="btn btn-ghost btn-accent btn-large">Start 14 days of free trial</a>
+                <a href="https://authenticator.continuouspipe.io/connect/github" class="btn btn-accent btn-large">Start 14 days of free trial</a>
             </p>
         </div>
+        <div class="col-md-6 image">
+            <img src="{{ asset('/img/scale1600.png') }}" />
+        </div>
     </div>
 </section>
-<section class="sign-up text-center" id="form">
-    <div class="container pricing-table">
-        <div class="row">
-            <div class="col-md-3 col-md-offset-3">
-                <div class="block personal">
-                    <h2 class="title">Cloud</h2>
-                    <div class="content">
-                        <p class="price">
-                            <sup>£</sup>
-                            <span>20</span>
-                            <sub>/user/mo.</sub>
-                        </p>
+<section class="pricing text-center" id="form">
+    <div class="container plan-list">
+        <div class="plan-container">
+            <div class="plan plan-toolkit">
+                <div class="plan-title">
+                    <h2><i class="fa fa-cogs"></i> Toolkit</h2>
+                </div>
+
+                <ul class="plan-items">
+                    <li>You have <strong>your own Kubernetes cluster</strong></li>
+                    <li>You have a Docker Registry</li>
+                    <li>Unlimited builds</li>
+                    <li>Unlimited applications</li>
+                </ul>
+
+                <div class="plan-price">
+                    <span>from</span> <span class="value">£10</span> <span>/ month</span>
+                </div>
+
+                <button class="btn" data-select-plan="toolkit">Calculate</button>
+            </div>
+        </div>
+        <div class="plan-container">
+            <div class="plan plan-managed">
+                <div class="plan-title">
+                    <h2><i class="fa fa-cloud"></i> Managed</h2>
+                </div>
+
+                <div class="plan-note">
+                    All features from <strong>Toolkit</strong>, plus...
+                </div>
+
+                <ul class="plan-items">
+                    <li>We run the containers for you</li>
+                    <li>We store the Docker images for you</li>
+                    <li>Pay by GB of memory</li>
+                    <li>Share memory across containers</li>
+                    <li>Share memory across environments</li>
+                </ul>
+
+                <div class="plan-price">
+                    <span>from</span> <span class="value">£20</span> <span>/ month</span>
+                </div>
+
+                <button class="btn" data-select-plan="managed">Calculate</button>
+            </div>
+        </div>
+        <div class="plan-container">
+            <div class="plan plan-enterprise">
+                <div class="plan-title">
+                    <h2><i class="fa fa-building-o"></i> Enterprise</h2>
+                </div>
+
+                <ul class="plan-items">
+                    <li>We cover your containers with SLA</li>
+                    <li>Support available by phone</li>
+                    <li>Need help running your Kubernetes cluster?</li>
+                </ul>
+
+                <div class="plan-price"></div>
+                <a href="{{ path('contact') }}" class="btn">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="pricing-calculator-placeholder">
+            <p>Select a plan to open the pricing calculator!</p>
+        </div>
+        <div class="pricing-calculator">
+            <h2>Pricing calculator for your <strong>managed</strong> plan</h2>
+
+            <div class="pricing-list">
+                <div class="price-item">
+                    <div class="item-header">
+                        <h2>Build pipeline</h2>
+                        <h4>Number of user</h4>
                     </div>
 
-                    <ul class="features">
-                        <li><i class="fa fa-github"></i> Unlimited projects</li>
-                        <li><i class="fa fa-github"></i> Unlimited repositories</li>
-                        <li><i class="fa fa-cube"></i> Unlimited pipelines</li>
-                        <li><i class="fa fa-cube"></i> Unlimited builds</li>
-                        <li><i class="fa fa-cloud"></i> Unlimited deployments</li>
-                        <li><i class="fa fa-comments"></i> GitHub & BitBucket</li>
-                        <li><i class="fa fa-line-chart"></i> Reports</li>
-                    </ul>
-
-                    <div class="pt-footer"></div>
+                    <div class="quantity" data-start="5" data-min="1" data-max="50" data-multiplicator="10">
+                        <div class="sliders" id="users-slider"></div>
+                        <div class="price"></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="block business">
-                    <h2 class="title">Enterprise</h2>
-                    <div class="content">
-                        <a href="{{ path('contact') }}" class="btn btn-accent btn-large">Contact us</a>
-                    </div>
-
-                    <ul class="features">
-                        <li><i class="fa fa-github"></i> Unlimited projects</li>
-                        <li><i class="fa fa-github"></i> Unlimited repositories</li>
-                        <li><i class="fa fa-cube"></i> Unlimited pipelines</li>
-                        <li><i class="fa fa-cube"></i> Unlimited builds</li>
-                        <li><i class="fa fa-cloud"></i> Unlimited deployments</li>
-                        <li><i class="fa fa-comments"></i> GitHub & Bitbucket</li>
-                        <li><i class="fa fa-line-chart"></i> Reports</li>
-                        <li><i class="fa fa-key"></i> API access</li>
-                        <li><i class="fa fa-life-ring"></i> Dedicated support</li>
-                    </ul>
-
-                    <div class="pt-footer">
+            <div class="pricing-summary">
+                <div class="row">
+                    <div class="col-md-12">
+                        X £ / month
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+    <link rel="stylesheet" href="{{ asset('/vendor/nouislider/distribute/nouislider.css') }}">
+{% endblock %}
+{% block javascripts %}
+{{ parent() }}
+<script src="{{ asset('/vendor/nouislider/distribute/nouislider.js') }}"></script>
+<script src="{{ asset('/vendor/wnumb/wNumb.js') }}"></script>
+<script>
+$(function() {
+    $('.quantity').each(function () {
+        var quantityItem = $(this),
+            computePrice = function(selectedAmount) {
+                return parseInt(quantityItem.data('multiplicator')) * parseInt(selectedAmount);
+            },
+            formatPrice = function(selectedAmount) {
+                return computePrice(selectedAmount) + ' £';
+            };
+
+        noUiSlider.create($('.sliders', this)[0], {
+            start: $(this).data('start'),
+            connect: [true, false],
+            tooltips: [wNumb({ decimals: 0 })],
+            range: {
+                'min': $(this).data('min'),
+                'max': $(this).data('max')
+            }
+        }).on('slide', function(value) {
+            $('.price', quantityItem).html(formatPrice(value));
+        });
+
+        $('.price', quantityItem).html(formatPrice(quantityItem.data('start')));
+    });
+
+    $('[data-select-plan]').click(function() {
+        var plan = $(this).data('select-plan');
+
+        $('.plan').removeClass('selected');
+        $('.plan.plan-'+plan).addClass('selected');
+    });
+});
+</script>
 {% endblock %}
