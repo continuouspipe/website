@@ -102,7 +102,7 @@
                             <li><strong>1</strong> private Docker image registry</li>
                         </ul>
                         <div class="price">
-                            <span class="value">50£</span> /month
+                            <span class="value">£50</span> /month
                         </div>
                     </li>
 
@@ -115,7 +115,7 @@
                             <li><strong>1</strong> private Docker image registry</li>
                         </ul>
                         <div class="price">
-                            <span class="value">105£</span> /month
+                            <span class="value">£105</span> /month
                         </div>
                     </li>
 
@@ -128,7 +128,7 @@
                             <li><strong>1</strong> private Docker image registry</li>
                         </ul>
                         <div class="price">
-                            <span class="value">325£</span> /month
+                            <span class="value">£325</span> /month
                         </div>
                     </li>
 
@@ -141,7 +141,7 @@
                             <li><strong>5</strong> private Docker image registry</li>
                         </ul>
                         <div class="price">
-                            <span class="value">825£</span> /month
+                            <span class="value">£825</span> /month
                         </div>
                     </li>
                 </ul>
@@ -153,7 +153,7 @@
                     </div>
                     <div class="input-label">
                         <div class="label">Extra 500 deployments</div>
-                        <div class="value">20£ / month</div>
+                        <div class="value">£20 / month</div>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -162,7 +162,7 @@
                     </div>
                     <div class="input-label">
                         <div class="label">Extra environments</div>
-                        <div class="value">10£ / month</div>
+                        <div class="value">£10 / month</div>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -171,7 +171,7 @@
                     </div>
                     <div class="input-label">
                         <div class="label">Extra private Docker image registry</div>
-                        <div class="value">5£ / month</div>
+                        <div class="value">£5 / month</div>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -180,14 +180,14 @@
                     </div>
                     <div class="input-label">
                         <div class="label">Extra persistent storage (GB)</div>
-                        <div class="value">5£ / month</div>
+                        <div class="value">£5 / month</div>
                     </div>
                 </div>
             </div>
 
             <div class="row price-summary">
                 <div class="price">
-                    <span class="value">3000 £</span>
+                    <span class="value">£50</span>
                     <span>per month</span>
                 </div>
                 <div class="action">
@@ -210,7 +210,7 @@
                     </div>
                     <div class="input-label">
                         <div class="label">Pack of 500 deployments</div>
-                        <div class="value">20£ / month</div>
+                        <div class="value">£20 / month</div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -219,14 +219,14 @@
                     </div>
                     <div class="input-label">
                         <div class="label">Extra private Docker image registry</div>
-                        <div class="value">5£ / month</div>
+                        <div class="value">£5 / month</div>
                     </div>
                 </div>
             </div>
 
             <div class="row price-summary">
                 <div class="price">
-                    <span class="value">20 £</span>
+                    <span class="value">£20</span>
                     <span>per month</span>
                 </div>
                 <div class="action">
@@ -274,7 +274,7 @@ $(function() {
             totalPrice += (parseInt($(this).val()) * parseInt($(this).data('cost-multiplicator'))) || 0;
         });
 
-        $('.price-summary .value', parent).html(totalPrice+' £');
+        $('.price-summary .value', parent).html('£'+totalPrice);
     };
 
     $('[data-select-plan]').click(function() {
