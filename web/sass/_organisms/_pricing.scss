@@ -1,5 +1,12 @@
+$hero-background: #2597F0;
+
+$button-primary-color: #24DF9B;
+$section-background: #F3F4F8;
+
+$selected-plan-border: #6EC0E6;
+
 .pricing-hero {
-    background: #2597F0;
+    background: $hero-background;
 
     &.hero-strip.section-padding {
         padding-bottom: 150px;
@@ -10,8 +17,8 @@
     }
 
     .btn.btn-accent {
-        background: #1277C7;
-        border-color: #2597F0;
+        background: $button-primary-color;
+        border-color: $hero-background;
 
         &:hover {
             border-color: inherit;
@@ -29,19 +36,19 @@
 }
 
 section.pricing {
-    background: #F3F4F8;
+    background: $section-background;
 
-    .plan-list {
+    .offer-list {
         position: relative;
         display: flex;
         flex-direction: row;
         margin-top: -50px;
 
-        .plan-container {
+        .offer-container {
             flex: 1;
         }
 
-        .plan {
+        .offer {
             background: #fff;
             border-radius: 5px;
             z-index: 50;
@@ -58,15 +65,14 @@ section.pricing {
             }
 
             &.selected {
-                border-color: #9bc7cc;
-                z-index: 150;
+                border-color: $selected-plan-border;
             }
 
             p, span, li {
                 color: #303146;
             }
 
-            .plan-title {
+            .offer-title {
                 border-bottom: 1px solid #F3F4F8;
 
                 h2 {
@@ -80,12 +86,12 @@ section.pricing {
                 }
             }
 
-            .plan-note {
+            .offer-note {
                 padding: 10px;
                 border-bottom: 1px solid #F3F4F8;
             }
 
-            ul.plan-items {
+            ul.offer-items {
                 list-style: none;
                 margin: 0;
                 padding: 10px;
@@ -95,7 +101,7 @@ section.pricing {
                 }
             }
 
-            .plan-price {
+            .offer-price {
                 margin: 20px;
                 font-size: 0.8em;
 
@@ -105,7 +111,7 @@ section.pricing {
             }
 
             .btn {
-                background: #2698F0;
+                background: $hero-background;
                 color: #fff;
                 border: none;
                 border-radius: 5px;
@@ -113,20 +119,33 @@ section.pricing {
                 padding: 10px 20px;
             }
 
-            &.plan-managed {
+            &.offer-toolkit {
+                border-top-right-radius: 0;
+
+                &:hover {
+                    border-top-right-radius: 5px;
+                }
+            }
+
+            &.offer-managed {
                 z-index: 100;
                 margin-top: -50px;
 
-                .plan-title h2 {
+                .offer-title h2 {
                     color: #269AEA;
                 }
             }
 
-            &.plan-enterprise {
+            &.offer-enterprise {
                 background: #0868B5;
                 border-color: #0868B5;
+                border-top-left-radius: 0;
 
-                .plan-title h2, p, span, li {
+                &:hover {
+                    border-top-left-radius: 5px;
+                }
+
+                .offer-title h2, p, span, li {
                     color: #EBF4FB;
                 }
             }
@@ -139,50 +158,143 @@ section.pricing {
     }
 
     .pricing-calculator {
-        background: #fff;
-        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        border: 1px solid #ccc;
-        border-radius: 10px;
+        display: none;
+        margin: 100px 0;
 
-        .pricing-list {
-            div.price-item {
-                padding: 10px;
-                text-align: left;
-                margin: 20px 0;
+        .pricing-calculator-title {
+            margin-bottom: 30px;
+        }
 
-                .item-header {
-                    margin-bottom: 10px;
+        > div {
+            padding: 20px;
+        }
 
-                    h2 {
-                        margin: 0;
-                        padding: 0;
-                        font-size: 1.5em;
+        ul.plans {
+            list-style: none;
+            margin: 0;
+            text-align: left;
+            padding: 0;
+            display: flex;
+
+            > li {
+                flex: 1;
+                border: 2px solid #F4F4F7;
+                background: #fff;
+                margin: 10px 20px;
+                cursor: pointer;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.selected, &:hover {
+                    border-color: $selected-plan-border;
+
+                    ul.features {
+                        li {
+                            color: #333;
+                        }
                     }
                 }
 
-                .sliders {
-                    margin: 10px;
+                h4 {
+                    color: #404153;
+                    text-align: center;
+                    margin: 0;
+                    padding: 20px 0;
                 }
 
-                .quantity {
-                    display: flex;
-                    align-items: center;
+                ul.features {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0 20px 20px 20px;
 
-                    .sliders {
-                        flex: 1;
+                    li {
+                        padding-bottom: 10px;
+                        color: #B7B7BF;
                     }
-                    .price {
-                        flex: 0 0 5em;
-                        text-align: right;
+                }
+
+                .price {
+                    text-align: center;
+                    padding-bottom: 10px;
+
+                    .value {
                         font-size: 1.5em;
                     }
                 }
             }
+        }
 
-            div.pricing-summary {
-                background: #efefef;
+        .extras, .price-summary {
+            > div {
+                background: #fff;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .extras {
+            > div {
+                display: flex;
+                align-items: center;
+            }
+
+            .input {
+                flex: 0 0 4em;
+
+                input {
+                    width: 3em;
+                }
+            }
+            .input-label {
+                text-align: left;
+                flex: 1;
+
+                .label {
+                    color: #333;
+                }
+
+                .value {
+                    padding: .2em .6em .3em;
+                }
+            }
+        }
+        
+        .price-summary {
+            display: flex;
+
+            > div {
+                flex: 1;
+            }
+
+            .price {
+                text-align: left;
+                align-items: center;
+                font-size: 1.3em;
+                display: flex;
+                padding-left: 20px;
+
+                .value {
+                    padding-right: 10px;
+                    font-size: 1.5em;
+                }
+            }
+
+            .action {
+                text-align: right;
+                padding-right: 10px;
+
+                .btn {
+                    background-color: $button-primary-color;
+
+                    &:hover {
+                        border-color: green;
+                    }
+                }
             }
         }
     }

@@ -5,7 +5,7 @@
     <div class="container">
         <div class="col-md-6 text-center">
             <h1 class="hero-strip__title">Our Pricing Is Very Simple</h1>
-            <p>Pick what you need. You are covered by 15 days for free, without any credit card required!</p>
+            <p>Pick what you need. You are covered by 14 days for free, without any credit card required!</p>
             <p>
                 <a href="https://authenticator.continuouspipe.io/connect/github" class="btn btn-accent btn-large">Start 14 days of free trial</a>
             </p>
@@ -16,95 +16,221 @@
     </div>
 </section>
 <section class="pricing text-center" id="form">
-    <div class="container plan-list">
-        <div class="plan-container">
-            <div class="plan plan-toolkit">
-                <div class="plan-title">
+    <div class="container offer-list">
+        <div class="offer-container">
+            <div class="offer offer-toolkit">
+                <div class="offer-title">
                     <h2><i class="fa fa-cogs"></i> Toolkit</h2>
                 </div>
 
-                <ul class="plan-items">
-                    <li>You have <strong>your own Kubernetes cluster</strong></li>
+                <ul class="offer-items">
+                    <li><strong>Use your own Kubernetes cluster</strong></li>
                     <li>You have a Docker Registry</li>
                     <li>Unlimited builds</li>
                     <li>Unlimited applications</li>
                 </ul>
 
-                <div class="plan-price">
-                    <span>from</span> <span class="value">£10</span> <span>/ month</span>
-                </div>
-
-                <button class="btn" data-select-plan="toolkit">Calculate</button>
-            </div>
-        </div>
-        <div class="plan-container">
-            <div class="plan plan-managed">
-                <div class="plan-title">
-                    <h2><i class="fa fa-cloud"></i> Managed</h2>
-                </div>
-
-                <div class="plan-note">
-                    All features from <strong>Toolkit</strong>, plus...
-                </div>
-
-                <ul class="plan-items">
-                    <li>We run the containers for you</li>
-                    <li>We store the Docker images for you</li>
-                    <li>Pay by GB of memory</li>
-                    <li>Share memory across containers</li>
-                    <li>Share memory across environments</li>
-                </ul>
-
-                <div class="plan-price">
+                <div class="offer-price">
                     <span>from</span> <span class="value">£20</span> <span>/ month</span>
                 </div>
 
-                <button class="btn" data-select-plan="managed">Calculate</button>
+                <button class="btn" data-select-offer="toolkit">Calculate</button>
             </div>
         </div>
-        <div class="plan-container">
-            <div class="plan plan-enterprise">
-                <div class="plan-title">
+        <div class="offer-container">
+            <div class="offer offer-managed">
+                <div class="offer-title">
+                    <h2><i class="fa fa-cloud"></i> Managed</h2>
+                </div>
+
+                <div class="offer-note">
+                    All features from <strong>Toolkit</strong>, plus...
+                </div>
+
+                <ul class="offer-items">
+                    <li>We store the Docker images for you</li>
+                    <li>We run the containers for you</li>
+                    <li>Buy a pack of available memory</li>
+                    <li>Divide memory across containers</li>
+                    <li>Divide memory across environments</li>
+                </ul>
+
+                <div class="offer-price">
+                    <span>from</span> <span class="value">£50</span> <span>/ month</span>
+                </div>
+
+                <button class="btn" data-select-offer="managed">Calculate</button>
+            </div>
+        </div>
+        <div class="offer-container">
+            <div class="offer offer-enterprise">
+                <div class="offer-title">
                     <h2><i class="fa fa-building-o"></i> Enterprise</h2>
                 </div>
 
-                <ul class="plan-items">
-                    <li>We cover your containers with SLA</li>
+                <ul class="offer-items">
+                    <li>Managed or on-premise</li>
+                    <li>We can cover your containers with SLA</li>
                     <li>Support available by phone</li>
-                    <li>Need help running your Kubernetes cluster?</li>
+                    <li>Kubernetes & architecture consultancy</li>
                 </ul>
 
-                <div class="plan-price"></div>
+                <div class="offer-price"></div>
                 <a href="{{ path('contact') }}" class="btn">Contact us</a>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="pricing-calculator-placeholder">
-            <p>Select a plan to open the pricing calculator!</p>
+            <p>Select an offer to open the detailed pricing calculator!</p>
         </div>
-        <div class="pricing-calculator">
-            <h2>Pricing calculator for your <strong>managed</strong> plan</h2>
+        <div class="container pricing-calculator pricing-calculator-managed">
+            <div class="row pricing-calculator-title">
+                <div class="col-md-12">
+                    <h2>Pricing calculator for your <strong>managed</strong> offer</h2>
+                </div>
+            </div>
 
-            <div class="pricing-list">
-                <div class="price-item">
-                    <div class="item-header">
-                        <h2>Build pipeline</h2>
-                        <h4>Number of user</h4>
+            <div class="row">
+                <ul class="plans">
+                    <li class="plan plan-individual" data-select-plan="individual" data-cost="45">
+                        <h4>Individual</h4>
+                        <ul class="features">
+                            <li><strong>1</strong> user</li>
+                            <li><strong>2</strong> environments <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="2GB of memory to share across containers across environments"></i></li>
+                            <li><strong>5 GB</strong> of persistent storage</li>
+                            <li><strong>0</strong> private Docker image</li>
+                        </ul>
+                        <div class="price">
+                            <span class="value">45£</span> /month
+                        </div>
+                    </li>
+
+                    <li class="plan plan-starter" data-select-plan="starter" data-cost="165">
+                        <h4>Starter</h4>
+                        <ul class="features">
+                            <li><strong>5</strong> users</li>
+                            <li><strong>5</strong> environments <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="5GB of memory to share across containers across environments"></i></li>
+                            <li><strong>10 GB</strong> of persistent storage</li>
+                            <li><strong>1</strong> private Docker image</li>
+                        </ul>
+                        <div class="price">
+                            <span class="value">165£</span> /month
+                        </div>
+                    </li>
+
+                    <li class="plan plan-medium" data-select-plan="medium" data-cost="325">
+                        <h4>Medium</h4>
+                        <ul class="features">
+                            <li><strong>10</strong> users</li>
+                            <li><strong>10</strong> environments <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="10GB of memory to share across containers across environments"></i></li>
+                            <li><strong>20 GB</strong> of persistent storage</li>
+                            <li><strong>1</strong> private Docker image</li>
+                        </ul>
+                        <div class="price">
+                            <span class="value">325£</span> /month
+                        </div>
+                    </li>
+
+                    <li class="plan plan-team" data-select-plan="team" data-cost="725">
+                        <h4>Team</h4>
+                        <ul class="features">
+                            <li><strong>20</strong> users</li>
+                            <li><strong>30</strong> environments <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="30GB of memory to share across containers across environments"></i></li>
+                            <li><strong>100 GB</strong> of persistent storage</li>
+                            <li><strong>5</strong> private Docker image</li>
+                        </ul>
+                        <div class="price">
+                            <span class="value">725£</span> /month
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row extras">
+                <div class="col-md-3">
+                    <div class="input">
+                        <input type="text" value="0" data-cost-multiplicator="20" />
                     </div>
-
-                    <div class="quantity" data-start="5" data-min="1" data-max="50" data-multiplicator="10">
-                        <div class="sliders" id="users-slider"></div>
-                        <div class="price"></div>
+                    <div class="input-label">
+                        <div class="label">Extra users</div>
+                        <div class="value">20£ / month</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input">
+                        <input type="text" value="0" data-cost-multiplicator="10" />
+                    </div>
+                    <div class="input-label">
+                        <div class="label">Extra memory (GB)</div>
+                        <div class="value">10£ / month</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input">
+                        <input type="text" value="0" data-cost-multiplicator="5" />
+                    </div>
+                    <div class="input-label">
+                        <div class="label">Extra Docker private image</div>
+                        <div class="value">5£ / month</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="input">
+                        <input type="text" value="0" data-cost-multiplicator="5" />
+                    </div>
+                    <div class="input-label">
+                        <div class="label">Extra persistent storage (GB)</div>
+                        <div class="value">5£ / month</div>
                     </div>
                 </div>
             </div>
 
-            <div class="pricing-summary">
-                <div class="row">
-                    <div class="col-md-12">
-                        X £ / month
+            <div class="row price-summary">
+                <div class="price">
+                    <span class="value">3000 £</span>
+                    <span>per month</span>
+                </div>
+                <div class="action">
+                    <a href="#" class="btn btn-primary btn-large btn-accent">Get started with 14 days free</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pricing-calculator pricing-calculator-toolkit">
+            <div class="row pricing-calculator-title">
+                <div class="col-md-12">
+                    <h2>Pricing calculator for your <strong>toolkit</strong> offer</h2>
+                </div>
+            </div>
+
+            <div class="row extras">
+                <div class="col-md-6">
+                    <div class="input">
+                        <input type="text" value="1" data-cost-multiplicator="20" />
                     </div>
+                    <div class="input-label">
+                        <div class="label">Number of developers</div>
+                        <div class="value">20£ / month</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input">
+                        <input type="text" value="0" data-cost-multiplicator="5" />
+                    </div>
+                    <div class="input-label">
+                        <div class="label">Number of hosted Docker private image</div>
+                        <div class="value">5£ / month</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row price-summary">
+                <div class="price">
+                    <span class="value">3000 £</span>
+                    <span>per month</span>
+                </div>
+                <div class="action">
+                    <a href="#" class="btn btn-primary btn-large btn-accent">Get started with 14 days free</a>
                 </div>
             </div>
         </div>
@@ -118,39 +244,52 @@
 {% block javascripts %}
 {{ parent() }}
 <script src="{{ asset('/vendor/nouislider/distribute/nouislider.js') }}"></script>
-<script src="{{ asset('/vendor/wnumb/wNumb.js') }}"></script>
 <script>
 $(function() {
-    $('.quantity').each(function () {
-        var quantityItem = $(this),
-            computePrice = function(selectedAmount) {
-                return parseInt(quantityItem.data('multiplicator')) * parseInt(selectedAmount);
-            },
-            formatPrice = function(selectedAmount) {
-                return computePrice(selectedAmount) + ' £';
-            };
+    $('[data-select-offer]').click(function() {
+        var offer = $(this).data('select-offer');
 
-        noUiSlider.create($('.sliders', this)[0], {
-            start: $(this).data('start'),
-            connect: [true, false],
-            tooltips: [wNumb({ decimals: 0 })],
-            range: {
-                'min': $(this).data('min'),
-                'max': $(this).data('max')
-            }
-        }).on('slide', function(value) {
-            $('.price', quantityItem).html(formatPrice(value));
+        $('.offer').removeClass('selected');
+        $('.offer.offer-'+offer).addClass('selected');
+
+        $('.pricing-calculator-placeholder, .pricing-calculator').hide();
+        $('.pricing-calculator-'+offer).show();
+
+        // Select the first plan by default
+        $('[data-select-plan]').first().click();
+    });
+
+    var refreshManagedPrice = function() {
+        refreshPrice($('.pricing-calculator-managed'));
+    };
+
+    var refreshToolkitPrice = function() {
+        refreshPrice($('.pricing-calculator-toolkit'));
+    };
+
+    var refreshPrice = function(parent) {
+        var totalPrice = parseInt($('.plan.selected', parent).data('cost')) || 0;
+
+        $('.extras input', parent).each(function() {
+            totalPrice += (parseInt($(this).val()) * parseInt($(this).data('cost-multiplicator'))) || 0;
         });
 
-        $('.price', quantityItem).html(formatPrice(quantityItem.data('start')));
-    });
+        $('.price-summary .value', parent).html(totalPrice+' £');
+    };
 
     $('[data-select-plan]').click(function() {
         var plan = $(this).data('select-plan');
 
         $('.plan').removeClass('selected');
         $('.plan.plan-'+plan).addClass('selected');
+
+        refreshManagedPrice();
     });
+
+    $('.pricing-calculator-managed input').change(refreshManagedPrice).keyup(refreshManagedPrice);
+    $('.pricing-calculator-toolkit input').change(refreshToolkitPrice).keyup(refreshToolkitPrice);
+
+    $('[data-toggle="tooltip"]').tooltip();
 });
 </script>
 {% endblock %}
