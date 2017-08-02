@@ -122,7 +122,7 @@ section.pricing {
             &.offer-toolkit {
                 border-top-right-radius: 0;
 
-                &:hover {
+                &:hover, &.selected {
                     border-top-right-radius: 5px;
                 }
             }
@@ -141,7 +141,7 @@ section.pricing {
                 border-color: #0868B5;
                 border-top-left-radius: 0;
 
-                &:hover {
+                &:hover, &.selected {
                     border-top-left-radius: 5px;
                 }
 
