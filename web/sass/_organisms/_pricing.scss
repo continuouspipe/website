@@ -158,8 +158,11 @@ section.pricing {
     }
 
     .pricing-calculator {
-        display: none;
         margin: 100px 0;
+
+        &.pricing-calculator-toolkit {
+            display: none;
+        }
 
         .pricing-calculator-title {
             margin-bottom: 30px;
