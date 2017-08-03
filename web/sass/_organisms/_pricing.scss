@@ -191,7 +191,11 @@ section.pricing {
         }
 
         > div {
-            padding: 20px;
+            padding: 20px 10px;
+
+            @media (min-width: 641px) {
+                padding: 20px;
+            }
         }
 
         ul.plans {
@@ -200,20 +204,29 @@ section.pricing {
             text-align: left;
             padding: 0;
             display: flex;
+            flex-direction: column;
+
+            @media (min-width: 992px) {
+                flex-direction: row;
+            }
 
             > li {
                 flex: 1;
                 border: 2px solid #F4F4F7;
                 background: #fff;
-                margin: 10px 20px;
+                margin: 20px 0;
                 cursor: pointer;
                 position: relative;
 
-                &:first-child {
-                    margin-left: 0;
-                }
-                &:last-child {
-                    margin-right: 0;
+                @media (min-width: 992px) {
+                    margin: 10px 20px;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
                 }
 
                 &.selected, &:hover {
@@ -292,17 +305,26 @@ section.pricing {
         
         .price-summary {
             display: flex;
+            flex-direction: column;
+
+            @media (min-width: 641px) {
+                flex-direction: row;
+            }
 
             > div {
                 flex: 1;
             }
 
             .price {
-                text-align: left;
+                justify-content: center;
                 align-items: center;
                 font-size: 1.3em;
                 display: flex;
-                padding-left: 20px;
+
+                @media (min-width: 641px) {
+                    justify-content: left;
+                    padding-left: 20px;
+                }
 
                 .value {
                     padding-right: 10px;
@@ -311,11 +333,16 @@ section.pricing {
             }
 
             .action {
-                text-align: right;
-                padding-right: 10px;
+                padding: 10px;
+
+                @media (min-width: 641px) {
+                    padding-left: 0;
+                    text-align: right;
+                }
 
                 .btn {
                     background-color: $button-primary-color;
+                    white-space: normal;
 
                     &:hover {
                         border-color: green;
