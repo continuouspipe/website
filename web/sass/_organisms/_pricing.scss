@@ -9,7 +9,13 @@ $selected-plan-border: #6EC0E6;
     background: $hero-background;
 
     &.hero-strip.section-padding {
-        padding-bottom: 150px;
+        @media (max-width: 1200px) {
+            padding: 40px 0;
+        }
+
+        @media (min-width: 992px) {
+            padding-bottom: 150px;
+        }
     }
 
     p {
@@ -41,8 +47,12 @@ section.pricing {
     .offer-list {
         position: relative;
         display: flex;
-        flex-direction: row;
-        margin-top: -50px;
+        flex-direction: column;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            margin-top: -50px;
+        }
 
         .offer-container {
             flex: 1;
@@ -51,7 +61,7 @@ section.pricing {
         .offer {
             background: #fff;
             border-radius: 5px;
-            z-index: 50;
+            margin-top: 40px;
             border: 2px solid #fff;
 
             -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
@@ -59,6 +69,11 @@ section.pricing {
             box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 
             transition: all .2s ease-in-out;
+
+            @media (min-width: 992px) {
+                margin-top: 0;
+                z-index: 50;
+            }
 
             &:hover, &.selected {
                 transform: scale(1.02);
@@ -120,16 +135,20 @@ section.pricing {
             }
 
             &.offer-toolkit {
-                border-top-right-radius: 0;
+                @media (min-width: 992px) {
+                    border-top-right-radius: 0;
 
-                &:hover, &.selected {
-                    border-top-right-radius: 5px;
+                    &:hover, &.selected {
+                        border-top-right-radius: 5px;
+                    }
                 }
             }
 
             &.offer-managed {
-                z-index: 100;
-                margin-top: -50px;
+                @media (min-width: 992px) {
+                    z-index: 100;
+                    margin-top: -50px;
+                }
 
                 .offer-title h2 {
                     color: #269AEA;
@@ -139,10 +158,13 @@ section.pricing {
             &.offer-enterprise {
                 background: #0868B5;
                 border-color: #0868B5;
-                border-top-left-radius: 0;
 
-                &:hover, &.selected {
-                    border-top-left-radius: 5px;
+                @media (min-width: 992px) {
+                    border-top-left-radius: 0;
+
+                    &:hover, &.selected {
+                        border-top-left-radius: 5px;
+                    }
                 }
 
                 .offer-title h2, p, span, li {
