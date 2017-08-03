@@ -42,6 +42,7 @@ $selected-plan-border: #6EC0E6;
 }
 
 section.pricing {
+    padding-bottom: 200px;
     background: $section-background;
 
     .offer-list {
@@ -174,14 +175,10 @@ section.pricing {
         }
     }
 
-    .pricing-calculator-placeholder {
-        padding: 200px 0;
-        font-style: italic;
-    }
-
     .pricing-calculator {
-        margin: 100px 0;
+        margin: 100px 0 0;
 
+        &.pricing-calculator-managed,
         &.pricing-calculator-toolkit {
             display: none;
         }
