@@ -1,0 +1,351 @@
+$hero-background: #2597F0;
+
+$button-primary-color: #24DF9B;
+$section-background: #F3F4F8;
+
+$selected-plan-border: #6EC0E6;
+
+.pricing-hero {
+    background: $hero-background;
+
+    &.hero-strip.section-padding {
+        @media (max-width: 1200px) {
+            padding: 40px 0;
+        }
+
+        @media (min-width: 992px) {
+            padding-bottom: 150px;
+        }
+    }
+
+    p {
+        color: #fff;
+    }
+
+    .btn.btn-accent {
+        background: $button-primary-color;
+        border-color: $hero-background;
+
+        &:hover {
+            border-color: inherit;
+        }
+    }
+
+    div.image {
+        text-align: center;
+
+        > img {
+            max-height: 50%;
+            max-width: 50%;
+        }
+    }
+}
+
+section.pricing {
+    padding-bottom: 200px;
+    background: $section-background;
+
+    .offer-list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            margin-top: -50px;
+        }
+
+        .offer-container {
+            flex: 1;
+        }
+
+        .offer {
+            background: #fff;
+            border-radius: 5px;
+            margin-top: 40px;
+            border: 2px solid #fff;
+
+            -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+
+            transition: all .2s ease-in-out;
+
+            @media (min-width: 992px) {
+                margin-top: 0;
+                z-index: 50;
+            }
+
+            &:hover, &.selected {
+                transform: scale(1.02);
+            }
+
+            &.selected {
+                border-color: $selected-plan-border;
+            }
+
+            p, span, li {
+                color: #303146;
+            }
+
+            .offer-title {
+                border-bottom: 1px solid #F3F4F8;
+
+                h2 {
+                    font-size: 1.5em;
+                    margin: 0;
+                    padding: 20px 0;
+
+                    i {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+
+            .offer-note {
+                padding: 10px;
+                border-bottom: 1px solid #F3F4F8;
+            }
+
+            ul.offer-items {
+                list-style: none;
+                margin: 0;
+                padding: 10px;
+
+                li {
+                    padding: 5px;
+                }
+            }
+
+            .offer-price {
+                margin: 20px;
+                font-size: 0.8em;
+
+                .value {
+                    font-size: 1.5em;
+                }
+            }
+
+            .btn {
+                background: $hero-background;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                padding: 10px 20px;
+            }
+
+            &.offer-toolkit {
+                @media (min-width: 992px) {
+                    border-top-right-radius: 0;
+
+                    &:hover, &.selected {
+                        border-top-right-radius: 5px;
+                    }
+                }
+            }
+
+            &.offer-managed {
+                @media (min-width: 992px) {
+                    z-index: 100;
+                    margin-top: -50px;
+                }
+
+                .offer-title h2 {
+                    color: #269AEA;
+                }
+            }
+
+            &.offer-enterprise {
+                background: #0868B5;
+                border-color: #0868B5;
+
+                @media (min-width: 992px) {
+                    border-top-left-radius: 0;
+
+                    &:hover, &.selected {
+                        border-top-left-radius: 5px;
+                    }
+                }
+
+                .offer-title h2, p, span, li {
+                    color: #EBF4FB;
+                }
+            }
+        }
+    }
+
+    .pricing-calculator {
+        margin: 100px 0 0;
+
+        &.pricing-calculator-managed,
+        &.pricing-calculator-toolkit {
+            display: none;
+        }
+
+        .pricing-calculator-title {
+            margin-bottom: 30px;
+        }
+
+        > div {
+            padding: 20px 10px;
+
+            @media (min-width: 641px) {
+                padding: 20px;
+            }
+        }
+
+        ul.plans {
+            list-style: none;
+            margin: 0;
+            text-align: left;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 992px) {
+                flex-direction: row;
+            }
+
+            > li {
+                flex: 1;
+                border: 2px solid #F4F4F7;
+                background: #fff;
+                margin: 20px 0;
+                cursor: pointer;
+                position: relative;
+
+                @media (min-width: 992px) {
+                    margin: 10px 20px;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                &.selected, &:hover {
+                    border-color: $selected-plan-border;
+
+                    ul.features {
+                        li {
+                            color: #333;
+                        }
+                    }
+                }
+
+                h4 {
+                    color: #404153;
+                    text-align: center;
+                    margin: 0;
+                    padding: 20px 0;
+                }
+
+                ul.features {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0 20px 20px 20px;
+
+                    li {
+                        padding-bottom: 10px;
+                        color: #B7B7BF;
+                    }
+                }
+
+                .price {
+                    text-align: center;
+                    padding-bottom: 10px;
+
+                    .value {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+
+        .extras, .price-summary {
+            > div {
+                background: #fff;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .extras {
+            > div {
+                display: flex;
+                align-items: center;
+            }
+
+            .input {
+                flex: 0 0 4em;
+
+                input {
+                    width: 3em;
+                }
+            }
+            .input-label {
+                text-align: left;
+                flex: 1;
+
+                .label {
+                    color: #333;
+                }
+
+                .value {
+                    padding: .2em .6em .3em;
+                }
+            }
+        }
+        
+        .price-summary {
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 641px) {
+                flex-direction: row;
+            }
+
+            > div {
+                flex: 1;
+            }
+
+            .price {
+                justify-content: center;
+                align-items: center;
+                font-size: 1.3em;
+                display: flex;
+
+                @media (min-width: 641px) {
+                    justify-content: left;
+                    padding-left: 20px;
+                }
+
+                .value {
+                    padding-right: 10px;
+                    font-size: 1.5em;
+                }
+            }
+
+            .action {
+                padding: 10px;
+
+                @media (min-width: 641px) {
+                    padding-left: 0;
+                    text-align: right;
+                }
+
+                .btn {
+                    background-color: $button-primary-color;
+                    white-space: normal;
+
+                    &:hover {
+                        border-color: green;
+                    }
+                }
+            }
+        }
+    }
+}

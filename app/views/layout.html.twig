@@ -80,7 +80,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 </footer>
 
-<script defer src="{{ asset('/js/vendor/jquery-1.11.2.min.js') }}"></script>
+{% block javascripts %}
+<script src="{{ asset('/js/vendor/jquery-1.11.2.min.js') }}"></script>
 <script defer src="{{ asset('/js/vendor/bootstrap.min.js') }}"></script>
 <script defer src="{{ asset('/js/vendor/jquery-waypoints/lib/jquery.waypoints.min.js') }}"></script>
 <script async src="{{ asset('/js/vendor/retina.js/dist/retina.js') }}"></script>
@@ -124,6 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         }
     })()</script>
+{% endblock %}
 </body>
 </html>
 {% endspaceless %}
