@@ -1,15 +1,5 @@
 app:
     build: .
-    volumes:
-        - ./:/app
     expose:
         - 80
-    ports:
-        - 80:80
-    environment:
-        - WEB_HTTP=true
-        - DEBUG_MODE=true
-        - CONTENTFUL_ACCESS_TOKEN
-        - CONTENTFUL_SPACE_ID
-        - CONTENTFUL_POST_CONTENT_TYPE
-        - CONTENTFUL_TAG_CONTENT_TYPE
+

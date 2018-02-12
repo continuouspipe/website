@@ -1,0 +1,11 @@
+app:
+    volumes:
+        - ./:/app
+    ports:
+        - 90:80
+    environment:
+        - WEB_HTTP=true
+        - DEBUG_MODE=true
+        - SYMFONY_ENV=dev
+        - APP_ENV=dev
+
