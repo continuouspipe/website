@@ -1,0 +1,145 @@
+{% extends "features/layout.html.twig" %}
+{% block nav_feature_developers_class %} active{% endblock %}
+{% block title %}Features for Developers{% endblock %}
+{% block content %}
+    <section class="intro section-padding" id="overview">
+        <div class="container">
+            <div class="row">
+                <div class="page-header">
+                    <h1>ContinuousPipe for Developers</h1>
+                    <p>ContinuousPipe has been built by developers, for developers. We want to remove the pain of deploying
+                    web-based applications by the joy of focusing on the delivered value of your product. All you need is a Docker
+                    configuration, a Kubernetes cluster (given by your ops team?) and you are all set.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features section-padding" id="assets">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="feature-list">
+                        <h3>A complete integration with GitHub and Bitbucket</h3>
+                        <p>We consider GitHub and Bitbucket not only as a code repository, but also as your project
+                            repository.</p>
+                        <ul class="features-stack">
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>"Here is the address"</h5>
+                                    <p>When creating a pull-request, just wait and a comment will appear with the
+                                        deployed environment link.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-tags" aria-hidden="true"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Label control</h5>
+                                    <p>By using comments and/or labels, you can seamlessly control and manage the
+                                        deployment pipeline.</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-recycle" aria-hidden="true"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Quick feedback loop</h5>
+                                    <p>Developers and QAs can approve features in parallel, merging and easily deploy
+                                        them.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="image-container">
+                        <img src="{{ asset('/img/github-workflow.png') }}" alt="GitHub workflow"
+                             class="illustration-image"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-extra section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="{{ asset('/img/live-shell.gif') }}" alt="ContinuousPipe's live shell"
+                             class="illustration-image"/>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="feature-list">
+                        <h3>Easy access to running containers</h3>
+                        <p>Having the ability to access the environments for debugging and investigation purposes should be a no-brainer.</p>
+                        <ul class="features-stack">
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Realtime logs</h5>
+                                    <p>Access the realtime logs of your container through the user interface. Don't search for them anymore!</p>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h5>Web shell</h5>
+                                    <p>Something is wrong? Open the "Web Shell" to access a web terminal within the running container.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features section-padding">
+        <div class="container">
+            <div class="row">
+                <h2>(Experimental) Development environments</h2>
+                <p>This demo using Laravel shows how your code changes are synchronised in the background to ContinuousPipe. Please
+                    note - Docker is
+                    not installed on the development machine - all you need is our cross-platform <a
+                            href="https://docs.continuouspipe.io/remote-development/">Remote Environment
+                        Client</a>.</p>
+                <img src="{{ asset('/img/cp-remote-laravel.gif') }}" class="img-responsive">
+            </div>
+        </div>
+    </section>
+    <section class="integrations section-padding">
+        <div class="container">
+            <div class="row integration-list">
+                <div class="col-md-4">
+                    <a href="https://github.com/">
+                        <img src="{{ asset('/img/logos/github-icon.svg') }}" alt="Github" />
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://bitbucket.org/">
+                        <img src="{{ asset('/img/logos/bitbucket.svg') }}" alt="Bitbucket" />
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://slack.com/">
+                        <img src="{{ asset('/img/logos/slack.svg') }}" alt="Slack" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "_partials/call-to-action.html.twig" %}
+{% endblock %}

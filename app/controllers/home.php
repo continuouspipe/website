@@ -144,6 +144,7 @@ $routes->get('/', function() use ($app) {
 })->bind('homepage');
 
 $app->error(function (\Exception $e, $code) use ($app) {
+    var_dump($e->getMessage());
     return $app['twig']->render('exception/error.html.twig',[
          'code' => $code,
     ]);

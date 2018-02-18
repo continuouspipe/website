@@ -1,6 +1,6 @@
 {% extends "features/layout.html.twig" %}
-{% block nav_area_qa_class %} active{% endblock %}
-{% block title %}Quality Assurance and Collaboration{% endblock %}
+{% block nav_feature_business_class %} active{% endblock %}
+{% block title %}Features for Stakeholders and Product Owners{% endblock %}
 {% block content %}
     <section class="intro section-padding" id="overview">
         <div class="container">
@@ -50,14 +50,14 @@
             </div>
         </div>
     </section>
+
     <section class="features section-padding" id="assets">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
                     <div class="feature-list">
-                        <h3>A complete integration with GitHub and Bitbucket</h3>
-                        <p>We consider GitHub and Bitbucket not only as a code repository, but also as your project
-                            repository.</p>
+                        <h3>An overview of the project</h3>
+                        <p>We consider GitHub and Bitbucket not only as a code repository, but also as your project repository.</p>
                         <ul class="features-stack">
                             <li class="feature-item">
                                 <div class="feature-icon">
@@ -74,9 +74,8 @@
                                     <i class="fa fa-tags" aria-hidden="true"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h5>Pipeline control</h5>
-                                    <p>By using comments and/or labels, you can seamlessly control and manage the
-                                        deployment pipeline.</p>
+                                    <h5>Identify your features</h5>
+                                    <p>For each branch and/or feature, ContinousPipe will deploy an isolated environment.</p>
                                 </div>
                             </li>
                             <li class="feature-item">
@@ -94,7 +93,7 @@
                 </div>
                 <div class="col-md-6 col-md-offset-1">
                     <div class="image-container">
-                        <img src="{{ asset('/img/github-workflow.png') }}" alt="GitHub workflow"
+                        <img src="{{ asset('/img/branches-overview.png') }}" alt="Branches workflow"
                              class="illustration-image"/>
                     </div>
                 </div>

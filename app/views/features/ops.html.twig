@@ -1,19 +1,48 @@
 {% extends "features/layout.html.twig" %}
-{% block nav_area_prod_class %} active{% endblock %}
-{% block title %}Production{% endblock %}
+{% block nav_feature_ops_class %} active{% endblock %}
+{% block title %}Features for Ops{% endblock %}
 {% block content %}
     <section class="intro section-padding">
         <div class="container">
             <div class="row">
                 <div class="page-header">
-                    <h1>Production</h1>
-                    <p>ContinuousPipe can reduce the time it takes to deploy your website to any Kubernetes cluster. You
-                        can easily host your cluster on <a href="https://cloud.google.com/container-engine/">Google
-                            Container Engine</a>, <a href="https://aws.amazon.com/ecs/">Amazon EC2 Container Service</a>
-                        or your
-                        own private Kubernetes cluster.</p>
+                    <h1>ContinuousPipe for Ops</h1>
+                    <p>ContinuousPipe can reduce the time it takes to deploy your website to any Kubernetes cluster. You can easily host your cluster on <a href="https://cloud.google.com/container-engine/">Google Container Engine</a>, <a href="https://aws.amazon.com/ecs/">Amazon EC2 Container Service</a> or your own private Kubernetes cluster. ContinuousPipe will bring the gap between your developers and your operational team.</p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Fast Onboarding</h5>
+                        <p>On-boarding a new team member or a project is super fast. All they need is a Docker configuration and a Git repository.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="intro-content">
+                        <h5>Minimal Downtime</h5>
+                        <p>The containers are deployed to your Kubernetes cluster. You can configure cluster policies to enforce different type of endpoints or resilience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 intro-feature">
+                    <div class="intro-icon">
+                        <i class="fa fa-fire" aria-hidden="true"></i>
+                    </div>
+                    <div class="intro-content last">
+                        <h5>Scale</h5>
+                        <p>There is no requirement on the Kubernetes cluster. Nothing to install on it. Just install and scale your Kubernetes cluster.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features section-padding">
+        <div class="container">
             <div class="row">
                 <div class="col-md-5">
                     <div class="image-container">
@@ -52,7 +81,6 @@
             </div>
         </div>
     </section>
-    {% include "_partials/call-to-action.html.twig" %}
     <section class="features-extra section-padding">
         <div class="container">
             <div class="row">
@@ -88,11 +116,7 @@
                                 </div>
                                 <div class="feature-content">
                                     <h5>Bring your own Cluster</h5>
-                                    <p>Most of our clients choose to use Kubernetes clusters hosted by Google or Amazon.
-                                        As well as getting a highly managed service, they benefit from compliance with
-                                        security frameworks such as PCI and ISO27001. If you’d prefer to build and
-                                        manage your own Kubernetes platform, we’d be
-                                        delighted to introduce you to our partner, Jetstack. </p>
+                                    <p>On-premise or in the cloud, ContinuousPipe will deploy to the Kubernetes cluster you have</p>
                                 </div>
                             </li>
                         </ul>
@@ -109,6 +133,7 @@
             </div>
         </div>
     </section>
+    {% include "_partials/call-to-action.html.twig" %}
     <section class="integrations features section-padding">
         <div class="container">
             <div class="row integration-list">
