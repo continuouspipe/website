@@ -1,4 +1,6 @@
 variables:
+    - name: COMMIT_SHA
+      expression: code_reference.sha
     - name: DEBUG_MODE
       condition: code_reference.branch == "master"
       value: false
@@ -16,12 +18,13 @@ tasks:
         build:
             services:
                 app:
-                    image: docker.io/inviqasession/cp-website
+                    image: quay.io/inviqa_images/continuouspipe
+                    tag: website-${COMMIT_SHA}
 
     deploy:
         deploy:
             services:
-                app:          
+                app:
                     specification:
                         environment_variables:
                             - name: DEBUG_MODE
@@ -34,7 +37,7 @@ tasks:
                               value: ${CONTENTFUL_POST_CONTENT_TYPE}
                             - name: CONTENTFUL_TAG_CONTENT_TYPE
                               value: ${CONTENTFUL_TAG_CONTENT_TYPE}
-                              
+
                     endpoints:
                         - name: dev
                           ingress:
