@@ -8,4 +8,7 @@ do_phpfpm_named_pipe() {
     mkdir -p /var/log/php-fpm/
     mkfifo -m 0660 /var/log/php-fpm/stdout
   fi
+  if [ "$IN_HEROKU" != 'true' ]; then
+    chown -R "$APP_USER:$APP_GROUP" /var/log/php-fpm/
+  fi
 }
