@@ -1,11 +1,12 @@
-app:
+version: '3.5'
+services:
+  app:
     volumes:
-        - ./:/app
+      - ./:/app
     ports:
-        - 90:80
+      - 90:80
     environment:
-        - WEB_HTTP=true
-        - DEBUG_MODE=true
-        - SYMFONY_ENV=dev
-        - APP_ENV=dev
-
+      WEB_HTTP: "true"
+      DEBUG_MODE: "true"
+      SYMFONY_ENV: dev
+      APP_ENV: dev
