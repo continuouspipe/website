@@ -1,0 +1,123 @@
+<!doctype html><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=""><![endif]--><!--[if IE 8]><html class="no-js lt-ie9" lang=""><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang=""><!--<![endif]--><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>ContinuousPipe - for a faster development workflow</title><meta name="description" content="ContinuousPipe, the continuous deployment pipeline based on Docker and Kubernetes"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" href="/favicon.png" /><link rel="stylesheet" href="/css/styles.css"><script async src="https://use.fontawesome.com/ae9153e864.js"></script><script async src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script></head><body id="top"><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WZD897"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZD897');</script><!-- End Google Tag Manager --><!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--><section class="navigation regular navigation-home">
+    <header>
+    <div class="header-content">
+        <div class="logo"><a href="/"><i class="cp-icon-logo"></i></a></div>
+        <div class="header-nav">
+            <nav>
+                <ul class="primary-nav">
+                    <li><a href="/features/">Features</a></li>
+                    <li><a href="https://medium.com/continuouspipe">Blog</a></li>
+                </ul>
+                <ul class="member-actions">
+                    <li><a href="https://docs.continuouspipe.io">Documentation</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navicon">
+            <a class="nav-toggle" href="#"><span></span></a>
+        </div>
+    </div>
+</header>
+</section>
+<section class="hero hero-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="hero-content text-center">
+                    <div class="continuous-pipe-logo"><i class="cp-icon-logo"></i></div>
+                    <p class="intro">For a faster development workflow</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="hero-content text-center">
+                    <h3>The open-source continuous deployment solution for your containerized applications to Kubernetes clusters</h3>
+                </div>
+            </div>
+            <div class="text-center home-buttons">
+                <a href="https://github.com/continuouspipe/continuouspipe"
+                    class="btn btn-large btn-fill btn-margin-right btn-sign-in"
+                    ga-on="click" ga-event-category="Homepage CTA" ga-event-action="click">See on GitHub</a>
+                <a href="https://docs.continuouspipe.io" class="btn btn-accent btn-large"
+                    ga-on="click" ga-event-category="Homepage CTA" ga-event-action="click">Documentation</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero-strip section-padding no-icon">
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h1 class="hero-strip__title">Why ContinuousPipe?</h1>
+            <p>
+                ContinuousPipe will help solve many problems in your software development lifecycle.
+                In particular, we believe that <strong>enabling faster collaboration</strong> and <strong>reducing the cycle time</strong> is critical to delivering value.
+            </p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container metrics__item">
+        <div class="col-md-6 col-md-push-6">
+            <h3>Say goodbye to QA and staging bottlenecks !</h3>
+            <p>Test and iterate on features in just minutes after a developer has created a commit or a pull-request. Gather non-technical feature before deploying to your staging environment to <strong>drastically reduce your cycle time</strong>.</p>
+        </div>
+        <div class="col-md-6 col-md-pull-6 metrics__img">
+            <img src="/img/branch-create-integrate.svg" />
+            <p class="caption text-center"><b>from days to minutes</b></p>
+        </div>
+    </div>
+    <div class="container metrics__item">
+        <div class="col-md-6">
+            <h3>Technology freedom</h3>
+            <p>Using containers means that <strong>your pipeline is the same, regardless of the technology you're using</strong>. You can deploy new versions of PHP, Scala or Go applications the very same way, and allow your team to use the right solution for the right problem.</p>
+        </div>
+        <div class="col-md-6 metrics__img">
+            <img src="/img/technology-freedom.svg" />
+        </div>
+    </div>
+    <div class="container metrics__item">
+        <div class="col-md-6 col-md-push-6">
+            <h3>Automatically generated configuration for Kubernetes</h3>
+            <p>Get started with container deployment at scale on Kubernetes cluster without Kubernetes configuration. <strong>Your Kubernetes configuration is automatically generated</strong> from the DockerCompose  and ContinuousPipe's files in the code repository!</p>
+        </div>
+        <div class="col-md-6 col-md-pull-6 metrics__img">
+            <img src="/img/kubernetes-automated.svg" />
+            <p class="caption text-center"><b>from days to minutes</b></p>
+        </div>
+    </div>
+    <div class="container metrics__item">
+        <div class="col-md-6">
+            <h3>Code repository integration</h3>
+            <p>Your code repository is so much more than just that. By storing all the configuration in your code repository, you can also version your architecture. Deploy a runtime version change as if it were simply a feature change. <strong>Use branch names, pull-requests labels and much more to control your pipelines.</strong> <a href="https://docs.continuouspipe.io/faq/how-do-I-control-deployments-using-pr-labels/" target="_blank">Learn more here!</a></p>
+        </div>
+        <div class="col-md-6 metrics__img">
+            <img src="/img/this-new-feature-pull-request.png" />
+        </div>
+    </div>
+    <div class="container metrics__item">
+        <div class="col-md-6 col-md-push-6">
+            <h3>Flexible configuration</h3>
+            <p>Your configuration is stored in your code repository in Yaml files. Compose your pipelines by ordering <a href="https://docs.continuouspipe.io/configuration/tasks/" target="_blank">tasks</a> that can build your Docker image, deploy your services, run tests or migrations, send webhooks and much more. Our API and integrations with <a href="https://docs.continuouspipe.io/configuration/notifications/#slack" target="_blank">Slack</a>, <a href="https://docs.continuouspipe.io/configuration/cloudflare-integration/" target="_blank">CloudFlare</a> and other third parties will allow you to build the perfect process.</p>
+        </div>
+        <div class="col-md-6 col-md-pull-6 metrics__img">
+            <img src="/img/deployed-branches.png" />
+        </div>
+    </div>
+    <div class="container metrics__item">
+        <div class="col-md-6">
+            <h3>We've even created images for you!</h3>
+            <p>We've already invested time in creating <a href="https://github.com/continuouspipe/dockerfiles" target="_blank">base Docker images for many applications</a> so that you won't have to. Use these optional images to <strong>get started in a matter of minutes</strong>, rather than days. You can also use environments deployed by ContinuousPipe as your own development environments!</p>
+        </div>
+        <div class="col-md-6 metrics__img">
+            <a href="https://github.com/continuouspipe/dockerfiles" target="_blank">
+                <img src="/img/dockerfiles.png" />
+            </a>
+            <p class="caption text-center"><b>from days to under an hour</b></p>
+        </div>
+    </div>
+</section>
+<section class="to-top"><div class="container"><div class="row"><div class="to-top-wrap"><a href="#top" class="top"><i class="fa fa-angle-up"></i></a></div></div></div></section><footer><div class="container"><div class="row"><div class="col-md-7"><div class="footer-links"><ul class="footer-group"><li><a href="/features/">Features</a></li><li><a href="https://medium.com/continuouspipe">Blog</a></li><li><a href="https://docs.continuouspipe.io">Documentation</a></li></ul><p>Crafted with <span class="fa fa-heart pulse2"></span> by <a href="https://twitter.com/samuelroze">Samuel Roze</a> & many <a href="https://github.com/continuouspipe/continuouspipe/graphs/contributors">contributors</a>.</p><p><a href="https://twitter.com/ContinuousPipe" class="twitter-share"><i class="fa fa-twitter"></i></a></p></div></div><div class="col-md-5"><div class="quote"><blockquote><p>Until your pretty code is in production, making money, or doing whatever it does, you’ve just wasted your time.</p><small class="author"><cite><a href="https://twitter.com/cread">Chris Read</a></cite></small></blockquote></div></div></div></div></footer><script src="/js/vendor/jquery-1.11.2.min.js"></script><script defer src="/js/vendor/bootstrap.min.js"></script><script defer src="/js/vendor/jquery-waypoints/lib/jquery.waypoints.min.js"></script><script async src="/js/vendor/retina.js/dist/retina.js"></script><script async src="/js/vendor/classie/classie.js"></script><script defer src="/js/jquery.fancybox.pack.js"></script><script defer src="/js/scripts.js"></script></body></html>
