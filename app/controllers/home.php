@@ -115,7 +115,7 @@ $routes->get('/pricing', function() use ($app) {
 })->bind('pricing');
 
 $routes->get('/frequently-asked-questions', function() use ($app) {
-    return new RedirectResponse('https://documentation-continuouspipe.github.io/faq/#from-website');
+    return new RedirectResponse('https://continuouspipe.github.io/docs/faq/#from-website');
 })->bind('faq');
 
 $routes->get('/why', function() use ($app) {
@@ -127,7 +127,7 @@ $routes->get('/services', function() use ($app) {
 })->bind('services');
 
 $routes->get('/get-started', function() use ($app) {
-    return new RedirectResponse('https://documentation-continuouspipe.github.io/guides/#from-website');
+    return new RedirectResponse('https://continuouspipe.github.io/docs/guides/#from-website');
 })->bind('get-started');
 
 $routes->get('/terms-and-conditions', function() use ($app) {
