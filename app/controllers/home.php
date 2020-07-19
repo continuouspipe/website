@@ -115,7 +115,7 @@ $routes->get('/pricing', function() use ($app) {
 })->bind('pricing');
 
 $routes->get('/frequently-asked-questions', function() use ($app) {
-    return new RedirectResponse('https://docs.continuouspipe.io/faq/#from-website');
+    return new RedirectResponse('https://documentation-continuouspipe.github.io/faq/#from-website');
 })->bind('faq');
 
 $routes->get('/why', function() use ($app) {
@@ -127,17 +127,12 @@ $routes->get('/services', function() use ($app) {
 })->bind('services');
 
 $routes->get('/get-started', function() use ($app) {
-    return new RedirectResponse('https://docs.continuouspipe.io/guides/#from-website');
+    return new RedirectResponse('https://documentation-continuouspipe.github.io/guides/#from-website');
 })->bind('get-started');
 
 $routes->get('/terms-and-conditions', function() use ($app) {
     return $app['twig']->render('terms-and-conditions.html.twig');
 })->bind('terms-and-conditions');
-
-$routes->get('/early-access', function() use ($app) {
-    return new RedirectResponse('https://authenticator.continuouspipe.io/early-access/');
-});
-
 
 $routes->get('/', function() use ($app) {
     return $app['twig']->render('home.html.twig');
